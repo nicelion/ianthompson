@@ -14,7 +14,7 @@
 					id="logo-img"
 					src="/img/ian-thompson.jpg"
 					alt=""
-					class="hidden sm:block h-full rounded-full rounded-br-sm border-blue-400 lg:border-8 sm:border-4 transition-all ease-in-out delay-75 opacity-0"
+					class="hidden sm:block h-full rounded-full rounded-br-sm border-blue-400 border-4 transition-all ease-in-out delay-75 opacity-0"
 				/>
 			</div>
 			<h1
