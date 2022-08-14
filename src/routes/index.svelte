@@ -6,11 +6,17 @@
 	import Experience from '../components/resume/Experience.svelte';
 </script>
 
+<svelte:head>
+	<title>Ian Thompson | Student @ Clemson University</title>
+</svelte:head>
+
 <div
 	id="hero"
 	class="hero w-full bg-eerie-black text-cornsilk flex flex-row sm:flex-col justify-center items-center space-y-5 max-h-min p-12"
 >
-	<div class="flex flex-col-reverse sm:flex-row items-center justify-between w-full md:px-64">
+	<div
+		class="flex flex-col-reverse sm:flex-row items-center justify-between w-full md:px-6 lg:px-64 pt-24 md:pt-0"
+	>
 		<div class="">
 			<h1
 				id="message"
@@ -18,15 +24,18 @@
 			>
 				Hello, I'm...
 			</h1>
-			<h1 class="text-4xl md:text-8xl font-bold ">Ian Thompson</h1>
+			<h1 class="text-4xl md:text-6xl lg:text-8xl font-bold ">Ian Thompson</h1>
 			<p class="text-lg md:text-2xl">Student. Computer Hobbyist. Everything else.</p>
 
 			<div class="mt-12 space-y-2">
-				<div class="text-xl space-x-4 group">
+				<div class="text-xl space-x-4 group flex">
 					<i class="fas fa-envelope group-hover:animate-wiggle" />
-					<a href="mailto:icthomp@g.clemson.edu">icthomp@g.clemson.edu</a>
-					<span class="border border-cornsilk" />
-					<a href="mailto:ianthompson@nicelion.com">ianthompson@nicelion.com</a>
+
+					<div class="">
+						<a href="mailto:icthomp@g.clemson.edu">icthomp@g.clemson.edu</a>
+						<!-- <span class="border border-cornsilk" /> -->
+						<a href="mailto:ianthompson@nicelion.com">ianthompson@nicelion.com</a>
+					</div>
 				</div>
 				<!-- <div class="text-xl space-x-4 group">
 					<i class="fas fa-phone group-hover:animate-wiggle" />
@@ -38,23 +47,25 @@
 				</div>
 			</div>
 			<div class="space-x-6 text-3xl mt-24">
-				<a href="https://www.github.com/nicelion" target="_blank"
+				<a href="https://www.github.com/nicelion" target="_blank" aria-label="github"
 					><i class="fa-brands fa-github hover:animate-wiggle" /></a
 				>
 
-				<a href="https://www.instagram.com/thompson_ian" target="_blank"
+				<a href="https://www.instagram.com/thompson_ian" target="_blank" aria-label="instagram"
 					><i class="fa-brands fa-instagram hover:animate-wiggle" /></a
 				>
-				<a href="https://www.linkedin.com/in/ian-thompson-b92467221" target="_blank"
-					><i class="fa-brands fa-linkedin hover:animate-wiggle" /></a
+				<a
+					href="https://www.linkedin.com/in/ian-thompson-b92467221"
+					target="_blank"
+					aria-label="linkedin"><i class="fa-brands fa-linkedin hover:animate-wiggle" /></a
 				>
-				<a href="https://www.twitter.com/thompson__ian" target="_blank"
+				<a href="https://www.twitter.com/thompson__ian" target="_blank" aria-label="twitter"
 					><i class="fa-brands fa-twitter hover:animate-wiggle" /></a
 				>
 			</div>
 		</div>
 		<div class="mt-10 sm:mt-0">
-			<div class="sm:h-96 ">
+			<div class="md:w-72 sm:w-56">
 				<img
 					id="main-img"
 					src="/img/ian-thompson.jpg"
@@ -78,9 +89,9 @@
 	class="bg-black-lighter pt-14 flex justify-center  items-center flex-col text-cornsilk font-serif"
 >
 	<div
-		class="container px-8 my-4 xl:px-10 xl:my-10 flex flex-col-reverse lg:flex-row items-center lg:items-stretch  justify-center md:space-x-10"
+		class="container px-8 my-4 xl:px-10 xl:my-10 flex flex-col-reverse lg:flex-row items-center lg:items-stretch  justify-center lg:space-x-10"
 	>
-		<div id="col" class="md:px-28 md:w-3/4">
+		<div id="col" class="mlgd:px-28 lg:w-3/4">
 			<div id="about-text" class="space-y-8">
 				<div id="about-heading" class="mb-10">
 					<!-- <p class="text-gray-200 mb-2 italic">A little about me...</p> -->
@@ -111,7 +122,7 @@
 			alt=""
 			class="p-5 w-full md:w-2/5 max-h-96 animate-message-bounce "
 		/> -->
-		<div class="mockup-code md:w-1/4 h-fit self-center mb-12 md:mb-0">
+		<div class="mockup-code lg:w-1/4 h-fit self-center mb-12 lg:mb-0">
 			<pre class="text-success"><code>Ian Thompson: {'{'}</code></pre>
 			<pre class="text-success"><code>&Tab; Age: 21</code></pre>
 			<pre class="text-success"><code>&Tab; Major: Elementary Education</code></pre>
@@ -121,10 +132,8 @@
 		</div>
 	</div>
 
-	<div
-		class="flex md:flex-row flex-col space-y-8 md:space-y-0 md:space-x-10 p-6 md:p-14 justify-center"
-	>
-		<div class="p-6 rounded-md border-2 border-blue-400 space-y-4 w-full md:w-1/3">
+	<div class="flex lg:flex-row flex-col space-y-8 lg:space-y-0 lg:space-x-10 p-6  justify-center">
+		<div class="p-6 rounded-md border-2 border-blue-400 space-y-4 w-full lg:w-1/2 xl:w-1/3">
 			<h3 class="text-2xl text-white font-bold">Academic Interests</h3>
 			<div class="flex flex-wrap">
 				<Interest interest="#Computer-science" color="bg-purple-400" />
@@ -138,7 +147,7 @@
 				<Interest interest="#Learning-analytics" color="bg-red-400" />
 			</div>
 		</div>
-		<div class="p-6  rounded-md border-2 border-blue-400 space-y-4 w-full md:w-1/3">
+		<div class="p-6  rounded-md border-2 border-blue-400 space-y-4 w-full lg:w-1/2 xl:w-1/3">
 			<h3 class="text-2xl text-white font-bold">Technical Skills</h3>
 			<div class="flex flex-wrap">
 				<Interest interest="JavaScript" color="bg-orange-400" />
@@ -295,10 +304,10 @@
 </div>
 
 <section id="projects" class="flex flex-col justify-center w-full items-center">
-	<div class="text-cornsilk mb-4">
+	<div class="text-cornsilk mb-12">
 		<h1 class="font-bold text-3xl">Projects I've Worked On</h1>
 	</div>
-	<div class="flex flex-col px-8 md:flex-row space-y-9 md:space-y-0 md:space-x-9">
+	<div class="flex flex-col px-8 lg:flex-row space-y-9 lg:space-y-0 lg:space-x-9">
 		<Card
 			url="https://github.com/nicelion/raspi-metar"
 			img="https://github.com/nicelion/raspi-metar/raw/master/img/cover.jpeg"

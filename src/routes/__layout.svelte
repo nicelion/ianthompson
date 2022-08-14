@@ -3,23 +3,23 @@
 	import '../app.css';
 </script>
 
-<div
+<nav
 	class="navbar bg-eerie-black z-50 sticky top-0 w-full border-blue-400 border-transparent border-b"
 	id="header"
 >
 	<div class="flex-1">
 		<a href="/" class="h-full w-full flex items-center space-x-2 md:space-x-5">
-			<div class="ml-2 h-7 md:h-14">
+			<div class="ml-2 h-7 sm:h-14">
 				<img
 					id="logo-img"
 					src="/img/ian-thompson.jpg"
 					alt=""
-					class="hidden md:block h-full rounded-full rounded-br-sm border-blue-400 border-8 transition-all ease-in-out delay-75 opacity-0"
+					class="hidden sm:block h-full rounded-full rounded-br-sm border-blue-400 lg:border-8 sm:border-4 transition-all ease-in-out delay-75 opacity-0"
 				/>
 			</div>
 			<h1
 				id="logo"
-				class="opacity-0 text-sm md:text-md text-white bg-blue-400 p-1 px-4 rounded-xl rounded-bl-none w-fit mb-2 font-extrabold font-mono transition-all ease-in-out delay-75"
+				class="opacity-0 text-sm sm:text-md text-white bg-blue-400 p-1 px-4 rounded-xl rounded-bl-none w-fit mb-2 font-extrabold font-mono transition-all ease-in-out delay-75"
 			>
 				Hi, I'm Ian!
 			</h1>
@@ -28,7 +28,7 @@
 	<div class="flex-none z-40">
 		<ul class="menu menu-horizontal p-0 mr-9 text-cornsilk">
 			<li class="" />
-			<li tabindex="0" class="md:hidden">
+			<li tabindex="0" class="sm:hidden">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					class="h-14 w-14 text-white "
@@ -50,32 +50,14 @@
 					<li><a href="#projects">Projects</a></li>
 				</ul>
 			</li>
-			<div class="hidden md:flex">
+			<ul class="hidden sm:flex">
 				<li><a href="#about">About</a></li>
 				<li><a href="#resume">Resume</a></li>
 				<li><a href="#projects">Projects</a></li>
-			</div>
-
-			<!-- <li tabindex="0">
-				<a>
-					Parent
-					<svg
-						class="fill-current"
-						xmlns="http://www.w3.org/2000/svg"
-						width="20"
-						height="20"
-						viewBox="0 0 24 24"
-						><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg
-					>
-				</a>
-				<ul class="p-2 bg-base-100">
-					<li><a>Submenu 1</a></li>
-					<li><a>Submenu 2</a></li>
-				</ul>
-			</li> -->
+			</ul>
 		</ul>
 	</div>
-</div>
+</nav>
 <!-- <header
 	id="headder"
 	class="w-full bg-eerie-black h-header p-5 flex items-center text-cornsilk sticky top-0 z-50 transition-colors ease-in-out duration-400 border-b border-blue-400 border-transparent"
@@ -108,8 +90,8 @@
 </div>
 
 <footer class="bg-black-lighter p-5 flex flex-col text-cornsilk">
-	<div id="footer-contnet" class="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6">
-		<div id="footer-left" class="md:w-1/2 md:p-7">
+	<div id="footer-contnet" class="flex flex-col lg:flex-row space-y-6 md:space-y-0 md:space-x-6">
+		<div id="footer-left" class="md:w-full md:p-7">
 			<div id="logo-footer" class="flex flex-col justify-start">
 				<div class="logo flex space-x-6 items-center">
 					<div class="flex flex-col">
@@ -118,7 +100,7 @@
 								id="main-img"
 								src="/img/ian-thompson.jpg"
 								alt="Ian Thompson smiling"
-								class="h-full rounded-full rounded-br-sm border-blue-400 border-8  ease-in-out duration-500 transition-all "
+								class="w-24 rounded-full rounded-br-sm border-blue-400 border-4 lg:border-8  ease-in-out duration-500 transition-all "
 							/>
 						</div>
 					</div>

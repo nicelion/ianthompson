@@ -16,7 +16,7 @@
 	export let url = '';
 </script>
 
-<a href={url} target="_blank" class="card md:w-96 bg-base-100 shadow-xl font-mono">
+<a href={url} target="_blank" class="card md:w-72 xl:w-96 bg-base-100 shadow-xl font-mono">
 	<figure><img src={img} alt={title} /></figure>
 	<div class="card-body">
 		<h2 class="card-title">
