@@ -19,6 +19,7 @@
   },
   "type": "module",
   "dependencies": {
+    "@sveltejs/adapter-vercel": "^1.0.0-next.66",
     "daisyui": "^2.22.0"
   }
 }
