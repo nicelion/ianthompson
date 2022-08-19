@@ -107,12 +107,15 @@
 					<div>
 						<h2 class="text-2xl font-bold">Ian Thompson</h2>
 						<div class="mt-3 space-y-2">
-							<div class="text-lg space-x-4 group">
-								<i class="fas fa-envelope group-hover:animate-wiggle" />
-								<a href="mailto:icthomp@g.clemson.edu">icthomp@g.clemson.edu</a>
-								<span class="border border-cornsilk" />
-								<a href="mailto:ianthompson@nicelion.com">ianthompson@nicelion.com</a>
-							</div>
+							<div class="text-lg space-x-4 group flex items-center">
+					<i class="fas fa-envelope group-hover:animate-wiggle" />
+
+					<div class="flex flex-col">
+						<a href="mailto:icthomp@g.clemson.edu" class="hover:underline">icthomp@g.clemson.edu</a>
+						<!-- <span class="border border-cornsilk" /> -->
+						<a href="mailto:ianthompson@nicelion.com" class="hover:underline">ianthompson@nicelion.com</a>
+					</div>
+				</div>
 							<!-- <div class="text-lg space-x-4 group">
 								<i class="fas fa-phone group-hover:animate-wiggle" />
 								<a href="mailto:ianthompson@nicelion.com">### ### ####</a>

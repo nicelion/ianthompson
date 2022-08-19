@@ -18,7 +18,7 @@
 <div class="flex items-center space-x-4">
 	<i class={`${fa} text-2xl`} />
 	<div class="w-full flex items-center justify-around">
-		<div class="mt-4 w-full bg-black-lighter p-2 pr-24">
+		<div class="mt-4 w-full bg-black-lighter p-2 md:pr-24">
 			<h4 class="text-lg">
 				<span class="uppercase text-2xl">{title}</span>
 			</h4>

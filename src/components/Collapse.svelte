@@ -14,7 +14,7 @@
 </script>
 
 <div class="w-full collapse collapse-arrow " tabindex="0">
-	<input type="checkbox" />
+	<input type="checkbox" aria-label="resume" />
 	<h1 class="collapse-title text-3xl border-b">{title}</h1>
 	<div class="collapse-content flex items-center space-x-4">
 		<!-- <i class="fa-solid fa-graduation-cap text-2xl" /> -->

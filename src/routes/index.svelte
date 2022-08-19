@@ -21,20 +21,20 @@
 			<h1
 				id="message"
 				class="text-lg mt-12 sm:mt-0 text-white bg-blue-400 md:p-2 px-8 rounded-xl rounded-bl-none w-fit mb-2 font-extrabold font-mono animate-message-bounce "
-			>
+			> 
 				Hello, I'm...
 			</h1>
 			<h1 class="text-4xl md:text-6xl lg:text-8xl font-bold ">Ian Thompson</h1>
 			<p class="text-lg md:text-2xl">Undergraduate Student @ Clemson University.</p>
 
 			<div class="mt-12 space-y-2">
-				<div class="text-xl space-x-4 group flex">
+				<div class="text-xl space-x-4 group flex items-center">
 					<i class="fas fa-envelope group-hover:animate-wiggle" />
 
-					<div class="">
-						<a href="mailto:icthomp@g.clemson.edu">icthomp@g.clemson.edu</a>
+					<div class="flex flex-col">
+						<a href="mailto:icthomp@g.clemson.edu" class="hover:underline">icthomp@g.clemson.edu</a>
 						<!-- <span class="border border-cornsilk" /> -->
-						<a href="mailto:ianthompson@nicelion.com">ianthompson@nicelion.com</a>
+						<a href="mailto:ianthompson@nicelion.com" class="hover:underline">ianthompson@nicelion.com</a>
 					</div>
 				</div>
 				<!-- <div class="text-xl space-x-4 group">
@@ -65,7 +65,7 @@
 			</div>
 		</div>
 		<div class="mt-10 sm:mt-0">
-			<div class="md:w-72 sm:w-56">
+			<div class="md:w-72 md:h-72 w-56 h-56 xl:w-96 xl:h-96">
 				<img
 					id="main-img"
 					src="/img/ian-thompson.jpg"
@@ -110,10 +110,7 @@
 						I am very interested in pursing graduate school and hoping to find a career where I can
 						combine my passion for computer science and education together.
 					</p>
-					<p>
-						On this site, you can learn more about me, my interests, my hobbies, and more about what
-						makes me, me.
-					</p>
+
 				</div>
 			</div>
 		</div>
@@ -136,13 +133,11 @@
 		<div class="p-6 rounded-md border-2 border-blue-400 space-y-4 w-full lg:w-1/2 xl:w-1/3">
 			<h3 class="text-2xl text-white font-bold">Academic Interests</h3>
 			<div class="flex flex-wrap">
-				<Interest interest="#Computer-science" color="bg-purple-400" />
-				<Interest interest="#Artificial-intelligence" color="bg-purple-400" />
 				<Interest interest="#Human-computer-interaction" color="bg-purple-400" />
 				<Interest interest="#AI-ethics" color="bg-purple-400" />
 				<Interest interest="#Online-privacy" color="bg-purple-400" />
 				<Interest interest="#UX-research" color="bg-purple-400" />
-				<Interest interest="#Learning-science" color="bg-red-400" />
+				<Interest interest="#Learning-sciences" color="bg-red-400" />
 				<Interest interest="#Educational-research" color="bg-red-400" />
 				<Interest interest="#Learning-analytics" color="bg-red-400" />
 			</div>
@@ -189,7 +184,7 @@
 
 		<Collapse title="Experience">
 			<Experience title="Undergraduate Researcher" fa="fa-solid fa-briefcase">
-				<p>Clemson University | Clemson, SC</p>
+				<p><a href="https://idealab.sites.clemson.edu/" class="hover:underline" target="_blank">IDEA Lab @ Clemson University</a> | Clemson, SC</p>
 				<p>August 2021 - Present</p>
 				<br />
 				<p class="leading-relaxed">
@@ -228,7 +223,7 @@
 				</ul>
 			</Experience>
 			<Experience title="Substitute Teacher" fa="fa-solid fa-briefcase">
-				<p>Greenville County School District | Greenville, SC</p>
+				<p><a href="https://www.greenville.k12.sc.us" class="hover:underline" target="_blank">Greenville County School District</a> | Greenville, SC</p>
 				<p>January 2021 - Present</p>
 				<br />
 				<p class="leading-relaxed">
@@ -238,7 +233,7 @@
 				</p>
 			</Experience>
 			<Experience title="Freelance Developer" fa="fa-solid fa-briefcase">
-				<p>Nice Lion Technologies LLC | Clemson, SC</p>
+				<p><a href="https://www.nicelion.com" class="hover:underline" target="_blank">Nice Lion Technologies LLC</a> | Clemson, SC</p>
 				<p>July 2021 - Present</p>
 				<br />
 				<p class="leading-relaxed">
@@ -247,7 +242,7 @@
 				</p>
 			</Experience>
 			<Experience title="Audiovisual Technology Intern" fa="fa-solid fa-briefcase">
-				<p>Fellowship Greenville | Greenville, SC</p>
+				<p><a href="https://www.fellowshipgreenville.org" class="hover:underline" target="_blank">Fellowship Greenville</a> | Greenville, SC</p>
 				<p>May 2022 - August 2022</p>
 				<br />
 				<p class="leading-relaxed">
@@ -310,19 +305,19 @@
 	<div class="flex flex-col px-8 lg:flex-row space-y-9 lg:space-y-0 lg:space-x-9">
 		<Card
 			url="https://github.com/nicelion/raspi-metar"
-			img="https://github.com/nicelion/raspi-metar/raw/master/img/cover.jpeg"
+			img="/img/raspi-metar.jpeg"
 			title="raspi-metar"
 			description="In short, raspi-metar is a Raspberry Pi project that takes METAR data from various airports and displays it on a VFR sectional map using NEOPIXEL LEDs."
 		/>
 		<Card
 			url="https://github.com/nicelion/M5IRBlaster"
 			img="https://obniz.com/doc/reference/m5stickc/images/m5stickc.jpg"
-			title="M5IRBlaster"
-			description="M5IRBlaster is a project I worked on while an intern at Fellowship Greenville. This project utilized an M5StickC to decode and send IR signals to power on/off devices. The M5Stick sets up a TCP server which was communicated to via BitFoucs' Companion and via Cronicle to automate Sunday mornings."
+			title="M5 TCP IRBlaster"
+			description="M5 TCP IRBlaster is a project I worked on while an intern at Fellowship Greenville. This project utilized an M5StickC to decode and send IR signals to power on/off devices. The M5Stick sets up a TCP server which was communicated to via BitFoucs' Companion and via Cronicle to automate Sunday mornings."
 		/>
 		<Card
 			url="https://github.com/nicelion/PCBTree"
-			img="https://github.com/nicelion/PCBTree/blob/master/img/IMG_3171.JPG?raw=true"
+			img="/img/pcbtree.JPG"
 			title="PCBTree"
 			description="PCBTree is a project I created while in high school. For this project, I designed and printed PCBs in the shape of a Christmas tree. I then programmed an ATTiny85 to measure a potentiometer which was used to determine the flashing speed of the LEDs."
 		/>
