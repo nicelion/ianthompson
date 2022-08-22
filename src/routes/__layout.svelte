@@ -5,7 +5,7 @@
 	var pageYOffset = 0
 
 	const pageScroll = () => {
-		console.log(pageYOffset);
+		
 		// Get the header
 		var header = document.getElementById('header');
 		var content = document.getElementById('content');
