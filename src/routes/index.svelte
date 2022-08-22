@@ -98,13 +98,13 @@
 					<h2 class="text-4xl text-slate-gray font-semibold">A little about me.</h2>
 				</div>
 				<div class="leading-relaxed space-y-5 text-xl">
-					<p>My name is Ian Thompson. I hail from the Upstate of South Carolina.</p>
+					<p>My name is Ian Thompson. I am from the Upstate of South Carolina.</p>
 					<p>
 						I am currently a student at Clemson University working towards my Bachelor of Arts in
 						Elementary Education. I love all things tech. I have been programming since I was 12
 						years old, having first started out learning Objective-C using Xcode 5! Since then, I
 						have used my programming skills to accomplish a variety of personal projects, for my
-						small business, and for educational research.
+						small business, and for my role in educational research.
 					</p>
 					<p>
 						I am very interested in pursing graduate school and hoping to find a career where I can
@@ -145,23 +145,23 @@
 		<div class="p-6  rounded-md border-2 border-blue-400 space-y-4 w-full lg:w-1/2 xl:w-1/3">
 			<h3 class="text-2xl text-white font-bold">Technical Skills</h3>
 			<div class="flex flex-wrap">
-				<Interest interest="JavaScript" color="bg-orange-400" />
-				<Interest interest="Python" color="bg-orange-400" />
-				<Interest interest="Swift" color="bg-orange-400" />
-				<Interest interest="HTML" color="bg-orange-400" />
-				<Interest interest="CSS" color="bg-green-400" />
-				<Interest interest="TailwindCSS" color="bg-green-400" />
-				<Interest interest="Svelte" color="bg-teal-400" />
-				<Interest interest="NodeJS" color="bg-teal-400" />
-				<Interest interest="React" color="bg-teal-400" />
+				<Interest interest="JavaScript" color="bg-orange-400" url="https://developer.mozilla.org/en-US/docs/Web/JavaScript" />
+				<Interest interest="Python" color="bg-orange-400"url="https://www.python.org/" />
+				<Interest interest="Swift" color="bg-orange-400" url="https://developer.apple.com/swift/" />
+				<Interest interest="HTML" color="bg-orange-400" url="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics" />
+				<Interest interest="CSS" color="bg-green-400" url="https://developer.mozilla.org/en-US/docs/Web/CSS" />
+				<Interest interest="TailwindCSS" color="bg-green-400" url="https://tailwindcss.com/" />
+				<Interest interest="Svelte" color="bg-teal-400" url="https://svelte.dev/" />
+				<Interest interest="NodeJS" color="bg-teal-400" url="https://nodejs.org/en/" />
+				<Interest interest="React" color="bg-teal-400" url="https://reactjs.org/" />
 
-				<Interest interest="Firebase" color="bg-teal-400" />
-				<Interest interest="VSCode" color="bg-indigo-400" />
-				<Interest interest="Xcode" color="bg-indigo-400" />
-				<Interest interest="Wireshark" color="bg-indigo-400" />
+				<Interest interest="Firebase" color="bg-teal-400" url="https://firebase.google.com/" />
+				<Interest interest="VSCode" color="bg-indigo-400" url="https://code.visualstudio.com/" />
+				<Interest interest="Xcode" color="bg-indigo-400" url="https://developer.apple.com/xcode/" />
+				<Interest interest="Wireshark" color="bg-indigo-400" url="https://www.wireshark.org/" />
 				<Interest interest="Zotero" color="bg-pink-400" url="https://www.zotero.org/" />
-				<Interest interest="Microsoft Office" color="bg-pink-400" />
-				<Interest interest="Photoshop" color="bg-pink-400" />
+				<Interest interest="Microsoft Office" color="bg-pink-400" url="https://www.office.com/" />
+				<Interest interest="Photoshop" color="bg-pink-400" url="https://www.adobe.com/products/photoshop.html" />
 			</div>
 		</div>
 	</div>
