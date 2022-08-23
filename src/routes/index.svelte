@@ -1,3 +1,16 @@
+<!--
+ index.svelte
+ iancthompson.dev
+ 
+ Created by Ian Thompson on February 11th 2022
+ ianthompson@nicelion.com
+ https://www.nicelion.com
+ 
+ Copyright (c) 2022 Nice Lion Technologies LLC. All Rights Reserved.
+ 
+--->
+
+
 <script>
 	import Collapse from '../components/Collapse.svelte';
 	import Card from '../components/Card.svelte';

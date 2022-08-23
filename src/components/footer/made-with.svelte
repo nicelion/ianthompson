@@ -1,6 +1,6 @@
 <!--
  made-with.svelte
- ianthompsoncd
+ iancthompson.dev
  
  Created by Ian Thompson on August 12th 2022
  ianthompson@nicelion.com
@@ -9,6 +9,8 @@
  Copyright (c) 2022 Nice Lion Technologies LLC. All Rights Reserved.
  
 --->
+
+
 <script>
 	let choices = [
 		'with ❤️ and ☕️',

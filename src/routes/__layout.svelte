@@ -1,3 +1,16 @@
+<!--
+ __layout.svelte
+ iancthompson.dev
+ 
+ Created by Ian Thompson on February 11th 2022
+ ianthompson@nicelion.com
+ https://www.nicelion.com
+ 
+ Copyright (c) 2022 Nice Lion Technologies LLC. All Rights Reserved.
+ 
+--->
+
+
 <script>
 	import MadeWith from '../components/footer/made-with.svelte';
 	import '../app.css';

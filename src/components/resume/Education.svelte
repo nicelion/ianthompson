@@ -1,3 +1,16 @@
+<!--
+ Education.svelte
+ iancthompson.dev
+ 
+ Created by Ian Thompson on February 12th 2022
+ ianthompson@nicelion.com
+ https://www.nicelion.com
+ 
+ Copyright (c) 2022 Nice Lion Technologies LLC. All Rights Reserved.
+ 
+--->
+
+
 <script>
     export let institution
     export let dates

@@ -1,4 +1,16 @@
-@tailwind base;
+/*
+ * app.css
+ * iancthompson.dev
+ * 
+ * Created by Ian Thompson on February 11th 2022
+ * ianthompson@nicelion.com
+ * https://www.nicelion.com
+ * 
+ * Copyright (c) 2022 Nice Lion Technologies LLC. All Rights Reserved.
+ * 
+ */
+
+ @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -15,5 +27,5 @@
     will-change: transform;
 }
 html {
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
 }
