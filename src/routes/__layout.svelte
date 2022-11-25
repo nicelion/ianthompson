@@ -193,7 +193,7 @@
 		</div>
 	</div>
 </footer>
-<div class="group p-2 px-4 text-sm flex w-full items-center space-x-2 justify-end hover:underline">
+<div class="group p-2 px-4 text-sm flex w-full items-center space-x-2 justify-center sm:justify-end hover:underline">
 	<a href="https://github.com/nicelion/ianthompson" target="_blank">See an issue? Create a pull request!!</a>
 	<i class="fa-solid fa-code-pull-request text-base group-hover:animate-wiggle"></i>
 
