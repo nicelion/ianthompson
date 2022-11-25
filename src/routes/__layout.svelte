@@ -180,7 +180,7 @@
 			</ul>
 		</div>
 	</div>
-	<div id="copyright" class="text-center mt-6 space-y-2 text-xs">
+	<div id="copyright" class="text-center mt-6 space-y-2 text-sm">
 		<div class="text-center">
 			<MadeWith />
 			<p>
@@ -188,8 +188,13 @@
 					class="hover:underline"
 					href="https://www.nicelion.com"
 					target="_blank">Nice Lion Technologies LLC</a
-				>. All Rights Reserved.
+				>.
 			</p>
 		</div>
 	</div>
 </footer>
+<div class="group p-2 px-4 text-sm flex w-full items-center space-x-2 justify-end hover:underline">
+	<a href="https://github.com/nicelion/ianthompson" target="_blank">See an issue? Create a pull request!!</a>
+	<i class="fa-solid fa-code-pull-request text-base group-hover:animate-wiggle"></i>
+
+</div>
