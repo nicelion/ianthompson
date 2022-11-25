@@ -78,12 +78,12 @@
 			</div>
 		</div>
 		<div class="mt-10 sm:mt-0">
-			<div class="md:w-72 md:h-72 w-56 h-56 xl:w-96 xl:h-96">
+			<div class="md:w-72 md:h-72 w-56 h-56 xl:w-96 xl:h-96 overflow-hidden rounded-full rounded-br-sm border-blue-400 border-8">
 				<img
 					id="main-img"
 					src="/img/ian-thompson.jpg"
-					alt="Ian Thompson smiling"
-					class="h-full rounded-full rounded-br-sm border-blue-400 border-8 hover:rounded-sm ease-in-out duration-500 transition-all "
+					alt="A portrait of Ian Thompson smiling"
+					class="h-full  hover:scale-110 ease-in-out duration-1000 transition-all "
 				/>
 			</div>
 		</div>
@@ -105,7 +105,7 @@
 		class="container px-8 my-4 xl:px-10 xl:my-10 flex flex-col-reverse lg:flex-row items-center lg:items-stretch  justify-center lg:space-x-10"
 	>
 		<div id="col" class="mlgd:px-28 lg:w-3/4">
-			<div id="about-text" class="space-y-8">
+			<div id="about-text" class="space-y-8 md:px-20">
 				<div id="about-heading" class="mb-10">
 					<!-- <p class="text-gray-200 mb-2 italic">A little about me...</p> -->
 					<h2 class="text-4xl text-slate-gray font-semibold">A little about me.</h2>
@@ -177,6 +177,18 @@
 				<Interest interest="Photoshop" color="bg-pink-400" url="https://www.adobe.com/products/photoshop.html" />
 			</div>
 		</div>
+		<!-- <div class="p-6  rounded-md border-2 border-blue-400 space-y-4 w-full lg:w-1/2 xl:w-1/3">
+			<h3 class="text-2xl text-white font-bold">Personal Interests</h3>
+			<div class="flex flex-wrap">
+				<Interest interest="Midwest Emo" color="bg-gray-400" url="https://developer.mozilla.org/en-US/docs/Web/JavaScript" />
+				<Interest interest="Punk Rock" color="bg-gray-400" url="https://developer.mozilla.org/en-US/docs/Web/JavaScript" />
+				<Interest interest="Folk" color="bg-gray-400" url="https://developer.mozilla.org/en-US/docs/Web/JavaScript" />
+				<Interest interest="Christian Anarchism" color="bg-teal-400" url="https://en.wikipedia.org/wiki/Christian_anarchism" />
+				<Interest interest="Clemson" color="bg-orange-400" url="https://en.wikipedia.org/wiki/Christian_anarchism" />
+				<Interest interest="BBQ" color="bg-red-400" url="https://en.wikipedia.org/wiki/Christian_anarchism" />
+
+			</div>
+		</div> -->
 	</div>
 	<div id="resume" class="flex flex-col justify-evenly w-full p-6 md:p-24  space-y-9">
 		<Collapse title="Education">
