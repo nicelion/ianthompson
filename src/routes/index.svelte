@@ -316,12 +316,20 @@
 	<div class="text-cornsilk mb-12">
 		<h1 class="font-bold text-3xl">Projects I've Worked On</h1>
 	</div>
-	<div class="flex flex-col px-8 lg:flex-row space-y-9 lg:space-y-0 lg:space-x-9">
+	<!-- <div class="flex flex-col px-8 lg:flex-row space-y-9 lg:space-y-0 lg:space-x-9"> -->
+	<div class="grid md:grid-cols-3 gap-8 px-8">
+
 		<Card
 			url="https://github.com/nicelion/raspi-metar"
 			img="/img/raspi-metar.jpeg"
 			title="raspi-metar"
 			description="In short, raspi-metar is a Raspberry Pi project that takes METAR data from various airports and displays it on a VFR sectional map using NEOPIXEL LEDs."
+		/>
+		<Card
+			url="https://idea-lab-clemson-university.github.io/cml-scratch"
+			img="/img/cml-scratch.jpg"
+			title="TPBot Scratch Extension"
+			description="As a part of my work with the IDEA Lab, I helped develop an extension that allows Scratch to interface with TPBot robots."
 		/>
 		<Card
 			url="https://github.com/nicelion/M5IRBlaster"

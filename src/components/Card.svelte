@@ -19,8 +19,11 @@
 </script>
 
 <a href={url} target="_blank" class="card md:w-72 xl:w-96 bg-base-100 shadow-xl font-mono">
-	<figure><img src={img} alt={title} /></figure>
-	<div class="card-body">
+	<div class="overflow-hidden">
+		<img src={img} alt={title} class="object-cover hover:scale-125 ease-in duration-1000"/>	
+
+	</div>
+	<div class="card-body h-2/3">
 		<h2 class="card-title">
 			{title}
 		</h2>
