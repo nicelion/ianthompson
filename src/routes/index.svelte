@@ -121,7 +121,7 @@
 					</p>
 					<p>
 						I am very interested in pursing graduate school and hoping to find a career where I can
-						combine my passion for computer science and education together.
+						combine my passion for computer science and education.
 					</p>
 
 				</div>
@@ -148,11 +148,18 @@
 			<div class="flex flex-wrap">
 				<Interest interest="#Human-computer-interaction" color="bg-purple-400" />
 				<Interest interest="#AI-ethics" color="bg-purple-400" />
-				<Interest interest="#Online-privacy" color="bg-purple-400" />
+				<Interest interest="#Data-privacy" color="bg-purple-400" />
 				<Interest interest="#UX-research" color="bg-purple-400" />
-				<Interest interest="#Learning-sciences" color="bg-red-400" />
-				<Interest interest="#Educational-research" color="bg-red-400" />
-				<Interest interest="#Learning-analytics" color="bg-red-400" />
+				<Interest interest="#Childrens-online-privacy" color="bg-purple-400" />
+
+				<Interest interest="#Computer-science-education" color="bg-red-400" />
+				<Interest interest="#Privacy-education" color="bg-red-400" />
+				<Interest interest="#Digital-citizenship" color="bg-red-400" />
+				<Interest interest="#Learning-environments" color="bg-red-400" />
+
+
+				<!-- <Interest interest="#Educational-research" color="bg-red-400" /> -->
+				<!-- <Interest interest="#Learning-analytics" color="bg-red-400" /> -->
 			</div>
 		</div>
 		<div class="p-6  rounded-md border-2 border-blue-400 space-y-4 w-full lg:w-1/2 xl:w-1/3">
@@ -329,7 +336,7 @@
 		<h1 class="font-bold text-3xl">Projects I've Worked On</h1>
 	</div>
 	<!-- <div class="flex flex-col px-8 lg:flex-row space-y-9 lg:space-y-0 lg:space-x-9"> -->
-	<div class="grid md:grid-cols-3 gap-8 px-8">
+	<div class="grid sm:grid-cols-2 md:grid-cols-3 gap-10 px-8 lg:px-64">
 
 		<Card
 			url="https://github.com/nicelion/raspi-metar"
