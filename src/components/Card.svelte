@@ -18,7 +18,7 @@
 	export let url = '';
 </script>
 
-<a href={url} target="_blank" class="card md:w-72 xl:w-96 bg-base-100 shadow-xl font-mono">
+<a href={url} target="_blank" class="card  bg-base-100 shadow-xl font-mono">
 	<div class="overflow-hidden">
 		<img src={img} alt={title} class="object-cover hover:scale-125 ease-in duration-1000"/>	
 
