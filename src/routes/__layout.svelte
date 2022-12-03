@@ -33,10 +33,13 @@
 
 		if (pageYOffset > content.offsetTop) {
 			header.classList.add('bg-black-lighter');
-			header.classList.remove('border-transparent');
+			// header.classList.remove('border-transparent');
+			header.classList.add('border-blue-400');
 		} else {
 			header.classList.remove('bg-black-lighter');
-			header.classList.add('border-transparent');
+			// header.classList.add('border-transparent');
+			header.classList.remove('border-blue-400');
+
 		}
 
 		if (message.getBoundingClientRect().bottom < header.getBoundingClientRect().bottom) {
@@ -44,6 +47,7 @@
 			logo.classList.remove('opacity-0');
 		} else {
 			logo.classList.remove('opacity-100');
+			header.classList.remove('border-blue-400');
 			logo.classList.add('opacity-0');
 		}
 
@@ -60,7 +64,7 @@
 <svelte:window on:scroll={pageScroll} bind:scrollY={pageYOffset} />
 
 <nav
-	class="navbar bg-eerie-black z-50 sticky top-0 w-full border-blue-400 border-transparent border-b"
+	class="navbar bg-eerie-black z-50 sticky top-0 w-full border-transparent border-b transition-opacity duration-200 ease-in-out"
 	id="header"
 >
 	<div class="flex-1">
@@ -115,7 +119,7 @@
 	</div>
 </nav>
 
-<div class="font-content relative bg-eerie-black w-full" id="content">
+<div class="font-body relative bg-eerie-black w-full" id="content">
 	<slot />
 </div>
 

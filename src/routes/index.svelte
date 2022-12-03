@@ -17,6 +17,7 @@
 	import Interest from '../components/Interest.svelte';
 	import Education from '../components/resume/Education.svelte';
 	import Experience from '../components/resume/Experience.svelte';
+	import ViewOnGitHubButton from '../components/ViewOnGitHubButton.svelte';
 </script>
 
 <svelte:head>
@@ -37,7 +38,7 @@
 			> 
 				Hello, I'm...
 			</h1>
-			<h1 class="text-4xl md:text-6xl lg:text-8xl font-bold ">Ian Thompson</h1>
+			<h1 class="text-4xl md:text-6xl lg:text-8xl font-bold  mb-5">Ian Thompson</h1>
 			<p class="text-lg md:text-2xl">Undergraduate Student @ Clemson University</p>
 
 			<div class="mt-12 space-y-2">
@@ -99,7 +100,7 @@
 </div>
 <section
 	id="about"
-	class="bg-black-lighter pt-14 flex justify-center  items-center flex-col text-cornsilk font-serif"
+	class="bg-black-lighter pt-14 flex justify-center  items-center flex-col text-cornsilk"
 >
 	<div
 		class="container px-8 my-4 xl:px-10 xl:my-10 flex flex-col-reverse lg:flex-row items-center lg:items-stretch  justify-center lg:space-x-10"
@@ -336,32 +337,41 @@
 		<h1 class="font-bold text-3xl">Projects I've Worked On</h1>
 	</div>
 	<!-- <div class="flex flex-col px-8 lg:flex-row space-y-9 lg:space-y-0 lg:space-x-9"> -->
-	<div class="grid sm:grid-cols-2 md:grid-cols-3 gap-10 px-8 lg:px-64">
+	<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 px-8 xl:p-23">
 
 		<Card
-			url="https://github.com/nicelion/raspi-metar"
 			img="/img/raspi-metar.jpeg"
 			title="raspi-metar"
 			description="In short, raspi-metar is a Raspberry Pi project that takes METAR data from various airports and displays it on a VFR sectional map using NEOPIXEL LEDs."
-		/>
+		>
+			<ViewOnGitHubButton url="https://github.com/nicelion/raspi-metar" />
+		</Card>
 		<Card
-			url="https://idea-lab-clemson-university.github.io/cml-scratch"
 			img="/img/cml-scratch.jpg"
 			title="TPBot Scratch Extension"
 			description="As a part of my work with the IDEA Lab, I helped develop an extension that allows Scratch to interface with TPBot robots."
-		/>
+		>
+			<a target="_blank" href="https://idea-lab-clemson-university.github.io/cml-scratch" class="px-4 py-2 rounded-lg text-center flex items-center align-middle outline text-white hover:bg-white hover:text-black transition duration-200 ease-in-out">
+				<p class="text-lg">View Project</p>
+			</a>
+			<ViewOnGitHubButton url="https://github.com/IDEA-Lab-Clemson-University/cml-scratch" />
+
+		</Card>
 		<Card
-			url="https://github.com/nicelion/M5IRBlaster"
 			img="https://obniz.com/doc/reference/m5stickc/images/m5stickc.jpg"
 			title="M5 TCP IRBlaster"
 			description="M5 TCP IRBlaster is a project I worked on while an intern at Fellowship Greenville. This project utilized an M5StickC to decode and send IR signals to power on/off devices. The M5Stick sets up a TCP server which was communicated to via BitFoucs' Companion and via Cronicle to automate Sunday mornings."
-		/>
+		> 
+			<ViewOnGitHubButton url="https://github.com/nicelion/M5IRBlaster" />
+		</Card>
 		<Card
 			url="https://github.com/nicelion/PCBTree"
 			img="/img/pcbtree.JPG"
 			title="PCBTree"
 			description="PCBTree is a project I created while in high school. For this project, I designed and printed PCBs in the shape of a Christmas tree. I then programmed an ATTiny85 to measure a potentiometer which was used to determine the flashing speed of the LEDs."
-		/>
+		>
+			<ViewOnGitHubButton url="https://github.com/nicelion/PCBTree" />
+		</Card>
 	</div>
 </section>
 

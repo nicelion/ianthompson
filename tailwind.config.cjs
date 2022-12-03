@@ -12,8 +12,8 @@ module.exports = {
 				'black-lighter': '#1D1D1D'
 			},
 			fontFamily: {
-				body: ['Oswald'],
-				content: 'Roboto'
+				body: ['Poppins'],
+				content: ['Poppins']
 			},
 			height: {
 				header: '6rem'

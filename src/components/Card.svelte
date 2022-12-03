@@ -15,18 +15,21 @@
 	export let img = '';
 	export let title = '';
 	export let description = '';
-	export let url = '';
 </script>
 
-<a href={url} target="_blank" class="card  bg-base-100 shadow-xl font-mono">
+<div target="_blank" class="card  bg-base-100 shadow-xl font-mono max-w-md">
 	<div class="overflow-hidden">
 		<img src={img} alt={title} class="object-cover hover:scale-125 ease-in duration-1000"/>	
 
 	</div>
 	<div class="card-body h-2/3">
-		<h2 class="card-title">
+		<h2 class="card-title mb-3">
 			{title}
 		</h2>
 		<p>{description}</p>
+
+		<div class="flex flex-col space-y-5">
+			<slot />
+		</div>
 	</div>
-</a>
+</div>
