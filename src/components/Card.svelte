@@ -28,7 +28,7 @@
 		</h2>
 		<p>{description}</p>
 
-		<div class="flex flex-col space-y-5">
+		<div class="mt-5flex flex-col space-y-5">
 			<slot />
 		</div>
 	</div>

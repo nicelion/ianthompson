@@ -14,7 +14,7 @@
     export let url = "";
 </script>
 
-<a href={url} class=" px-4 py-2 rounded-lg text-center flex items-center align-middle outline text-white hover:bg-white hover:text-black transition ease-in-out duration-200" target="_blank">
+<a href={url} class=" px-4 py-2 rounded-lg text-center flex items-center align-middle border text-white hover:bg-white hover:text-black transition ease-in-out duration-200" target="_blank">
     <i class="fa-brands fa-github hover:animate-wiggle text-3xl" />
     <p class="text-lg">View on GitHub</p>
 </a>

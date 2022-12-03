@@ -351,7 +351,7 @@
 			title="TPBot Scratch Extension"
 			description="As a part of my work with the IDEA Lab, I helped develop an extension that allows Scratch to interface with TPBot robots."
 		>
-			<a target="_blank" href="https://idea-lab-clemson-university.github.io/cml-scratch" class="px-4 py-2 rounded-lg text-center flex items-center align-middle outline text-white hover:bg-white hover:text-black transition duration-200 ease-in-out">
+			<a target="_blank" href="https://idea-lab-clemson-university.github.io/cml-scratch" class="px-4 py-2 rounded-lg text-center flex items-center align-middle border text-white hover:bg-white hover:text-black transition duration-200 ease-in-out">
 				<p class="text-lg">View Project</p>
 			</a>
 			<ViewOnGitHubButton url="https://github.com/IDEA-Lab-Clemson-University/cml-scratch" />
