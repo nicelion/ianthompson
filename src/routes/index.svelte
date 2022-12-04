@@ -18,6 +18,7 @@
 	import Education from '../components/resume/Education.svelte';
 	import Experience from '../components/resume/Experience.svelte';
 	import ViewOnGitHubButton from '../components/ViewOnGitHubButton.svelte';
+	import AboutTerminal from '../components/AboutTerminal.svelte';
 </script>
 
 <svelte:head>
@@ -133,14 +134,7 @@
 			alt=""
 			class="p-5 w-full md:w-2/5 max-h-96 animate-message-bounce "
 		/> -->
-		<div class="mockup-code lg:w-1/4 h-fit self-center mb-12 lg:mb-0">
-			<pre class="text-success"><code>Ian Thompson: {'{'}</code></pre>
-			<pre class="text-success"><code>&Tab; Age: 21</code></pre>
-			<pre class="text-success"><code>&Tab; Major: Elementary Education</code></pre>
-			<pre class="text-success"><code>&Tab; Location: Clemson, SC</code></pre>
-			<pre class="text-success"><code>&Tab; Graduation: 2024</code></pre>
-			<pre class="text-success"><code>{'}'}</code></pre>
-		</div>
+		<AboutTerminal />
 	</div>
 
 	<div class="flex lg:flex-row flex-col space-y-8 lg:space-y-0 lg:space-x-10 p-6  justify-center">
