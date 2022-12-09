@@ -197,11 +197,7 @@
 		<div class="text-center">
 			<MadeWith />
 			<p>
-				Copyright &copy; 2022 <a
-					class="hover:underline"
-					href="https://www.nicelion.com"
-					target="_blank">Nice Lion Technologies LLC</a
-				>.
+				Create a <a class="hover:underline text-theme-primary" href="https://github.com/nicelion/ianthompson/network/members">fork</a> and make your own in accordance with the <a class="hover:underline text-theme-primary" href="https://github.com/nicelion/ianthompson/blob/main/LICENSE.md">license</a>!
 			</p>
 		</div>
 	</div>

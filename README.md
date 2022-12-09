@@ -2,6 +2,18 @@
 
 This is the official repository for [iancthompson.dev](https://www.iancthompson.dev).
 
+Please take inspiration for your own website and use in accordance to the provided License.
+
+Note that I am not maintaining this repository with the intent on making this "reusable," in the sense that I am building this for my own personal use but making the source available to you for free. You will need go in and change images/colors/content/whatever to fit your own needs. This is not a skeleton project. Do with that as you will...
+
+## Contributing
+
+If you see an issue in the live version and would like to make a fix, submit a pull request!
+
+## License
+
+Please see LICENSE.md for more information.
+
 ## Developing
 
 Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
