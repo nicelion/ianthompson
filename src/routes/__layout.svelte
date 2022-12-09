@@ -81,7 +81,7 @@
 				id="logo"
 				class="opacity-0 text-sm sm:text-md text-white bg-theme-primary p-1 px-4 rounded-xl rounded-bl-none w-fit mb-2 font-extrabold font-mono transition-all ease-in-out delay-75"
 			>
-				Hi, I'm Ian!
+				Hi, I'm Ian.
 			</h1>
 		</a>
 	</div>

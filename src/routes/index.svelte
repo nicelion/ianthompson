@@ -328,7 +328,7 @@
 
 <section id="projects" class="flex flex-col justify-center w-full items-center py-12">
 	<div class="text-cornsilk mb-12">
-		<h1 class="font-bold text-4xl">Projects I've Worked On</h1>
+		<h1 class="font-bold text-2xl md:text-4xl">Projects I've Worked On</h1>
 	</div>
 	<!-- <div class="flex flex-col px-8 lg:flex-row space-y-9 lg:space-y-0 lg:space-x-9"> -->
 	<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 px-8 xl:p-23">
