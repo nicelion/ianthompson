@@ -34,11 +34,11 @@
 		if (pageYOffset > content.offsetTop) {
 			header.classList.add('bg-black-lighter');
 			// header.classList.remove('border-transparent');
-			header.classList.add('border-blue-400');
+			header.classList.add('border-theme-primary');
 		} else {
 			header.classList.remove('bg-black-lighter');
 			// header.classList.add('border-transparent');
-			header.classList.remove('border-blue-400');
+			header.classList.remove('border-theme-primary');
 
 		}
 
@@ -47,7 +47,7 @@
 			logo.classList.remove('opacity-0');
 		} else {
 			logo.classList.remove('opacity-100');
-			header.classList.remove('border-blue-400');
+			header.classList.remove('border-theme-primary');
 			logo.classList.add('opacity-0');
 		}
 
@@ -74,12 +74,12 @@
 					id="logo-img"
 					src="/img/ian-thompson.jpg"
 					alt=""
-					class="hidden sm:block h-full rounded-full rounded-br-sm border-blue-400 border-4 transition-all ease-in-out delay-75 opacity-0"
+					class="hidden sm:block h-full rounded-full rounded-br-sm border-theme-primary border-4 transition-all ease-in-out delay-75 opacity-0"
 				/>
 			</div>
 			<h1
 				id="logo"
-				class="opacity-0 text-sm sm:text-md text-white bg-blue-400 p-1 px-4 rounded-xl rounded-bl-none w-fit mb-2 font-extrabold font-mono transition-all ease-in-out delay-75"
+				class="opacity-0 text-sm sm:text-md text-white bg-theme-primary p-1 px-4 rounded-xl rounded-bl-none w-fit mb-2 font-extrabold font-mono transition-all ease-in-out delay-75"
 			>
 				Hi, I'm Ian!
 			</h1>
@@ -104,7 +104,7 @@
 					/>
 				</svg>
 
-				<ul class="p-2 right-0 bg-black-lighter border-2 border-blue-400">
+				<ul class="p-2 right-0 bg-black-lighter border-2 border-theme-primary">
 					<li><a href="#about">About</a></li>
 					<li><a href="#resume">Resume</a></li>
 					<li><a href="#projects">Projects</a></li>
@@ -143,7 +143,7 @@
 								id="main-img"
 								src="/img/ian-thompson.jpg"
 								alt="Ian Thompson smiling"
-								class="w-24 rounded-full rounded-br-sm border-blue-400 border-4 lg:border-8  ease-in-out duration-500 transition-all "
+								class="w-24 rounded-full rounded-br-sm border-theme-primary border-4 lg:border-8  ease-in-out duration-500 transition-all "
 							/>
 						</div>
 					</div>

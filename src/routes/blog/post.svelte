@@ -57,6 +57,6 @@
     }
 
     a {
-        @apply hover:underline text-blue-400;
+        @apply hover:underline text-theme-primary;
     }
 </style>

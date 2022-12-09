@@ -35,7 +35,7 @@
 		<div class="">
 			<h1
 				id="message"
-				class="text-lg mt-12 sm:mt-0 text-white bg-blue-400 md:p-2 px-8 rounded-xl rounded-bl-none w-fit mb-2 font-extrabold font-mono animate-message-bounce "
+				class="text-lg mt-12 sm:mt-0 text-white bg-theme-primary md:p-2 px-8 rounded-xl rounded-bl-none w-fit mb-2 font-extrabold font-mono animate-message-bounce "
 			> 
 				Hello, I'm...
 			</h1>
@@ -80,7 +80,7 @@
 			</div>
 		</div>
 		<div class="mt-10 sm:mt-0">
-			<div class="md:w-72 md:h-72 w-56 h-56 xl:w-96 xl:h-96 overflow-hidden rounded-full rounded-br-sm border-blue-400 border-8">
+			<div class="md:w-72 md:h-72 w-56 h-56 xl:w-96 xl:h-96 overflow-hidden rounded-full rounded-br-sm border-theme-primary border-8">
 				<img
 					id="main-img"
 					src="/img/ian-thompson.jpg"
@@ -138,7 +138,7 @@
 	</div>
 
 	<div class="flex lg:flex-row flex-col space-y-8 lg:space-y-0 lg:space-x-10 p-6  justify-center">
-		<div class="p-6 rounded-md border-2 border-blue-400 space-y-4 w-full lg:w-1/2 xl:w-1/3">
+		<div class="p-6 rounded-md border-2 border-theme-primary space-y-4 w-full lg:w-1/2 xl:w-1/3">
 			<h3 class="text-2xl text-white font-bold">Academic Interests</h3>
 			<div class="flex flex-wrap">
 				<Interest interest="#Human-computer-interaction" color="bg-purple-400" />
@@ -157,7 +157,7 @@
 				<!-- <Interest interest="#Learning-analytics" color="bg-red-400" /> -->
 			</div>
 		</div>
-		<div class="p-6  rounded-md border-2 border-blue-400 space-y-4 w-full lg:w-1/2 xl:w-1/3">
+		<div class="p-6  rounded-md border-2 border-theme-primary space-y-4 w-full lg:w-1/2 xl:w-1/3">
 			<h3 class="text-2xl text-white font-bold">Technical Skills</h3>
 			<div class="flex flex-wrap">
 				<Interest interest="JavaScript" color="bg-orange-400" url="https://developer.mozilla.org/en-US/docs/Web/JavaScript" />
@@ -179,7 +179,7 @@
 				<Interest interest="Photoshop" color="bg-pink-400" url="https://www.adobe.com/products/photoshop.html" />
 			</div>
 		</div>
-		<!-- <div class="p-6  rounded-md border-2 border-blue-400 space-y-4 w-full lg:w-1/2 xl:w-1/3">
+		<!-- <div class="p-6  rounded-md border-2 border-theme-primary space-y-4 w-full lg:w-1/2 xl:w-1/3">
 			<h3 class="text-2xl text-white font-bold">Personal Interests</h3>
 			<div class="flex flex-wrap">
 				<Interest interest="Midwest Emo" color="bg-gray-400" url="https://developer.mozilla.org/en-US/docs/Web/JavaScript" />

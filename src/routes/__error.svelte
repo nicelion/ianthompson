@@ -34,7 +34,7 @@
     </div>
 
     <div class="">
-        <a href="/" class="bg-blue-400 text-xl text-white font-mono px-8 py-3 rounded-md hover:bg-blue-500 transition ease-in duration-100">Go Home</a>
+        <a href="/" class="bg-theme-primary text-xl text-white font-mono px-8 py-3 rounded-md hover:bg-blue-500 transition ease-in duration-100">Go Home</a>
     </div>
 
 </div>

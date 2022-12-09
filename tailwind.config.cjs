@@ -10,7 +10,7 @@ module.exports = {
 				'liver-dogs': '#BC6C25',
 				'eerie-black': '#131313',
 				'black-lighter': '#1D1D1D',
-				'theme-primary': '#60a5fa', 
+				'theme-primary': '#60a5fa', // change this to affect theme color
 			},
 			fontFamily: {
 				body: ['Poppins'],
