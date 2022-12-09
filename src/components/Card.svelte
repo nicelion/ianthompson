@@ -22,7 +22,7 @@
 		<img src={img} alt={title} class="object-cover hover:scale-125 ease-in duration-1000 h-full w-full"/>	
 
 	</div>
-	<div class="card-body h-2/3">
+	<div class="card-body h-full">
 		<h2 class="card-title mb-3">
 			{title}
 		</h2>
