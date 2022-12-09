@@ -326,9 +326,9 @@
 	>
 </div>
 
-<section id="projects" class="flex flex-col justify-center w-full items-center">
+<section id="projects" class="flex flex-col justify-center w-full items-center py-12">
 	<div class="text-cornsilk mb-12">
-		<h1 class="font-bold text-3xl">Projects I've Worked On</h1>
+		<h1 class="font-bold text-4xl">Projects I've Worked On</h1>
 	</div>
 	<!-- <div class="flex flex-col px-8 lg:flex-row space-y-9 lg:space-y-0 lg:space-x-9"> -->
 	<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 px-8 xl:p-23">
@@ -352,6 +352,17 @@
 
 		</Card>
 		<Card
+			img="/img/cover.jpg"
+			title="This Website"
+			description="This website you are viewing is a project of mine! If you want to use this as a template for your own site, feel free to check out the GitHub"
+		>
+			<a target="_blank" href="/" class="px-4 py-2 rounded-lg text-center flex items-center align-middle border text-white hover:bg-white hover:text-black transition duration-200 ease-in-out">
+				<p class="text-lg">View Project</p>
+			</a>
+			<ViewOnGitHubButton url="https://github.com/nicelion/ianthompson" />
+
+		</Card>
+		<Card
 			img="https://obniz.com/doc/reference/m5stickc/images/m5stickc.jpg"
 			title="M5 TCP IRBlaster"
 			description="M5 TCP IRBlaster is a project I worked on while an intern at Fellowship Greenville. This project utilized an M5StickC to decode and send IR signals to power on/off devices. The M5Stick sets up a TCP server which was communicated to via BitFoucs' Companion and via Cronicle to automate Sunday mornings."
@@ -369,11 +380,11 @@
 	</div>
 </section>
 
-<div id="hero-wave" class="h-40 overflow-hidden bg-eerie-black text-black-lighter fill-current">
+<!-- <div id="hero-wave" class="h-40 overflow-hidden bg-eerie-black text-black-lighter fill-current">
 	<svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%; "
 		><path
 			d="M0.00,49.98 C194.13,157.39 342.55,8.39 500.56,92.27 L500.00,150.00 L0.00,150.00 Z"
 			style="stroke: none;"
 		/></svg
 	>
-</div>
+</div> -->

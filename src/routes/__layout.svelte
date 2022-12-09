@@ -123,7 +123,16 @@
 	<slot />
 </div>
 
-<footer class="bg-black-lighter p-5 flex flex-col text-cornsilk">
+<div id="hero-wave" class="h-40 overflow-hidden bg-eerie-black text-black-lighter fill-current">
+	<svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%; "
+		><path
+			d="M0.00,49.98 C194.13,157.39 342.55,8.39 500.56,92.27 L500.00,150.00 L0.00,150.00 Z"
+			style="stroke: none;"
+		/></svg
+	>
+</div>
+
+<footer class="bg-black-lighter p-5 flex flex-col text-cornsilk ">
 	<div id="footer-contnet" class="flex flex-col lg:flex-row space-y-6 md:space-y-0 md:space-x-6">
 		<div id="footer-left" class="md:w-full md:p-7">
 			<div id="logo-footer" class="flex flex-col justify-start">

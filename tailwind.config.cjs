@@ -9,7 +9,8 @@ module.exports = {
 				'earth-yellow': '#DDA15E',
 				'liver-dogs': '#BC6C25',
 				'eerie-black': '#131313',
-				'black-lighter': '#1D1D1D'
+				'black-lighter': '#1D1D1D',
+				'theme-primary': '#60a5fa', 
 			},
 			fontFamily: {
 				body: ['Poppins'],

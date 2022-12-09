@@ -18,8 +18,8 @@
 </script>
 
 <div target="_blank" class="card  bg-base-100 shadow-xl font-mono max-w-md">
-	<div class="overflow-hidden">
-		<img src={img} alt={title} class="object-cover hover:scale-125 ease-in duration-1000"/>	
+	<div class="overflow-hidden h-3/5">
+		<img src={img} alt={title} class="object-cover hover:scale-125 ease-in duration-1000 h-full w-full"/>	
 
 	</div>
 	<div class="card-body h-2/3">
