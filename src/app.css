@@ -13,3 +13,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hero {
+    height: calc(100vh - theme(height.header));
+}
+
+.will-change-transform {
+    will-change: transform;
+}
+html {
+    scroll-behavior: smooth;
+}
