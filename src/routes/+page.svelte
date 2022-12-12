@@ -17,18 +17,10 @@
 
 
 
-<div
-	id="hero"
-	class="hero w-full bg-eerie-black text-cornsilk flex flex-row sm:flex-col justify-center items-center space-y-5 max-h-min p-12"
->
-	<div
-		class="flex flex-col-reverse sm:flex-row items-center justify-between w-full md:px-6 lg:px-64 pt-24 md:pt-0"
-	>
+<div id="hero" class="hero w-full bg-eerie-black text-cornsilk flex flex-row sm:flex-col justify-center items-center space-y-5 max-h-min p-12">
+	<div class="flex flex-col-reverse sm:flex-row items-center justify-between w-full md:px-6 lg:px-64 pt-24 md:pt-0">
 		<div class="">
-			<h1
-				id="message"
-				class="text-lg mt-12 sm:mt-0 text-white bg-theme-primary md:p-2 px-8 rounded-xl rounded-bl-none w-fit mb-2 font-extrabold font-mono animate-message-bounce "
-			> 
+			<h1 id="message" class="text-lg mt-12 sm:mt-0 text-white bg-theme-primary md:p-2 px-8 rounded-xl rounded-bl-none w-fit mb-2 font-extrabold font-mono animate-message-bounce"> 
 				Hello, I'm...
 			</h1>
 			<h1 class="text-4xl md:text-6xl lg:text-8xl font-bold  mb-5">Ian Thompson</h1>
@@ -61,11 +53,7 @@
 				<a href="https://www.instagram.com/thompson_ian" target="_blank" rel="noreferrer" aria-label="instagram"
 					><i class="fa-brands fa-instagram hover:animate-wiggle" /></a
 				>
-				<a
-					href="https://www.linkedin.com/in/ian-thompson-b92467221"
-					target="_blank" rel="noreferrer"
-					aria-label="linkedin"><i class="fa-brands fa-linkedin hover:animate-wiggle" /></a
-				>
+				<a href="https://www.linkedin.com/in/ian-thompson-b92467221" target="_blank" rel="noreferrer" aria-label="linkedin"><i class="fa-brands fa-linkedin hover:animate-wiggle" /></a>
 				<a href="https://www.twitter.com/thompson__ian" target="_blank" rel="noreferrer" aria-label="twitter"
 					><i class="fa-brands fa-twitter hover:animate-wiggle" /></a
 				>
@@ -73,16 +61,12 @@
 		</div>
 		<div class="mt-10 sm:mt-0">
 			<div class="md:w-72 md:h-72 w-56 h-56 xl:w-96 xl:h-96 overflow-hidden rounded-full rounded-br-sm border-theme-primary border-8">
-				<img
-					id="main-img"
-					src="/img/ian-thompson.jpg"
-					alt="A portrait of Ian Thompson smiling"
-					class="h-full  hover:scale-110 ease-in-out duration-1000 transition-all "
-				/>
+				<img id="main-img" src="/img/ian-thompson.jpg" alt="A portrait of Ian Thompson smiling" class="h-full  hover:scale-110 ease-in-out duration-1000 transition-all"/>
 			</div>
 		</div>
 	</div>
 </div>
+
 <div id="hero-wave" class="h-40 overflow-hidden bg-eerie-black text-black-lighter fill-current">
 	<svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%; "
 		><path
@@ -91,13 +75,9 @@
 		/></svg
 	>
 </div>
-<section
-	id="about"
-	class="bg-black-lighter pt-14 flex justify-center  items-center flex-col text-cornsilk"
->
-	<div
-		class="container px-8 my-4 xl:px-10 xl:my-10 flex flex-col-reverse lg:flex-row items-center lg:items-stretch  justify-center lg:space-x-10"
-	>
+
+<section id="about" class="bg-black-lighter pt-14 flex justify-center  items-center flex-col text-cornsilk">
+	<div class="container px-8 my-4 xl:px-10 xl:my-10 flex flex-col-reverse lg:flex-row items-center lg:items-stretch  justify-center lg:space-x-10">
 		<div id="col" class="mlgd:px-28 lg:w-3/4">
 			<div id="about-text" class="space-y-8 md:px-20">
 				<div id="about-heading" class="mb-10">
@@ -143,10 +123,6 @@
 				<Interest interest="#Privacy-education" color="bg-red-400" />
 				<Interest interest="#Digital-citizenship" color="bg-red-400" />
 				<Interest interest="#Learning-environments" color="bg-red-400" />
-
-
-				<!-- <Interest interest="#Educational-research" color="bg-red-400" /> -->
-				<!-- <Interest interest="#Learning-analytics" color="bg-red-400" /> -->
 			</div>
 		</div>
 		<div class="p-6  rounded-md border-2 border-theme-primary space-y-4 w-full lg:w-1/2 xl:w-1/3">
@@ -171,18 +147,6 @@
 				<Interest interest="Photoshop" color="bg-pink-400" url="https://www.adobe.com/products/photoshop.html" />
 			</div>
 		</div>
-		<!-- <div class="p-6  rounded-md border-2 border-theme-primary space-y-4 w-full lg:w-1/2 xl:w-1/3">
-			<h3 class="text-2xl text-white font-bold">Personal Interests</h3>
-			<div class="flex flex-wrap">
-				<Interest interest="Midwest Emo" color="bg-gray-400" url="https://developer.mozilla.org/en-US/docs/Web/JavaScript" />
-				<Interest interest="Punk Rock" color="bg-gray-400" url="https://developer.mozilla.org/en-US/docs/Web/JavaScript" />
-				<Interest interest="Folk" color="bg-gray-400" url="https://developer.mozilla.org/en-US/docs/Web/JavaScript" />
-				<Interest interest="Christian Anarchism" color="bg-teal-400" url="https://en.wikipedia.org/wiki/Christian_anarchism" />
-				<Interest interest="Clemson" color="bg-orange-400" url="https://en.wikipedia.org/wiki/Christian_anarchism" />
-				<Interest interest="BBQ" color="bg-red-400" url="https://en.wikipedia.org/wiki/Christian_anarchism" />
-
-			</div>
-		</div> -->
 	</div>
 	<div id="resume" class="flex flex-col justify-evenly w-full p-6 md:p-24  space-y-9">
 		<Collapse title="Education">
@@ -286,26 +250,6 @@
 				</p>
 			</Experience>
 		</Collapse>
-		<!-- <div class="w-full">
-			<h1 class="text-3xl border-b">Volunteering</h1>
-			<div class="flex items-center space-x-4">
-				<i class="fa-solid fa-handshake-angle text-2xl" />
-				<div class="mt-4 w-full bg-black-lighter p-2">
-					<h4 class="text-lg">
-						<span class="uppercase text-2xl">Wyldlife Leader @ McCants Middle School</span>
-					</h4>
-					<p>Tri-County YoungLife | Anderson, SC</p>
-					<p>August 2020 - Present</p>
-					<br />
-					<p>
-						Wyldlife is a ministry under YoungLife for middle school students. In this role, I have
-						connected with many students and families at McCants Middle School in Anderson, SC. I am
-						on a team of other college students who plan weekly gatherings, aka "club", and other
-						events with the goal of sharing the Gospel of Christ to our middle school friends.
-					</p>
-				</div>
-			</div>
-		</div> -->
 	</div>
 </section>
 
@@ -322,60 +266,30 @@
 	<div class="text-cornsilk mb-12">
 		<h1 class="font-bold text-2xl md:text-4xl">Projects I've Worked On</h1>
 	</div>
-	<!-- <div class="flex flex-col px-8 lg:flex-row space-y-9 lg:space-y-0 lg:space-x-9"> -->
 	<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 px-8 xl:p-23">
 
-		<Card
-			img="/img/raspi-metar.jpeg"
-			title="raspi-metar"
-			description="In short, raspi-metar is a Raspberry Pi project that takes METAR data from various airports and displays it on a VFR sectional map using NEOPIXEL LEDs."
-		>
+		<Card img="/img/raspi-metar.jpeg" title="raspi-metar" description="In short, raspi-metar is a Raspberry Pi project that takes METAR data from various airports and displays it on a VFR sectional map using NEOPIXEL LEDs.">
 			<ViewOnGitHubButton url="https://github.com/nicelion/raspi-metar" />
 		</Card>
-		<Card
-			img="/img/cml-scratch.jpg"
-			title="TPBot Scratch Extension"
-			description="As a part of my work with the IDEA Lab, I helped develop an extension that allows Scratch to interface with TPBot robots."
-		>
+		<Card img="/img/cml-scratch.jpg" title="TPBot Scratch Extension" description="As a part of my work with the IDEA Lab, I helped develop an extension that allows Scratch to interface with TPBot robots.">
 			<a target="_blank" rel="noreferrer" href="https://idea-lab-clemson-university.github.io/cml-scratch" class="px-4 py-2 rounded-lg text-center flex items-center align-middle border text-white hover:bg-white hover:text-black transition duration-200 ease-in-out">
 				<p class="text-lg">View Project</p>
 			</a>
 			<ViewOnGitHubButton url="https://github.com/IDEA-Lab-Clemson-University/cml-scratch" />
-
 		</Card>
-		<Card
-			img="/img/cover.jpg"
-			title="This Website"
-			description="This website you are viewing is a project of mine! If you want to use this as a template for your own site, feel free to check out the GitHub"
-		>
+		<Card img="/img/cover.jpg" title="This Website" description="This website you are viewing is a project of mine! If you want to use this as a template for your own site, feel free to check out the GitHub">
 			<a target="_blank" href="/" class="px-4 py-2 rounded-lg text-center flex items-center align-middle border text-white hover:bg-white hover:text-black transition duration-200 ease-in-out">
 				<p class="text-lg">View Project</p>
 			</a>
 			<ViewOnGitHubButton url="https://github.com/nicelion/ianthompson" />
 
 		</Card>
-		<Card
-			img="https://obniz.com/doc/reference/m5stickc/images/m5stickc.jpg"
-			title="M5 TCP IRBlaster"
-			description="M5 TCP IRBlaster is a project I worked on while an intern at Fellowship Greenville. This project utilized an M5StickC to decode and send IR signals to power on/off devices. The M5Stick sets up a TCP server which was communicated to via BitFoucs' Companion and via Cronicle to automate Sunday mornings."
-		> 
+		<Card img="https://obniz.com/doc/reference/m5stickc/images/m5stickc.jpg" title="M5 TCP IRBlaster" description="M5 TCP IRBlaster is a project I worked on while an intern at Fellowship Greenville. This project utilized an M5StickC to decode and send IR signals to power on/off devices. The M5Stick sets up a TCP server which was communicated to via BitFoucs' Companion and via Cronicle to automate Sunday mornings."> 
 			<ViewOnGitHubButton url="https://github.com/nicelion/M5IRBlaster" />
 		</Card>
-		<Card
-			img="/img/pcbtree.JPG"
-			title="PCBTree"
-			description="PCBTree is a project I created while in high school. For this project, I designed and printed PCBs in the shape of a Christmas tree. I then programmed an ATTiny85 to measure a potentiometer which was used to determine the flashing speed of the LEDs."
-		>
+		<Card img="/img/pcbtree.JPG" title="PCBTree" description="PCBTree is a project I created while in high school. For this project, I designed and printed PCBs in the shape of a Christmas tree. I then programmed an ATTiny85 to measure a potentiometer which was used to determine the flashing speed of the LEDs.">
 			<ViewOnGitHubButton url="https://github.com/nicelion/PCBTree" />
 		</Card>
 	</div>
 </section>
 
-<!-- <div id="hero-wave" class="h-40 overflow-hidden bg-eerie-black text-black-lighter fill-current">
-	<svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%; "
-		><path
-			d="M0.00,49.98 C194.13,157.39 342.55,8.39 500.56,92.27 L500.00,150.00 L0.00,150.00 Z"
-			style="stroke: none;"
-		/></svg
-	>
-</div> -->
