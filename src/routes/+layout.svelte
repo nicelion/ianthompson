@@ -168,17 +168,17 @@
 							</div>
 						</div>
 						<div id="footer-social" class="mt-8 space-x-4 text-xl">
-							<a href="https://www.github.com/nicelion" target="_blank" rel="noreferrer"
+							<a href="https://www.github.com/nicelion" target="_blank" rel="noreferrer" aria-label="github account"
 								><i class="fa-brands fa-github hover:animate-wiggle" /></a
 							>
 
-							<a href="https://www.instagram.com/thompson_ian" target="_blank" rel="noreferrer"
+							<a href="https://www.instagram.com/thompson_ian" target="_blank" rel="noreferrer" aria-label="instagram account"
 								><i class="fa-brands fa-instagram hover:animate-wiggle" /></a
 							>
-							<a href="https://www.linkedin.com/in/ian-thompson-b92467221" target="_blank" rel="noreferrer"
+							<a href="https://www.linkedin.com/in/ian-thompson-b92467221" target="_blank" rel="noreferrer" aria-label="linkedin-account"
 								><i class="fa-brands fa-linkedin hover:animate-wiggle" /></a
 							>
-							<a href="https://www.twitter.com/thompson__ian" target="_blank" rel="noreferrer"
+							<a href="https://www.twitter.com/thompson__ian" target="_blank" rel="noreferrer" aria-label="twitter account"
 								><i class="fa-brands fa-twitter hover:animate-wiggle" /></a
 							>
 						</div>
