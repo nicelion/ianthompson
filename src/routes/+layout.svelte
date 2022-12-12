@@ -1,8 +1,8 @@
 <!--
- __layout.svelte
- iancthompson.dev
+ +layout.svelte
+ ianthompson
  
- Created by Ian Thompson on February 11th 2022
+ Created by Ian Thompson on December 12th 2022
  ianthompson@nicelion.com
  https://www.nicelion.com
  
@@ -10,9 +10,8 @@
  
 --->
 
-
-<script>
-	import MadeWith from '../components/footer/made-with.svelte';
+<script lang="ts">
+	import MadeWith from '$lib/components/footer/made-with.svelte';
 	import '../app.css';
 
 	var pageYOffset = 0
@@ -169,17 +168,17 @@
 							</div>
 						</div>
 						<div id="footer-social" class="mt-8 space-x-4 text-xl">
-							<a href="https://www.github.com/nicelion" target="_blank"
+							<a href="https://www.github.com/nicelion" target="_blank" rel="noreferrer"
 								><i class="fa-brands fa-github hover:animate-wiggle" /></a
 							>
 
-							<a href="https://www.instagram.com/thompson_ian" target="_blank"
+							<a href="https://www.instagram.com/thompson_ian" target="_blank" rel="noreferrer"
 								><i class="fa-brands fa-instagram hover:animate-wiggle" /></a
 							>
-							<a href="https://www.linkedin.com/in/ian-thompson-b92467221" target="_blank"
+							<a href="https://www.linkedin.com/in/ian-thompson-b92467221" target="_blank" rel="noreferrer"
 								><i class="fa-brands fa-linkedin hover:animate-wiggle" /></a
 							>
-							<a href="https://www.twitter.com/thompson__ian" target="_blank"
+							<a href="https://www.twitter.com/thompson__ian" target="_blank" rel="noreferrer"
 								><i class="fa-brands fa-twitter hover:animate-wiggle" /></a
 							>
 						</div>
@@ -203,7 +202,7 @@
 	</div>
 </footer>
 <div class="group p-2 px-4 text-sm flex w-full items-center space-x-2 justify-center sm:justify-end hover:underline">
-	<a href="https://github.com/nicelion/ianthompson" target="_blank">See an issue? Create a pull request!!</a>
+	<a href="https://github.com/nicelion/ianthompson" target="_blank" rel="noreferrer">See an issue? Create a pull request!!</a>
 	<i class="fa-solid fa-code-pull-request text-base group-hover:animate-wiggle"></i>
 
 </div>

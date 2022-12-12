@@ -17,9 +17,9 @@
 	export let description = '';
 </script>
 
-<div target="_blank" class="card  bg-base-100 shadow-xl font-mono max-w-md">
-	<div class="overflow-hidden h-3/5">
-		<img src={img} alt={title} class="object-cover hover:scale-125 ease-in duration-1000 h-full w-full"/>	
+<div target="_blank" class="card  bg-base-100  font-mono max-w-md">
+	<div class="overflow-hidden h-3/5 rounded-t-md">
+		<img src={img} alt={title} class="object-cover hover:scale-125 ease-in duration-1000 h-full w-full rounded-t-md"/>	
 
 	</div>
 	<div class="card-body h-full">

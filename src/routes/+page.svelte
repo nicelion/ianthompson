@@ -1,29 +1,21 @@
-<!--
- index.svelte
- iancthompson.dev
- 
- Created by Ian Thompson on February 11th 2022
- ianthompson@nicelion.com
- https://www.nicelion.com
- 
- Copyright (c) 2022 Nice Lion Technologies LLC. All Rights Reserved.
- 
---->
+<script lang="ts">
+
+    import Collapse from '$lib/components/Collapse.svelte';
+	import Card from '$lib/components/Card.svelte';
+	import Interest from '$lib/components/Interest.svelte';
+	import Education from '$lib/components/resume/Education.svelte';
+	import Experience from '$lib/components/resume/Experience.svelte';
+	import ViewOnGitHubButton from '$lib/components/ViewOnGitHubButton.svelte';
+	import AboutTerminal from '$lib/components/AboutTerminal.svelte';
 
 
-<script>
-	import Collapse from '../components/Collapse.svelte';
-	import Card from '../components/Card.svelte';
-	import Interest from '../components/Interest.svelte';
-	import Education from '../components/resume/Education.svelte';
-	import Experience from '../components/resume/Experience.svelte';
-	import ViewOnGitHubButton from '../components/ViewOnGitHubButton.svelte';
-	import AboutTerminal from '../components/AboutTerminal.svelte';
 </script>
 
 <svelte:head>
 	<title>Ian Thompson | Student @ Clemson University</title>
 </svelte:head>
+
+
 
 <div
 	id="hero"
@@ -62,19 +54,19 @@
 				</div>
 			</div>
 			<div class="space-x-6 text-3xl mt-24">
-				<a href="https://www.github.com/nicelion" target="_blank" aria-label="github"
+				<a href="https://www.github.com/nicelion" target="_blank" rel="noreferrer" aria-label="github"
 					><i class="fa-brands fa-github hover:animate-wiggle" /></a
 				>
 
-				<a href="https://www.instagram.com/thompson_ian" target="_blank" aria-label="instagram"
+				<a href="https://www.instagram.com/thompson_ian" target="_blank" rel="noreferrer" aria-label="instagram"
 					><i class="fa-brands fa-instagram hover:animate-wiggle" /></a
 				>
 				<a
 					href="https://www.linkedin.com/in/ian-thompson-b92467221"
-					target="_blank"
+					target="_blank" rel="noreferrer"
 					aria-label="linkedin"><i class="fa-brands fa-linkedin hover:animate-wiggle" /></a
 				>
-				<a href="https://www.twitter.com/thompson__ian" target="_blank" aria-label="twitter"
+				<a href="https://www.twitter.com/thompson__ian" target="_blank" rel="noreferrer" aria-label="twitter"
 					><i class="fa-brands fa-twitter hover:animate-wiggle" /></a
 				>
 			</div>
@@ -212,7 +204,7 @@
 
 		<Collapse title="Experience">
 			<Experience title="Undergraduate Researcher" fa="fa-solid fa-briefcase">
-				<p><a href="https://idealab.sites.clemson.edu/" class="hover:underline" target="_blank">IDEA Lab @ Clemson University</a> | Clemson, SC</p>
+				<p><a href="https://idealab.sites.clemson.edu/" class="hover:underline" target="_blank" rel="noreferrer">IDEA Lab @ Clemson University</a> | Clemson, SC</p>
 				<p>August 2021 - Present</p>
 				<br />
 				<p class="leading-relaxed">
@@ -251,7 +243,7 @@
 				</ul>
 			</Experience>
 			<Experience title="Substitute Teacher" fa="fa-solid fa-briefcase">
-				<p><a href="https://www.greenville.k12.sc.us" class="hover:underline" target="_blank">Greenville County School District</a> | Greenville, SC</p>
+				<p><a href="https://www.greenville.k12.sc.us" class="hover:underline" target="_blank" rel="noreferrer">Greenville County School District</a> | Greenville, SC</p>
 				<p>January 2021 - Present</p>
 				<br />
 				<p class="leading-relaxed">
@@ -261,7 +253,7 @@
 				</p>
 			</Experience>
 			<Experience title="Freelance Developer" fa="fa-solid fa-briefcase">
-				<p><a href="https://www.nicelion.com" class="hover:underline" target="_blank">Nice Lion Technologies LLC</a> | Clemson, SC</p>
+				<p><a href="https://www.nicelion.com" class="hover:underline" target="_blank" rel="noreferrer">Nice Lion Technologies LLC</a> | Clemson, SC</p>
 				<p>July 2021 - Present</p>
 				<br />
 				<p class="leading-relaxed">
@@ -270,7 +262,7 @@
 				</p>
 			</Experience>
 			<Experience title="Audiovisual Technology Intern" fa="fa-solid fa-briefcase">
-				<p><a href="https://www.fellowshipgreenville.org" class="hover:underline" target="_blank">Fellowship Greenville</a> | Greenville, SC</p>
+				<p><a href="https://www.fellowshipgreenville.org" class="hover:underline" target="_blank" rel="noreferrer">Fellowship Greenville</a> | Greenville, SC</p>
 				<p>May 2022 - August 2022</p>
 				<br />
 				<p class="leading-relaxed">
@@ -345,7 +337,7 @@
 			title="TPBot Scratch Extension"
 			description="As a part of my work with the IDEA Lab, I helped develop an extension that allows Scratch to interface with TPBot robots."
 		>
-			<a target="_blank" href="https://idea-lab-clemson-university.github.io/cml-scratch" class="px-4 py-2 rounded-lg text-center flex items-center align-middle border text-white hover:bg-white hover:text-black transition duration-200 ease-in-out">
+			<a target="_blank" rel="noreferrer" href="https://idea-lab-clemson-university.github.io/cml-scratch" class="px-4 py-2 rounded-lg text-center flex items-center align-middle border text-white hover:bg-white hover:text-black transition duration-200 ease-in-out">
 				<p class="text-lg">View Project</p>
 			</a>
 			<ViewOnGitHubButton url="https://github.com/IDEA-Lab-Clemson-University/cml-scratch" />
@@ -370,7 +362,6 @@
 			<ViewOnGitHubButton url="https://github.com/nicelion/M5IRBlaster" />
 		</Card>
 		<Card
-			url="https://github.com/nicelion/PCBTree"
 			img="/img/pcbtree.JPG"
 			title="PCBTree"
 			description="PCBTree is a project I created while in high school. For this project, I designed and printed PCBs in the shape of a Christmas tree. I then programmed an ATTiny85 to measure a potentiometer which was used to determine the flashing speed of the LEDs."

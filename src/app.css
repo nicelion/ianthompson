@@ -1,8 +1,8 @@
 /*
  * app.css
- * iancthompson.dev
+ * ianthompson
  * 
- * Created by Ian Thompson on February 11th 2022
+ * Created by Ian Thompson on December 12th 2022
  * ianthompson@nicelion.com
  * https://www.nicelion.com
  * 
@@ -10,14 +10,9 @@
  * 
  */
 
- @tailwind base;
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
-/* h1 {
-    @apply text-3xl;
-} */
 
 .hero {
     height: calc(100vh - theme(height.header));
