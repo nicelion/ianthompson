@@ -1,18 +1,18 @@
-# create-svelte
+# iancthompson.dev
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+This is the official repository for [iancthompson.dev](https://www.iancthompson.dev).
 
-## Creating a project
+Please take inspiration for your own website and use in accordance to the provided License.
 
-If you're seeing this, you've probably already done this step. Congrats!
+Note that I am not maintaining this repository with the intent on making this "reusable," in the sense that I am building this for my own personal use but making the source available to you for free. You will need go in and change images/colors/content/whatever to fit your own needs. This is not a skeleton project. Do with that as you will...
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Contributing
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+If you see an issue in the live version and would like to make a fix, submit a pull request!
+
+## License
+
+Please see LICENSE.md for more information.
 
 ## Developing
 
