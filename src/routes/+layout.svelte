@@ -11,13 +11,21 @@
 --->
 
 <script lang="ts">
+
+	import { page } from '$app/stores'
+
 	import MadeWith from '$lib/components/footer/made-with.svelte';
+	import { onMount } from 'svelte';
 	import '../app.css';
 
 	var pageYOffset = 0
 
+	// console.log($page.url);
+	
+
 	const pageScroll = () => {
 		
+
 		// Get the header
 		var header = document.getElementById('header');
 		var content = document.getElementById('content');
@@ -30,42 +38,65 @@
 		var logoImg = document.getElementById('logo-img');
 		var mainImg = document.getElementById('main-img');
 
-		if (pageYOffset > content.offsetTop) {
-			header.classList.add('bg-black-lighter');
-			// header.classList.remove('border-transparent');
-			header.classList.add('border-theme-primary');
-		} else {
-			header.classList.remove('bg-black-lighter');
-			// header.classList.add('border-transparent');
-			header.classList.remove('border-theme-primary');
+		if ($page.url.pathname == "/") {
+			if (pageYOffset > content.offsetTop) {
+				header.classList.add('bg-black-lighter');
+				// header.classList.remove('border-transparent');
+				header.classList.add('border-theme-primary');
+			} else {
+				header.classList.remove('bg-black-lighter');
+				// header.classList.add('border-transparent');
+				header.classList.remove('border-theme-primary');
 
+			}
+
+			if (message.getBoundingClientRect().bottom < header.getBoundingClientRect().bottom) {
+				logo.classList.add('opacity-100');
+				logo.classList.remove('opacity-0');
+			} else {
+				logo.classList.remove('opacity-100');
+				header.classList.remove('border-theme-primary');
+				logo.classList.add('opacity-0');
+			}
+
+			if (mainImg.getBoundingClientRect().bottom < header.getBoundingClientRect().bottom) {
+				logoImg.classList.add('opacity-100');
+				logoImg.classList.remove('opacity-0');
+			} else {
+				logoImg.classList.remove('opacity-100');
+				logoImg.classList.add('opacity-0');
+			}
 		}
 
-		if (message.getBoundingClientRect().bottom < header.getBoundingClientRect().bottom) {
-			logo.classList.add('opacity-100');
-			logo.classList.remove('opacity-0');
-		} else {
-			logo.classList.remove('opacity-100');
-			header.classList.remove('border-theme-primary');
-			logo.classList.add('opacity-0');
-		}
 
-		if (mainImg.getBoundingClientRect().bottom < header.getBoundingClientRect().bottom) {
-			logoImg.classList.add('opacity-100');
-			logoImg.classList.remove('opacity-0');
-		} else {
-			logoImg.classList.remove('opacity-100');
-			logoImg.classList.add('opacity-0');
-		}
 	}
+
+	onMount(() => {
+		// Get the header
+		var header = document.getElementById('header');
+		var content = document.getElementById('content');
+		var heroWave = document.getElementById('hero-wave');
+		// Get the offset position of the navbar
+		var sticky = header.offsetTop;
+
+		var logo = document.getElementById('logo');
+		var message = document.getElementById('message');
+		var logoImg = document.getElementById('logo-img');
+		var mainImg = document.getElementById('main-img');
+
+		if ($page.url.pathname != "/") {
+			header?.classList.add("border-theme-primary")
+			logo?.classList.remove("opacity-0")
+			logoImg?.classList.remove("opacity-0")
+
+		}
+	})
+	
 </script>
 
 <svelte:window on:scroll={pageScroll} bind:scrollY={pageYOffset} />
 
-<nav
-	class="navbar bg-eerie-black z-50 sticky top-0 w-full border-transparent border-b transition-opacity duration-200 ease-in-out"
-	id="header"
->
+<nav class="navbar bg-eerie-black z-50 sticky top-0 w-full border-transparent border-b transition-opacity duration-200 ease-in-out" id="header">
 	<div class="flex-1">
 		<a href="/" class="h-full w-full flex items-center space-x-2 md:space-x-5">
 			<div class="ml-2 h-7 sm:h-14">
