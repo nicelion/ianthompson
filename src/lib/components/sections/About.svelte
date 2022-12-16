@@ -38,7 +38,9 @@
 						I am very interested in pursing graduate school and hoping to find a career where I can
 						combine my passion for computer science and education.
 					</p>
-
+					<!-- <p>
+						If you are interested in my political views, please <a href="/political-views" class="url"> click here.</a>
+					</p> -->
 				</div>
 			</div>
 		</div>
@@ -109,13 +111,13 @@
 
 		<Collapse title="Experience">
 			<Experience title="Undergraduate Researcher" fa="fa-solid fa-briefcase">
-				<p><a href="https://idealab.sites.clemson.edu/" class="hover:underline" target="_blank" rel="noreferrer">IDEA Lab @ Clemson University</a> | Clemson, SC</p>
+				<p><a href="https://idealab.sites.clemson.edu/" class="url" target="_blank" rel="noreferrer">IDEA Lab @ Clemson University</a> | Clemson, SC</p>
 				<p>August 2021 - Present</p>
 				<br />
 				<p class="leading-relaxed">
 					In this role, I assisted the <a
 						href="https://idealab.sites.clemson.edu/"
-						class="underline">IDEA Lab</a
+						class="url">IDEA Lab</a
 					>
 					in Clemson University's College of Education on an NSF funded project that seeks to "measure
 					and model youth’s data science knowledge and practices in the context of social, ethical, and
@@ -123,7 +125,7 @@
 					to enact change in their communities in terms of the ethical use of digital technologies."
 					<sup class=""
 						><a
-							href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2024965&HistoricalAwards=false"
+							href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2024965&HistoricalAwards=false" class="url"
 							>1</a
 						></sup
 					>
@@ -148,7 +150,7 @@
 				</ul>
 			</Experience>
 			<Experience title="Substitute Teacher" fa="fa-solid fa-briefcase">
-				<p><a href="https://www.greenville.k12.sc.us" class="hover:underline" target="_blank" rel="noreferrer">Greenville County School District</a> | Greenville, SC</p>
+				<p><a href="https://www.greenville.k12.sc.us" class="url" target="_blank" rel="noreferrer">Greenville County School District</a> | Greenville, SC</p>
 				<p>January 2021 - Present</p>
 				<br />
 				<p class="leading-relaxed">
@@ -158,7 +160,7 @@
 				</p>
 			</Experience>
 			<Experience title="Freelance Developer" fa="fa-solid fa-briefcase">
-				<p><a href="https://www.nicelion.com" class="hover:underline" target="_blank" rel="noreferrer">Nice Lion Technologies LLC</a> | Clemson, SC</p>
+				<p><a href="https://www.nicelion.com" class="url" target="_blank" rel="noreferrer">Nice Lion Technologies LLC</a> | Clemson, SC</p>
 				<p>July 2021 - Present</p>
 				<br />
 				<p class="leading-relaxed">
@@ -167,7 +169,7 @@
 				</p>
 			</Experience>
 			<Experience title="Audiovisual Technology Intern" fa="fa-solid fa-briefcase">
-				<p><a href="https://www.fellowshipgreenville.org" class="hover:underline" target="_blank" rel="noreferrer">Fellowship Greenville</a> | Greenville, SC</p>
+				<p><a href="https://www.fellowshipgreenville.org" class="url" target="_blank" rel="noreferrer">Fellowship Greenville</a> | Greenville, SC</p>
 				<p>May 2022 - August 2022</p>
 				<br />
 				<p class="leading-relaxed">

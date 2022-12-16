@@ -19,7 +19,7 @@
 {#if url == ''}
 	<p class={`py-1 px-2 ${color} rounded-md font-mono h-fit my-1 mx-2`}>{interest}</p>
 {:else}
-	<a href={url} target="_blank" class={`py-1 px-2 ${color} rounded-md font-mono h-fit my-1 mx-2 hover:underline`}
+	<a href={url} target="_blank" class={`py-1 px-2 ${color} rounded-md font-mono h-fit my-1 mx-2 hover:underline text-cornsilk`}
 		>{interest}</a
 	>
 {/if}
