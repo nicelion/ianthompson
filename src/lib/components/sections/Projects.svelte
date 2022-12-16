@@ -13,6 +13,33 @@
 <script>
 	import ViewOnGitHubButton from "$lib/components/ViewOnGitHubButton.svelte";
 	import Card from "$lib/components/Card.svelte";
+	
+
+	import { Confetti } from "svelte-confetti"
+
+	const duration = 2000
+
+	let things = []
+	let timeout
+
+	async function moveConfetti(event) {
+
+
+		const { target, clientX, clientY } = event
+
+		const elementY = target.getBoundingClientRect().top
+		const elementX = target.getBoundingClientRect().left
+
+		const x = clientX - elementX
+		const y = clientY - elementY
+
+		things = [...things, { x, y }]
+
+		clearTimeout(timeout)
+
+		timeout = setTimeout(() => things = [], duration)
+	}
+
 </script>
 
 <section id="projects" class="flex flex-col justify-center w-full items-center py-12">
@@ -31,13 +58,18 @@
 			<ViewOnGitHubButton url="https://github.com/IDEA-Lab-Clemson-University/cml-scratch" />
 		</Card>
 		<Card img="/img/cover.jpg" title="This Website" description="This website you are viewing is a project of mine! If you want to use this as a template for your own site, feel free to check out the GitHub" badge="code">
-			<a href="/" class="px-4 py-2 rounded-lg text-center flex items-center align-middle border text-white hover:bg-white hover:text-black transition duration-200 ease-in-out">
+			<button on:click={moveConfetti} class="px-4 py-2 rounded-lg text-center flex items-center align-middle border text-white hover:bg-white hover:text-black transition duration-200 ease-in-out">
 				<p class="text-lg">View Project</p>
-			</a>
+			</button>
+			{#each things as thing}
+				<div class="mover" style="left: {thing.x}px; top: {thing.y}px">
+					<Confetti y={[-0.5, 0.5]} fallDistance=20px amount=100 {duration} />
+				</div>
+		  	{/each}
 			<ViewOnGitHubButton url="https://github.com/nicelion/ianthompson" />
 
 		</Card>
-		<Card img="https://obniz.com/doc/reference/m5stickc/images/m5stickc.jpg" title="M5 TCP IRBlaster" description="M5 TCP IRBlaster is a project I worked on while an intern at Fellowship Greenville. This project utilized an M5StickC to decode and send IR signals to power on/off devices. The M5Stick sets up a TCP server which was communicated to via BitFoucs' Companion and via Cronicle to automate Sunday mornings."> 
+		<Card img="https://obniz.com/doc/reference/m5stickc/images/m5stickc.jpg" title="M5 TCP IRBlaster" description="M5 TCP IRBlaster is a project I worked on while an intern at Fellowship Greenville. This project utilized an M5StickC to decode and send IR signals to power on/off devices. The M5Stick sets up a TCP server which was communicated to via BitFoucs' Companion and via Cronicle to automate Sunday mornings." badge="code"> 
 			<ViewOnGitHubButton url="https://github.com/nicelion/M5IRBlaster" />
 		</Card>
 		<Card img="/img/pcbtree.JPG" title="PCBTree" description="PCBTree is a project I created while in high school. For this project, I designed and printed PCBs in the shape of a Christmas tree. I then programmed an ATTiny85 to measure a potentiometer which was used to determine the flashing speed of the LEDs." badge="code">
@@ -45,3 +77,27 @@
 		</Card>
 
 </section>
+
+<style>
+	.box {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		height: 10rem;
+		width: 100%;
+		border: 1px solid lightgray;
+		border-radius: 0.5rem;
+		background: white;
+		user-select: none;
+	}
+  
+	.mover {
+	 	 position: absolute;
+	}
+  
+	span {
+	  	pointer-events: none;
+	}
+  </style>
+  
