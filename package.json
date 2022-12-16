@@ -29,6 +29,7 @@
 	"type": "module",
 	"dependencies": {
 		"daisyui": "^2.22.0",
-		"svelte-confetti": "^1.2.2"
+		"svelte-confetti": "^1.2.2",
+		"svelte-notifications": "^0.9.98"
 	}
 }
