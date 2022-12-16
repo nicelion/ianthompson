@@ -135,15 +135,15 @@
 				</svg>
 
 				<ul class="p-2 right-0 bg-black-lighter border-2 border-theme-primary">
-					<li><a href="#about">About</a></li>
-					<li><a href="#resume">Resume</a></li>
-					<li><a href="#projects">Projects</a></li>
+					<li><a href="/#about">About</a></li>
+					<li><a href="/#resume">Resume</a></li>
+					<li><a href="/#projects">Projects</a></li>
 				</ul>
 			</li>
 			<ul class="hidden sm:flex">
-				<li><a href="#about">About</a></li>
-				<li><a href="#resume">Resume</a></li>
-				<li><a href="#projects">Projects</a></li>
+				<li><a href="/#about">About</a></li>
+				<li><a href="/#resume">Resume</a></li>
+				<li><a href="/#projects">Projects</a></li>
 			</ul>
 		</ul>
 	</div>
