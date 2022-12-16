@@ -24,3 +24,7 @@
 html {
     scroll-behavior: smooth;
 }
+
+.url {
+    @apply text-theme-primary hover:underline
+}
