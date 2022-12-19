@@ -10,7 +10,7 @@
  
 --->
 
-<div class="flex flex-col md:flex-row w-full h-full p-4 space-y-8">
+<div class="flex flex-col md:flex-row w-full h-full p-4 ">
     <div id="sidebar" class="w-full md:w-1/4 bg-black-lighter p-2 space-y-5 rounded h-fit md:sticky md:top-20">
         <h2 class="font-bold text-center text-xl">Refine Your Search</h2>
 
@@ -37,6 +37,11 @@
           </select>
     </div>
     <main class="w-full md:px-8">
+        <div class="text-sm breadcrumbs">
+            <ul>
+              <li><a class="url">Blog</a></li> 
+            </ul>
+          </div>
         <slot />
     </main>
 </div>
