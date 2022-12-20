@@ -14,6 +14,8 @@
 
 	import { page } from '$app/stores'
 
+	import { PUBLIC_SECRET_KEY } from '$env/static/public';
+
 	import MadeWith from '$lib/components/footer/made-with.svelte';
 	import { onMount } from 'svelte';
 	import '../app.css';
@@ -22,7 +24,8 @@
 
 	// console.log($page.url);
 	
-
+	var message = PUBLIC_SECRET_KEY;
+	
 	const pageScroll = () => {
 		
 
@@ -108,6 +111,7 @@
 
 <svelte:window on:scroll={pageScroll} bind:scrollY={pageYOffset} />
 
+<div class="w-full">{message}</div>
 <nav class="navbar bg-eerie-black z-50 sticky top-0 w-full border-transparent border-b transition-opacity duration-200 ease-in-out" id="header">
 	<div class="flex-1">
 		<a href="/" class="h-full w-full flex items-center space-x-2 md:space-x-5">
