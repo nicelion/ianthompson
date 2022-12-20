@@ -24,26 +24,25 @@
   <h1 class="text-3xl font-mono">This doesn't look good :(</h1>
   <div class="mockup-code w-full">
       <pre class=""><code>Attempting to access {$page.url.pathname}</code></pre>
-      <pre class="text-warning"><code></code></pre>
-
+      <!-- <pre class="text-warning"><code></code></pre> -->
       <pre class="text-warning"><code>Error!... retrying!</code></pre>
       <pre class="text-warning"><code>Error!... retrying!</code></pre>
       <pre class="text-warning"><code>Error!... retrying!</code></pre>
       <pre class="text-warning"><code>Error!... retrying!</code></pre>
       <pre class="text-warning"><code>Error!... retrying!</code></pre>
-      <pre class="text-warning"><code></code></pre>
+      <!-- <pre class="text-warning"><code></code></pre> -->
 
       <pre class="text-error"><code>Error: {$page.status}: {$page.error.message}</code></pre>
   </div>
 
-  <div class="">
-      <a href="/" class="bg-theme-primary text-xl text-white font-mono px-8 py-3 rounded-md hover:bg-blue-500 transition ease-in duration-100">Go Home</a>
-  </div>
-  <div class="group p-2 px-4 text-sm flex w-full items-center space-x-2 justify-center sm:justify-end hover:underline">
+  <div class="group p-2 px-4 text-md flex w-full items-center space-x-2 justify-center  hover:underline">
     <a href="https://github.com/nicelion/ianthompson" target="_blank" rel="noreferrer">Think this error could be fixed? Create a pull request!!</a>
     <i class="fa-solid fa-code-pull-request text-base group-hover:animate-wiggle"></i>
-
   </div>
   
+  <div class="">
+      <a href="/" class="bg-theme-primary text-xl text-white px-4 py-3 rounded-md hover:bg-blue-500 transition ease-in duration-100">Go Home</a>
+  </div>
+
 
 </div>

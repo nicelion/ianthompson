@@ -13,6 +13,8 @@
 <script lang="ts">
 
 	import { page } from '$app/stores'
+	import Analytics from '$lib/components/Analytics.svelte';
+
 
 	import MadeWith from '$lib/components/footer/made-with.svelte';
 	import { onMount } from 'svelte';
@@ -30,6 +32,9 @@
 		var header = document.getElementById('header');
 		var content = document.getElementById('content');
 		var heroWave = document.getElementById('hero-wave');
+		var cta = document.getElementById("cta");
+		var footer = document.getElementById("footer");
+
 		// Get the offset position of the navbar
 		var sticky = header.offsetTop;
 
@@ -38,16 +43,25 @@
 		var logoImg = document.getElementById('logo-img');
 		var mainImg = document.getElementById('main-img');
 
+
+
 		if ($page.url.pathname == "/") {
 			if (pageYOffset > content.offsetTop) {
 				header.classList.add('bg-black-lighter');
 				// header.classList.remove('border-transparent');
 				header.classList.add('border-theme-primary');
+				cta?.classList.remove('hidden')
 			} else {
 				header.classList.remove('bg-black-lighter');
 				// header.classList.add('border-transparent');
 				header.classList.remove('border-theme-primary');
+				cta?.classList.add('hidden')
 
+			}
+
+			// Remove the CallToAction if it intersects the footer
+			if (cta?.getBoundingClientRect().bottom > footer?.getBoundingClientRect().top) {
+				cta?.classList.add("hidden")
 			}
 
 			if (message.getBoundingClientRect().bottom < header.getBoundingClientRect().bottom) {
@@ -96,6 +110,8 @@
 
 <svelte:window on:scroll={pageScroll} bind:scrollY={pageYOffset} />
 
+<Analytics />
+
 <nav class="navbar bg-eerie-black z-50 sticky top-0 w-full border-transparent border-b transition-opacity duration-200 ease-in-out" id="header">
 	<div class="flex-1">
 		<a href="/" class="h-full w-full flex items-center space-x-2 md:space-x-5">
@@ -135,15 +151,17 @@
 				</svg>
 
 				<ul class="p-2 right-0 bg-black-lighter border-2 border-theme-primary">
-					<li><a href="#about">About</a></li>
-					<li><a href="#resume">Resume</a></li>
-					<li><a href="#projects">Projects</a></li>
+					<li><a href="/#about">About</a></li>
+					<li><a href="/#resume">Resume</a></li>
+					<li><a href="/#projects">Projects</a></li>
+					<li><a href="/lets-chat">Contact</a></li>
 				</ul>
 			</li>
 			<ul class="hidden sm:flex">
-				<li><a href="#about">About</a></li>
-				<li><a href="#resume">Resume</a></li>
-				<li><a href="#projects">Projects</a></li>
+				<li><a href="/#about">About</a></li>
+				<li><a href="/#resume">Resume</a></li>
+				<li><a href="/#projects">Projects</a></li>
+				<li><a href="/lets-chat">Contact</a></li>
 			</ul>
 		</ul>
 	</div>
@@ -162,7 +180,7 @@
 	>
 </div>
 
-<footer class="bg-black-lighter p-5 flex flex-col text-cornsilk ">
+<footer id="footer" class="bg-black-lighter p-5 flex flex-col text-cornsilk">
 	<div id="footer-contnet" class="flex flex-col lg:flex-row space-y-6 md:space-y-0 md:space-x-6">
 		<div id="footer-left" class="md:w-full md:p-7">
 			<div id="logo-footer" class="flex flex-col justify-start">
@@ -227,7 +245,7 @@
 		<div class="text-center">
 			<MadeWith />
 			<p>
-				Create a <a class="hover:underline text-theme-primary" href="https://github.com/nicelion/ianthompson/network/members">fork</a> and make your own in accordance with the <a class="hover:underline text-theme-primary" href="https://github.com/nicelion/ianthompson/blob/main/LICENSE.md">license</a>!
+				Create a <a class="hover:underline text-theme-primary" href="https://github.com/nicelion/ianthompson/network/members"  target="_blank" rel="noreferrer">fork</a> and make your own in accordance with the <a class="hover:underline text-theme-primary" href="https://github.com/nicelion/ianthompson/blob/main/LICENSE.md"  target="_blank" rel="noreferrer">license</a>!
 			</p>
 		</div>
 	</div>
@@ -235,5 +253,4 @@
 <div class="group p-2 px-4 text-sm flex w-full items-center space-x-2 justify-center sm:justify-end hover:underline">
 	<a href="https://github.com/nicelion/ianthompson" target="_blank" rel="noreferrer">See an issue? Create a pull request!!</a>
 	<i class="fa-solid fa-code-pull-request text-base group-hover:animate-wiggle"></i>
-
 </div>

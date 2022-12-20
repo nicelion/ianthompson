@@ -1,5 +1,5 @@
 {
-	"name": "ianthompson",
+	"name": "iancthompson",
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
@@ -14,6 +14,7 @@
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/kit": "next",
+		"@types/gtag.js": "^0.0.12",
 		"autoprefixer": "^10.4.13",
 		"postcss": "^8.4.20",
 		"prettier": "^2.8.0",
