@@ -241,7 +241,7 @@
 		<div class="text-center">
 			<MadeWith />
 			<p>
-				Create a <a class="hover:underline text-theme-primary" href="https://github.com/nicelion/ianthompson/network/members">fork</a> and make your own in accordance with the <a class="hover:underline text-theme-primary" href="https://github.com/nicelion/ianthompson/blob/main/LICENSE.md">license</a>!
+				Create a <a class="hover:underline text-theme-primary" href="https://github.com/nicelion/ianthompson/network/members"  target="_blank" rel="noreferrer">fork</a> and make your own in accordance with the <a class="hover:underline text-theme-primary" href="https://github.com/nicelion/ianthompson/blob/main/LICENSE.md"  target="_blank" rel="noreferrer">license</a>!
 			</p>
 		</div>
 	</div>
@@ -249,5 +249,4 @@
 <div class="group p-2 px-4 text-sm flex w-full items-center space-x-2 justify-center sm:justify-end hover:underline">
 	<a href="https://github.com/nicelion/ianthompson" target="_blank" rel="noreferrer">See an issue? Create a pull request!!</a>
 	<i class="fa-solid fa-code-pull-request text-base group-hover:animate-wiggle"></i>
-
 </div>
