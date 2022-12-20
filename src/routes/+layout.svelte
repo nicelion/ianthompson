@@ -30,6 +30,9 @@
 		var header = document.getElementById('header');
 		var content = document.getElementById('content');
 		var heroWave = document.getElementById('hero-wave');
+		var cta = document.getElementById("cta");
+		var footer = document.getElementById("footer");
+
 		// Get the offset position of the navbar
 		var sticky = header.offsetTop;
 
@@ -38,16 +41,25 @@
 		var logoImg = document.getElementById('logo-img');
 		var mainImg = document.getElementById('main-img');
 
+
+
 		if ($page.url.pathname == "/") {
 			if (pageYOffset > content.offsetTop) {
 				header.classList.add('bg-black-lighter');
 				// header.classList.remove('border-transparent');
 				header.classList.add('border-theme-primary');
+				cta?.classList.remove('hidden')
 			} else {
 				header.classList.remove('bg-black-lighter');
 				// header.classList.add('border-transparent');
 				header.classList.remove('border-theme-primary');
+				cta?.classList.add('hidden')
 
+			}
+
+			// Remove the CallToAction if it intersects the footer
+			if (cta?.getBoundingClientRect().bottom > footer?.getBoundingClientRect().top) {
+				cta?.classList.add("hidden")
 			}
 
 			if (message.getBoundingClientRect().bottom < header.getBoundingClientRect().bottom) {
@@ -138,12 +150,14 @@
 					<li><a href="/#about">About</a></li>
 					<li><a href="/#resume">Resume</a></li>
 					<li><a href="/#projects">Projects</a></li>
+					<li><a href="/lets-chat">Contact</a></li>
 				</ul>
 			</li>
 			<ul class="hidden sm:flex">
 				<li><a href="/#about">About</a></li>
 				<li><a href="/#resume">Resume</a></li>
 				<li><a href="/#projects">Projects</a></li>
+				<li><a href="/lets-chat">Contact</a></li>
 			</ul>
 		</ul>
 	</div>
@@ -162,7 +176,7 @@
 	>
 </div>
 
-<footer class="bg-black-lighter p-5 flex flex-col text-cornsilk ">
+<footer id="footer" class="bg-black-lighter p-5 flex flex-col text-cornsilk">
 	<div id="footer-contnet" class="flex flex-col lg:flex-row space-y-6 md:space-y-0 md:space-x-6">
 		<div id="footer-left" class="md:w-full md:p-7">
 			<div id="logo-footer" class="flex flex-col justify-start">
