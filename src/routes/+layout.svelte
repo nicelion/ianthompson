@@ -13,6 +13,7 @@
 <script lang="ts">
 
 	import { page } from '$app/stores'
+	import Analytics from '$lib/components/Analytics.svelte';
 
 
 	import MadeWith from '$lib/components/footer/made-with.svelte';
@@ -108,6 +109,8 @@
 </script>
 
 <svelte:window on:scroll={pageScroll} bind:scrollY={pageYOffset} />
+
+<Analytics />
 
 <nav class="navbar bg-eerie-black z-50 sticky top-0 w-full border-transparent border-b transition-opacity duration-200 ease-in-out" id="header">
 	<div class="flex-1">
