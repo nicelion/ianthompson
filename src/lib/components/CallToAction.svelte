@@ -13,7 +13,7 @@
 <a href="/lets-chat" id="cta" class="toast toast-end z-50 hidden hover:underline">
 	<div class="alert bg-theme-primary text-white sticky bottom-3">
 	  <div>
-		<span>Want to hire me? Let's chat!</span>
+		<span>Want to work together? <span class="font-bold">Let's chat!</span></span>
 	  </div>
 	</div>
 </a>
