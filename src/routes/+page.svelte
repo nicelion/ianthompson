@@ -1,4 +1,6 @@
 <script lang="ts">
+  	import CallToAction from '$lib/components/CallToAction.svelte';
+
 
     import Collapse from '$lib/components/Collapse.svelte';
 	import Card from '$lib/components/Card.svelte';
@@ -17,6 +19,8 @@
 <svelte:head>
 	<title>Ian Thompson | Student @ Clemson University</title>
 </svelte:head>
+
+<CallToAction />
 
 <Hero />
 
