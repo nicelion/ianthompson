@@ -28,7 +28,7 @@
                 <div class="space-y-2">
                     <h2 class="text-xl underline">Internships</h2>
                     <p>
-                        Do you have or know of an internship in a field I might be interested in? I currently have no commitments for the Summer 2023 and Summer 2024. I am interested in research based internships, specifically in the fields listed <a href="/#about">here</a>, however I am open to other fields as well!
+                        Do you have or know of an internship in a field I might be interested in? I currently have no commitments for the Summer 2023 and Summer 2024. I am interested in research based internships, specifically in the fields listed <a class="url" href="/#about">here</a>, however I am open to other fields as well!
                     </p>
                 </div>
                 <div class="space-y-2">
@@ -47,9 +47,12 @@
                     </p>
                 </div>
             </div>
-            <h1 class="text-center text-2xl mt-9 mb-5 spacy-y-8 ">Let's Chat!</h1>
+            <h1 class="text-center text-2xl mt-9 mb-5">Let's Chat!</h1>
+            <p class="mb-5">
+                If I have piqued your interest, please do not hesitate to reach out! Below are two emails in which you use to reach out to me. I will also have my socials listed, but those are not my preferred form of communication as my use of social media is very inconsistent. 
+            </p>
             <p>
-                If I have piqued your interest, please do not hesitate to reach out! Below are two emails in which you use to reach out to me. I will also have my socials listed, but those are not my preferred form of communication as my use of social media is very inconsistent. Additionally, I realize you may be able to find my phone number online rather easily. However, I ask that we stick to emails first before we move to phone calls. Plus, I ignore any number I do not have saved (thanks robots!).
+                Additionally, I realize you may be able to find my phone number online rather easily. However, I ask that we stick to emails first before we move to phone calls. Plus, I ignore any number I do not have saved (thanks robots!).
             </p>
             <div class="flex flex-col md:flex-row items-center justify-around mt-24 md:space-y-0 space-y-8">
                 <div class="flex flex-col  md:w-full items-center space-y-2">
@@ -61,6 +64,19 @@
                     <p class="text-sm">ianthompson@nicelion.com</p>
                 </div>
             </div>
+            <div class="space-x-6 text-3xl mt-24 flex justify-center">
+				<a href="https://www.github.com/nicelion" target="_blank" rel="noreferrer" aria-label="github"
+					><i class="fa-brands fa-github hover:animate-wiggle" /></a
+				>
+
+				<a href="https://www.instagram.com/thompson_ian" target="_blank" rel="noreferrer" aria-label="instagram"
+					><i class="fa-brands fa-instagram hover:animate-wiggle" /></a
+				>
+				<a href="https://www.linkedin.com/in/ian-thompson-b92467221" target="_blank" rel="noreferrer" aria-label="linkedin"><i class="fa-brands fa-linkedin hover:animate-wiggle" /></a>
+				<a href="https://www.twitter.com/thompson__ian" target="_blank" rel="noreferrer" aria-label="twitter"
+					><i class="fa-brands fa-twitter hover:animate-wiggle" /></a
+				>
+			</div>
         </div>
     </div>
 </div>
