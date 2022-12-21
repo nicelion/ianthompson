@@ -1,3 +1,7 @@
+<script>
+	import Badge from "$lib/components/Badge.svelte";
+
+</script>
 <!--
  +layout.svelte
  ianthompson
@@ -21,12 +25,13 @@
         <div class="flex flex-col space-y-2">
             <h2>Filter by Tag:</h2>
             <div class="flex flex-wrap">
-                <div class="m-2 badge badge-primary bg-theme-primary">code</div>
-                <div class="m-2 badge badge-primary bg-orange-400">opinions</div>
-                <div class="m-2 badge badge-primary bg-red-400">politics</div>
-                <div class="m-2 badge badge-primary bg-emerald-400">religion</div>
-                <div class="m-2 badge badge-primary bg-purple-400">recipies</div>
-                <div class="m-2 badge badge-primary bg-cyan-300">how-to</div>
+                <Badge title="code"/>
+                <Badge title="opinions"/>
+                <Badge title="politics"/>
+                <Badge title="religion"/>
+                <Badge title="personal"/>
+                <Badge title="how-to"/>
+
             </div>
         </div>
 
@@ -39,7 +44,7 @@
     <main class="w-full md:px-8">
         <div class="text-sm breadcrumbs">
             <ul>
-              <li><a class="url">Blog</a></li> 
+              <li><a href="/blog" class="url">Blog</a></li> 
             </ul>
           </div>
         <slot />

@@ -11,22 +11,34 @@
 --->
 
 <script>
+	import Badge from "../Badge.svelte";
+
     export let data;
+
+    // console.log("data", data);
+
+    let post = data.attributes
+
 </script>
 
-<div class="bg-black-lighter w-full rounded-md flex flex-col lg:flex-row p-4 items-center">
+<a href={`/blog/${post.slug}`} class="bg-black-lighter w-full rounded-md flex flex-col lg:flex-row p-4 items-center">
     <div class="lg:w-1/5 h-1/5 lg:h-full mb-5">
-        <img src={data.img} alt="" class=" w-full rounded-md object-cover">
+        <img src={`http://localhost:1337${post.cover.data.attributes.formats.thumbnail.url}`} alt="" class=" w-full rounded-md object-cover">
     </div>
     <div class="px-4 w-full">
-        <h1 class="text-2xl font-bold">{data.title}</h1>
-        <p>By: <a href="#" class="url">{data.author}</a> on November 29, 2022</p>
+        <div class="flex w-full justify-between">        
+            <h1 class="text-2xl font-bold">{post.title}</h1>
+            <i class="fa-solid fa-thumbtack text-2xl text-yellow-300 hover:animate-wiggle"></i>
+        </div>
+        <p>By: <a href="#" class="url">{post.author}</a> on November 29, 2022</p>
         <div class="mt-4">
-            <p>{data.description}</p>
+            <p>{post.description}</p>
         </div>
         <div class="flex justify-end">
-            <div class="m-2 badge badge-primary bg-theme-primary">code</div>
-            <div class="m-2 badge badge-primary bg-cyan-300">how-to</div>
+            {#each post.tags as tag}
+                <Badge title={tag} />
+            {/each}
+
         </div>
     </div>
-</div>
+</a>

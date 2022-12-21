@@ -12,6 +12,8 @@
 
 
 <script>
+	import Badge from "./Badge.svelte";
+
 	export let img = '';
 	export let title = '';
 	export let description = '';
@@ -27,7 +29,7 @@
 			{title}
 		</h2>
 		<div class="mb-2 italic">
-			<div class="badge py-3 badge-primary text-white">#{badge}</div>
+			<Badge title={badge}/>
 		</div>
 		<p>{description}</p>
 
