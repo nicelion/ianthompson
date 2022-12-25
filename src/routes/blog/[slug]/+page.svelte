@@ -10,6 +10,12 @@
  
 --->
 <script lang="ts">
+	import Badge from '$lib/components/Badge.svelte';
+import ContentContainer from '$lib/components/blog/ContentContainer.svelte';
+	import HeadingRenderer from '$lib/components/blog/renderers/HeadingRenderer.svelte';
+	import ImageRenderer from '$lib/components/blog/renderers/ImageRenderer.svelte';
+	import ParagraphRenderer from '$lib/components/blog/renderers/ParagraphRenderer.svelte';
+	import StrongRenderer from '$lib/components/blog/renderers/StrongRenderer.svelte';
 	import { onMount } from 'svelte';
   import SvelteMarkdown from 'svelte-markdown'
 
@@ -18,29 +24,57 @@
 // console.log("data", data.data);
     let content = data.attributes.content;
 
-    onMount(async () => {
-        const marked = (await import('marked')).default;
-        content = marked(data.attributes.content);
-    })
+    // onMount(async () => {
+    //     const marked = (await import('marked')).default;
+    //     content = marked(data.attributes.content);
+    // })
+
+console.log(data.attributes.tags);
+
+
+    // const date = new Date().toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"short", day:"numeric"}) 
 
 </script>
 
 <svelte:head>
-    <title>{data.attributes.title}</title>
+    <title>{data.attributes.title} - iancthompson.dev</title>
+    <meta name="description" content={data.attributes.description}>
+
 </svelte:head>
 
-<article class="bg-black-lighter p-5 rounded-md">
-    <h1 class="text-3xl">{data.attributes.title}</h1>
+<article class="bg-black-lighter rounded-md text-cornsilk">
+    <div class="w-full h-1/3">    
+        <img src={`http://localhost:1337${data.attributes.cover.data.attributes.formats.small.url}`} alt="" class="w-full h-72 object-cover rounded-md">  
+    </div>
+    <div class="p-5">
+        <div class="flex justify-between">
+            <div class="space-y-1">
+                <h1 class="text-4xl">{data.attributes.title}</h1>
+                <p>By <a class="url" href="#">Ian Thompson</a> on {new Date(data.attributes.createdAt).toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"short", day:"numeric"}) 
+                }</p>
+            </div>
+            <div class="">
+                {#each data.attributes.tags as tag}
+                    <Badge title={tag} />
+                {/each}
+            </div>
+        </div>
 
-    <div class="space-y-6">
-        <!-- {@html content} -->
-        <SvelteMarkdown source={data.attributes.content} />
+        <div class="space-y-6 mt-5">
+            <!-- {@html content} -->
+            
+            <!-- <div class="flex flex-col text-center justify-center rounded-lg h-96">
+                <img src={`http://localhost:1337${data.attributes.cover.data.attributes.formats.small.url}`} alt="" class="border-2 border-white rounded-lg h-full object-contain">
+                <p>This is a description of the image</p>
+            </div> -->
+
+            <!-- {paragraph: ParagraphRenderer, heading: HeadingRenderer, strong: StrongRenderer, image: ImageRenderer} -->
+            <SvelteMarkdown source={data.attributes.content} renderers={{strong: StrongRenderer, image: ImageRenderer, heading: HeadingRenderer}} />
+        </div>
     </div>
 </article>
 
 <style>
-    h1 {
-        color: blue;
-    }
+
 </style>
 
