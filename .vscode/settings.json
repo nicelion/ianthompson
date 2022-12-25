@@ -1,0 +1,22 @@
+{
+    "psi-header.config": {
+    
+    },
+    "psi-header.templates": [
+
+        {
+          "language": "*",
+          "template": [
+            "<<filerelativepath>>"
+            "<<filename>>",
+            "<<projectName>>",
+            "",
+            "Created by <<author>> on <<filecreated('MMMM Do YYYY')>>",
+            "<<authorEmail>>",
+            "",
+            "https://iancthompson.dev",
+            ""
+          ]
+        }
+      ],
+}
