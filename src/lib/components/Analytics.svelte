@@ -16,11 +16,13 @@
 	import { PUBLIC_MEASUREMENT_ID } from '$env/static/public';
 
     $: {
-        if (typeof gtag !== 'undefined') {
+        if ((typeof gtag !== 'undefined') && window.location.hostname != "localhost") {
             gtag('config', PUBLIC_MEASUREMENT_ID, {
                 page_title: document.title,
                 page_path: $page.url.href
             })
+        } else {
+          console.warn("Google Analytics not loaded!!")
         }
     
     }
