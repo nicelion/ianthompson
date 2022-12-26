@@ -12,8 +12,14 @@
 <script lang="ts">
 	import Badge from '$lib/components/Badge.svelte';
 import ContentContainer from '$lib/components/blog/ContentContainer.svelte';
+	import CodeRenderer from '$lib/components/blog/renderers/CodeRenderer.svelte';
+	import CodespanRenderer from '$lib/components/blog/renderers/CodespanRenderer.svelte';
 	import HeadingRenderer from '$lib/components/blog/renderers/HeadingRenderer.svelte';
+	import HtmlRenderer from '$lib/components/blog/renderers/HTMLRenderer.svelte';
 	import ImageRenderer from '$lib/components/blog/renderers/ImageRenderer.svelte';
+	import LinkRenderer from '$lib/components/blog/renderers/LinkRenderer.svelte';
+	import ListItemRenderer from '$lib/components/blog/renderers/ListItemRenderer.svelte';
+	import ListRenderer from '$lib/components/blog/renderers/ListRenderer.svelte';
 	import ParagraphRenderer from '$lib/components/blog/renderers/ParagraphRenderer.svelte';
 	import StrongRenderer from '$lib/components/blog/renderers/StrongRenderer.svelte';
 	import { onMount } from 'svelte';
@@ -59,8 +65,10 @@ console.log(data.attributes.tags);
                 {/each}
             </div>
         </div>
-
-        <div class="space-y-6 mt-5">
+        <div class="my-5 ">
+            <div class="border border-eerie-black px-7" />
+        </div>
+        <div class="space-y-6 mt-9">
             <!-- {@html content} -->
             
             <!-- <div class="flex flex-col text-center justify-center rounded-lg h-96">
@@ -69,7 +77,7 @@ console.log(data.attributes.tags);
             </div> -->
 
             <!-- {paragraph: ParagraphRenderer, heading: HeadingRenderer, strong: StrongRenderer, image: ImageRenderer} -->
-            <SvelteMarkdown source={data.attributes.content} renderers={{strong: StrongRenderer, image: ImageRenderer, heading: HeadingRenderer}} />
+            <SvelteMarkdown source={data.attributes.content} renderers={{strong: StrongRenderer, image: ImageRenderer, heading: HeadingRenderer, codespan: CodespanRenderer, link: LinkRenderer, html: HtmlRenderer, code: CodeRenderer, list: ListRenderer, listitem: ListItemRenderer}} />
         </div>
     </div>
 </article>
