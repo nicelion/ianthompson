@@ -12,8 +12,6 @@
 
 
 <script>
-
-    import PrismJsRenderer from "./PrismJSRenderer.svelte";
     import Highlight from "svelte-highlight";
     import typescript from "svelte-highlight/languages/typescript";
     import python from "svelte-highlight/languages/python"
