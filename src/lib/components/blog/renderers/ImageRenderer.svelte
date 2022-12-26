@@ -19,7 +19,7 @@
     
 </script>
 
-<div class="flex flex-col justify-center items-center space-y-3">
-    <img src={href} alt={text} class="h-96 border-4 rounded-md shadow-lg">
+<div class="flex flex-col justify-center items-center space-y-3 my-6">
+    <img src={href} alt={text} class="h-96 rounded-md shadow-lg">
     <p class="italic">{text}</p>
 </div>
