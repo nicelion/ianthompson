@@ -54,12 +54,17 @@ console.log(data.attributes.tags);
     </div>
     <div class="p-5">
         <div class="flex justify-between">
-            <div class="space-y-1">
-                <h1 class="text-4xl">{data.attributes.title}</h1>
-                <p>By <a class="url" href="#">Ian Thompson</a> on {new Date(data.attributes.createdAt).toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"short", day:"numeric"}) 
-                }</p>
+            <div class="w-full">
+                <h1 class="text-4xl mb-1">{data.attributes.title}</h1>
+                <p>
+                    By <a class="url" href="#">Ian Thompson</a> on {new Date(data.attributes.createdAt).toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"short", day:"numeric"})}
+                </p>
+                <p class="mt-6 italic text-sm">
+                    {data.attributes.description}
+                </p>
+
             </div>
-            <div class="">
+            <div class="w-1/4">
                 {#each data.attributes.tags as tag}
                     <Badge title={tag} />
                 {/each}

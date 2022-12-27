@@ -28,9 +28,12 @@
     <div class="px-4 w-full">
         <div class="flex w-full justify-between">        
             <h1 class="text-2xl font-bold">{post.title}</h1>
-            <i class="fa-solid fa-thumbtack text-2xl text-yellow-300 hover:animate-wiggle"></i>
+            {#if post.pinned}
+                <i class="fa-solid fa-thumbtack text-2xl text-yellow-300 hover:animate-wiggle"></i>
+
+            {/if}
         </div>
-        <p>By: <a href="#" class="url">{post.author}</a> on November 29, 2022</p>
+        <p>By: <a href="#" class="url">{post.author}</a> on {new Date(post.createdAt).toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"short", day:"numeric"})}</p>
         <div class="mt-4">
             <p>{post.description}</p>
         </div>
