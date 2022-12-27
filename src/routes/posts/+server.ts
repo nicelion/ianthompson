@@ -13,7 +13,7 @@
 import { error } from '@sveltejs/kit';
 /** @type {import('./$types').RequestHandler} */
 export async function GET() {
-    const res = await fetch('http://localhost:1337/api/posts?populate=*');
+    const res = await fetch('http://localhost:1337/api/posts?populate=*&sort[1]=pinned%3Aasc&sort[0]=publishedAt%3Adesc');
     const data = await res.json();
     
     return new Response(JSON.stringify(data));
