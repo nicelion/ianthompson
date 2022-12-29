@@ -10,18 +10,19 @@
  
 */
 
+import type { Post, Response } from '$lib/utils/types/Blog';
 import { error } from '@sveltejs/kit';
 import type { PageServerLoad } from './$types';
  
 export const load = (async ({ params, fetch }) => {
   const post = await fetch(`http://localhost:1337/api/posts?filters[slug][$eq]=${params.slug}&populate=*`);
-  const response = await post.json();
-  
-  
+  const response: Response = await post.json();
+
   if (response.data.length == 1) {
 
+    let blogPost: Post = response.data[0]
     
-    return response.data[0];
+    return blogPost;
   }
  
 

@@ -10,12 +10,13 @@
  
 --->
 
-<script>
-    /** @type {import('./$types').PageData} */
-    export let data;
-
-    console.log("data!!", data);
+<script lang="ts">
 	import PostRow from "$lib/components/blog/PostRow.svelte";
+	import type { Post, Response } from "$lib/utils/types/Blog";
+
+    /** @type {import('./$types').PageData} */
+    export let data: Response;
+
 
 </script>
 

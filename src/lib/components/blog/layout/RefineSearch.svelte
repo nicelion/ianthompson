@@ -11,12 +11,20 @@
 --->
 
 <script>
+	import { goto } from "$app/navigation";
 	import Badge from "$lib/components/Badge.svelte";
 
     let showSidebar = false;
 
+    let searchParam = ""
+
     const handleToggle = () => {
         showSidebar = !showSidebar
+    }
+
+    const handleSearch = () => {
+        // alert("Searching for "+ searchParam)
+        goto(`/blog?q=${searchParam}`, { replaceState: true})
     }
 </script>
 
@@ -30,10 +38,10 @@
 <!-- Full Size -->
 <div id="sidebar" class="w-full md:w-1/4 bg-black-lighter p-2 space-y-5 rounded h-fit md:sticky md:top-20">
     <button class={`md:hidden btn btn-ghost w-full text-xs`} on:click={handleToggle}>{`${showSidebar ? "Close" : "Search Blog"}`}</button>
-    <div class={`${showSidebar ? "" : "hidden"} md:block space-y-5`}>
+    <form on:submit|preventDefault={handleSearch} class={`${showSidebar ? "" : "hidden"} md:block space-y-5`}>
         <h2 class="font-bold text-center text-xl">Refine Your Search</h2>
         <div class="flex flex-col space-y-5">
-            <input type="text" placeholder="Search blog" class="input w-full" />
+            <input type="text" placeholder="Search blog" class="input w-full" bind:value={searchParam}/>
             <button class="btn btn-primary ">Search</button>
         </div>
         <div class="flex flex-col space-y-2">
@@ -53,6 +61,6 @@
             <option>Date - Newest to Oldest</option>
             <option>Date - Oldest to Newest</option>
           </select>
-    </div>
+    </form>
 
 </div>

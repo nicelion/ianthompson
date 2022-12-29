@@ -11,7 +11,7 @@
 --->
 <script lang="ts">
 	import Badge from '$lib/components/Badge.svelte';
-import ContentContainer from '$lib/components/blog/ContentContainer.svelte';
+    import ContentContainer from '$lib/components/blog/ContentContainer.svelte';
 	import CodeRenderer from '$lib/components/blog/renderers/CodeRenderer.svelte';
 	import CodespanRenderer from '$lib/components/blog/renderers/CodespanRenderer.svelte';
 	import HeadingRenderer from '$lib/components/blog/renderers/HeadingRenderer.svelte';
@@ -22,23 +22,12 @@ import ContentContainer from '$lib/components/blog/ContentContainer.svelte';
 	import ListRenderer from '$lib/components/blog/renderers/ListRenderer.svelte';
 	import ParagraphRenderer from '$lib/components/blog/renderers/ParagraphRenderer.svelte';
 	import StrongRenderer from '$lib/components/blog/renderers/StrongRenderer.svelte';
+	
+    import type { Post } from '$lib/utils/types/Blog';
 	import { onMount } from 'svelte';
-  import SvelteMarkdown from 'svelte-markdown'
+    import SvelteMarkdown from 'svelte-markdown'
 
-    export let data;
-
-// console.log("data", data.data);
-    let content = data.attributes.content;
-
-    // onMount(async () => {
-    //     const marked = (await import('marked')).default;
-    //     content = marked(data.attributes.content);
-    // })
-
-console.log(data.attributes.tags);
-
-
-    // const date = new Date().toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"short", day:"numeric"}) 
+    export let data: Post;
 
 </script>
 
@@ -50,7 +39,7 @@ console.log(data.attributes.tags);
 
 <article class="bg-black-lighter rounded-md text-cornsilk">
     <div class="w-full h-1/3">    
-        <img src={`http://localhost:1337${data.attributes.cover.data.attributes.formats.small.url}`} alt="" class="w-full h-72 object-cover rounded-md">  
+        <img src={`http://localhost:1337${data.attributes.cover.data.attributes.url}`} alt="" class="w-full h-72 object-cover rounded-md">  
     </div>
     <div class="p-5">
         <div class="flex justify-between">
@@ -74,14 +63,6 @@ console.log(data.attributes.tags);
             <div class="border border-eerie-black px-7" />
         </div>
         <div class="space-y-6 mt-9">
-            <!-- {@html content} -->
-            
-            <!-- <div class="flex flex-col text-center justify-center rounded-lg h-96">
-                <img src={`http://localhost:1337${data.attributes.cover.data.attributes.formats.small.url}`} alt="" class="border-2 border-white rounded-lg h-full object-contain">
-                <p>This is a description of the image</p>
-            </div> -->
-
-            <!-- {paragraph: ParagraphRenderer, heading: HeadingRenderer, strong: StrongRenderer, image: ImageRenderer} -->
             <SvelteMarkdown source={data.attributes.content} renderers={{strong: StrongRenderer, image: ImageRenderer, heading: HeadingRenderer, codespan: CodespanRenderer, link: LinkRenderer, html: HtmlRenderer, code: CodeRenderer, list: ListRenderer, listitem: ListItemRenderer}} />
         </div>
     </div>
