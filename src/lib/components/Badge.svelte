@@ -19,4 +19,4 @@
 
 </script>
 
-<div class="m-1 badge py-3 text-white" style={`background-color: #${color};`}>#{title}</div>
+<a href={`/blog?tag=${title}`} class="m-1 badge py-3 text-white hover:opacity-75 transition-all ease-in-out duration-200" style={`background-color: #${color};`}>#{title}</a>
