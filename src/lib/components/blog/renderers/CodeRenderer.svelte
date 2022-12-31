@@ -11,13 +11,37 @@
 --->
 
 
-<script>
+<script lang="ts">
+	import { onMount } from "svelte";
     import Highlight from "svelte-highlight";
-    import typescript from "svelte-highlight/languages/typescript";
-    import python from "svelte-highlight/languages/python"
+    // import javascript from "svelte-highlight/languages/javascript";
+    // import python from "svelte-highlight/languages/python"
+    // import html
+
+    import {python, javascript, cpp} from "svelte-highlight/languages"
+
     import atomOneDark from "svelte-highlight/styles/atom-one-dark";
-    export let lang
-    export let text
+    
+    export let lang: string
+    export let text: string
+
+    let language: any = javascript
+
+    onMount(() => {
+        switch (lang) {
+            case "javascript": 
+                language = javascript
+                break;
+            case "python":
+                language = python;
+                break;
+            case "cpp":
+                language = cpp;
+                break;
+            default:
+                language = javascript;
+        }
+    })
 </script>
 
 <svelte:head>
@@ -26,7 +50,7 @@
 
 <div class="mockup-code bg-code-background shadow-lg" style="background: #282c34;">
     <div class="border-t border-eerie-black">
-        <Highlight language={python} code={text} />
+        <Highlight {language} code={text} />
     </div>
 </div>
 
