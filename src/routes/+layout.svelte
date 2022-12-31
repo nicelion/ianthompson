@@ -108,6 +108,11 @@
 	
 </script>
 
+<svelte:head>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4487298036056646"
+     crossorigin="anonymous"></script>
+</svelte:head>
+
 <svelte:window on:scroll={pageScroll} bind:scrollY={pageYOffset} />
 
 <Analytics />
