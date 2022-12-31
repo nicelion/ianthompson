@@ -11,7 +11,8 @@
 --->
 
 <script lang="ts">
-	import PostRow from "$lib/components/blog/PostRow.svelte";
+	import AdContainer from "$lib/components/AdContainer.svelte";
+import PostRow from "$lib/components/blog/PostRow.svelte";
 	import type { Post, Response } from "$lib/utils/types/Blog";
 
     /** @type {import('./$types').PageData} */
@@ -25,7 +26,15 @@
 </svelte:head>
 
 <div class="space-y-4">
-    {#each data.data as post}
+    {#each data.data as post, i}
         <PostRow data={post} />
+        <!-- 
+            Here, were checking the post row index to determine if we will display an ad or not. We want to display an ad every nth post, which is determined by changing the number after the modulo operator. 
+
+            Then, we want to ensure that we don't place an ad after the first post and we don't place an ad at the last post. The reasoning for the later is because we already have an ad placed at the end in +layout, since we always want to display an ad at the end of the PostRows
+        -->
+        {#if ((i % 2 == 0) && (i != data.data.length - 1) && (i != 0)) }
+            <AdContainer />
+        {/if}
     {/each}
 </div>

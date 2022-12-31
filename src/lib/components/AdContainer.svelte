@@ -14,6 +14,11 @@
 
 </script>
 
-<div class="w-full bg-red-400 text-center">
-    this is an ad!
+<div class="w-full my-3">
+    <div class="w-full bg-red-400 text-center py-6 text-black">
+        this is an ad!
+    </div>
+    <div class="text-right text-xs mt-2">
+        <label for="why-ads-modal" class="hover:underline cursor-pointer">Why ads?</label>
+    </div>
 </div>

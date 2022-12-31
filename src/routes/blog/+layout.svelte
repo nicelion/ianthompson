@@ -11,13 +11,17 @@
 --->
 
 <script>
+	import AdContainer from "$lib/components/AdContainer.svelte";
 	import Badge from "$lib/components/Badge.svelte";
 	import RefineSearch from "$lib/components/blog/layout/RefineSearch.svelte";
 
 </script>
 
 <div class="flex flex-col md:flex-row w-full h-full p-4 ">
-    <RefineSearch />
+    <div class="w-full md:w-1/4 md:space-y-20 ">
+      <RefineSearch />
+      <AdContainer />
+    </div>
     <main class="w-full md:px-8">
         <div class="text-sm breadcrumbs">
             <ul>
@@ -25,5 +29,7 @@
             </ul>
           </div>
         <slot />
+        <AdContainer />
+
     </main>
 </div>

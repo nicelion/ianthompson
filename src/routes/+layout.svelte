@@ -17,6 +17,7 @@
 
 
 	import MadeWith from '$lib/components/footer/made-with.svelte';
+	import ModalHolder from '$lib/components/modals/ModalHolder.svelte';
 	import { onMount } from 'svelte';
 	import '../app.css';
 
@@ -298,3 +299,6 @@
 	<a href="https://github.com/nicelion/ianthompson" target="_blank" rel="noreferrer">See an issue? Create a pull request!!</a>
 	<i class="fa-solid fa-code-pull-request text-base group-hover:animate-wiggle"></i>
 </div>
+
+
+<ModalHolder />

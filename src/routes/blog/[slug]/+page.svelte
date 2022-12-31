@@ -42,7 +42,7 @@
         <img src={`http://localhost:1337${data.attributes.cover.data.attributes.url}`} alt="" class="w-full h-72 object-cover rounded-md">  
     </div>
     <div class="p-5">
-        <div class="flex justify-between">
+        <div class="flex flex-col md:flex-row justify-between">
             <div class="w-full">
                 <h1 class="text-4xl mb-1">{data.attributes.title}</h1>
                 <p>
@@ -53,7 +53,7 @@
                 </p>
 
             </div>
-            <div class="w-1/4">
+            <div class="md:w-1/4">
                 {#each data.attributes.tags as tag}
                     <Badge title={tag} />
                 {/each}
