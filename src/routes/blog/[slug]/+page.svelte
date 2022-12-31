@@ -65,6 +65,11 @@
         <div class="space-y-6 mt-9">
             <SvelteMarkdown source={data.attributes.content} renderers={{strong: StrongRenderer, image: ImageRenderer, heading: HeadingRenderer, codespan: CodespanRenderer, link: LinkRenderer, html: HtmlRenderer, code: CodeRenderer, list: ListRenderer, listitem: ListItemRenderer}} />
         </div>
+        <div class="mt-24 text-xs">
+            <p class="text-neutral-content">
+                * This post may contain affiliate marketing links. By clicking these links, a portion of money you spend on the websites you are referred to may be shared with the owner of this site.
+            </p>
+        </div>
     </div>
 </article>
 
