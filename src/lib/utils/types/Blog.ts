@@ -36,6 +36,7 @@ export interface Post {
         title: string,
         description: string,
         content: string,
+        toc?: string,
         createdAt: string,
         updatedAt: string,
         publishedAt: string,
