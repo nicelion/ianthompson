@@ -16,4 +16,5 @@
     export let text: string = undefined
 </script>
 
-<a href={href} target="_blank" rel="noreferrer" class="url">{text}</a>
+<!-- <a href={href} >{text}</a> -->
+<a {href} {title} target="_blank" rel="noreferrer" class="url"><slot></slot></a>

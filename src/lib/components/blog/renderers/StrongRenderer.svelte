@@ -14,4 +14,4 @@
     export let text: string
 </script>
 
-<span class="font-bold">{text}djsd</span>
+<strong class="font-bold"><slot></slot></strong>
