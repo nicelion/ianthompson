@@ -24,7 +24,7 @@
 
     const handleSearch = () => {
         // alert("Searching for "+ searchParam)
-        goto(`/blog?q=${searchParam}`, { replaceState: true})
+        goto(`/blog?q=${searchParam}`, { replaceState: true })
     }
 </script>
 
@@ -56,11 +56,11 @@
             </div>
         </div>
     
-        <select class="select w-full">
+        <!-- <select class="select w-full">
             <option disabled selected>Sort By</option>
             <option>Date - Newest to Oldest</option>
             <option>Date - Oldest to Newest</option>
-          </select>
+          </select> -->
     </form>
 
 </div>

@@ -12,32 +12,62 @@
 
 import { error } from '@sveltejs/kit';
 // import { Response } from '$lib/utils/types/Blog';
+import qs from "qs"
 
 /** @type {import('./$types').RequestHandler} */
 export async function GET({url}) {
 
-    // console.log("URL IS", url);
-    
-    let baseURL = "http://localhost:1337/api/posts?populate=*&sort[0]=publishedAt%3Adesc"
+    let baseURL = "http://localhost:1337/api/posts?"
+
+    let baseQuery = {
+        populate: "*",
+        sort: ["publishedAt:desc"],
+        filters: {}
+    }
 
     let searchParams = url.searchParams.get("q")
     let tagsParam = url.searchParams.get("tag")
 
-    console.log("SEARCH PARMAS IN SERVER", searchParams);
+    // console.log("SEARCH PARMAS IN SERVER", searchParams);
 
     if (searchParams != "null") {
         console.log("\tsestch present");
-        
-        baseURL = baseURL + `&filters[title][$contains]=${searchParams}`
+        baseQuery.filters = {
+            ...baseQuery.filters, 
+            $or: [
+                {
+                    title: {
+                        $containsi: searchParams,
+                    }
+                },
+                {
+                    description: {
+                        $containsi: searchParams
+                    }
+                }
+            ]
+        }
     }
 
     if (tagsParam != "null") {
-        baseURL = baseURL + `&filters[tags][$contains]=${tagsParam}`
+        baseQuery.filters = {
+            ...baseQuery.filters,
+            tags: {
+                $contains: tagsParam
+            }
+        }
     }
 
-    console.log("\ttring to access " + baseURL);
+    const query = qs.stringify({
+        ...baseQuery
+    }, {
+        encodeValuesOnly: true
+    })
+
+    console.log(`QUERY IS /api/posts?${query}`);
+
     
-    const res = await fetch(baseURL);
+    const res = await fetch(`${baseURL}${query}`);
     const data = await res.json() as Response;
     
     return new Response(JSON.stringify(data));

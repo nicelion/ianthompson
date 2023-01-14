@@ -30,8 +30,10 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@types/qs": "^6.9.7",
 		"daisyui": "^2.22.0",
 		"marked": "^4.2.4",
+		"qs": "^6.11.0",
 		"svelte-confetti": "^1.2.2",
 		"svelte-markdown": "^0.2.3",
 		"svelte-notifications": "^0.9.98"

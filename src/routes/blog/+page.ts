@@ -28,11 +28,15 @@ import type { Response } from "$lib/utils/types/Blog"
 
 import { error } from '@sveltejs/kit';
 import type { PageLoad } from './$types';
+
+// const qs = require("qs")
+
  
 export const load = (async ({ fetch, url }) => {
 
     // console.log("url!!", url.searchParams.get("q"));
   
+    // The "search parameters" that are to be typed into the text field
     let searchParam: string | null = null
     let tagsParam: string | null = null
 
