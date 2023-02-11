@@ -14,7 +14,7 @@
     <title>Let's Work Together!</title>
 </svelte:head>
 
-<div class="px-2 md:px-8 py-9 text-cornsilk leading-relaxed">
+<div class="px-2 lg:mx-24 md:px-8 py-9 text-cornsilk leading-relaxed">
     <div class="p-6 rounded-md bg-black-lighter flex flex-row-reverse">
         <!-- <div class="w-1/5 h-80 overflow-hidden rounded-full rounded-br-sm border-theme-primary border-8 flex justify-center items-center">
             <img id="main-img" src="/img/ian-thompson.jpg" alt="A portrait of Ian Thompson smiling" class="h-full  hover:scale-110 ease-in-out duration-1000 transition-all"/>
