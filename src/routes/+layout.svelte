@@ -11,6 +11,7 @@
 --->
 
 <script lang="ts">
+	import { fade, fly } from 'svelte/transition';
 
 	import { page } from '$app/stores'
 	import Analytics from '$lib/components/Analytics.svelte';
@@ -21,6 +22,9 @@
 	import '../app.css';
 
 	var pageYOffset = 0
+
+	var showImage = false
+	var showMessage = false
 
 	// console.log($page.url);
 	
@@ -65,20 +69,24 @@
 			}
 
 			if (message.getBoundingClientRect().bottom < header.getBoundingClientRect().bottom) {
-				logo.classList.add('opacity-100');
-				logo.classList.remove('opacity-0');
+				showMessage = true;
+				// logo.classList.add('opacity-100');
+				// logo.classList.remove('opacity-0');
 			} else {
-				logo.classList.remove('opacity-100');
+				showMessage = false
+				// logo.classList.remove('opacity-100');
 				header.classList.remove('border-theme-primary');
-				logo.classList.add('opacity-0');
+				// logo.classList.add('opacity-0');
 			}
 
 			if (mainImg.getBoundingClientRect().bottom < header.getBoundingClientRect().bottom) {
-				logoImg.classList.add('opacity-100');
-				logoImg.classList.remove('opacity-0');
+				showImage = true
+				// logoImg.classList.add('opacity-100');
+				// logoImg.classList.remove('opacity-0');
 			} else {
-				logoImg.classList.remove('opacity-100');
-				logoImg.classList.add('opacity-0');
+				showImage = false
+				// logoImg.classList.remove('opacity-100');
+				// logoImg.classList.add('opacity-0');
 			}
 		}
 
@@ -120,20 +128,24 @@
 <nav class="navbar bg-eerie-black z-50 sticky top-0 w-full border-transparent border-b transition-opacity duration-200 ease-in-out" id="header">
 	<div class="flex-1">
 		<a href="/" class="h-full w-full flex items-center space-x-2 md:space-x-5">
-			<div class="ml-2 h-7 sm:h-14">
-				<img
-					id="logo-img"
-					src="/img/ian-thompson.jpg"
-					alt=""
-					class="hidden sm:block h-full rounded-full rounded-br-sm border-theme-primary border-4 transition-all ease-in-out delay-75 opacity-0"
-				/>
-			</div>
-			<h1
-				id="logo"
-				class="opacity-0 text-sm sm:text-md text-white bg-theme-primary p-1 px-4 rounded-xl rounded-bl-none w-fit mb-2 font-extrabold font-mono transition-all ease-in-out delay-75"
-			>
-				Hi, I'm Ian.
-			</h1>
+			{#if showImage}
+				<div class="ml-2 h-7 sm:h-14" in:fly="{{ x: -200, duration: 500 }}" out:fly="{{ x: -200, duration: 500 }}">
+					<img
+						id="logo-img"
+						src="/img/ian-thompson.jpg"
+						alt=""
+						class="hidden sm:block h-full rounded-full rounded-br-sm border-theme-primary border-4 transition-all ease-in-out delay-75"
+					/>
+				</div>
+			{/if}
+			
+			{#if showMessage}
+				<p
+					id="logo"
+					class="text-sm sm:text-md text-white bg-theme-primary p-1 px-4 rounded-xl rounded-bl-none w-fit mb-2 font-extrabold font-mono transition-all ease-in-out delay-75" in:fly="{{ x: -200, duration: 500 }}" out:fly="{{ x: -200, duration: 500 }}">
+					Hi, I'm Ian.
+				<p/>
+			{/if}
 		</a>
 	</div>
 	<div class="flex-none z-40">
