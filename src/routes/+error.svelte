@@ -36,7 +36,7 @@
   </div>
 
   <div class="group p-2 px-4 text-md flex w-full items-center space-x-2 justify-center  hover:underline">
-    <a href="https://github.com/nicelion/ianthompson" target="_blank" rel="noreferrer">Think this error could be fixed? Create a pull request!!</a>
+    <a href="https://github.com/nicelion/ianthompson/issues" target="_blank" rel="noreferrer">Think this error could be fixed? Create an issue on GitHub!!</a>
     <i class="fa-solid fa-code-pull-request text-base group-hover:animate-wiggle"></i>
   </div>
   
