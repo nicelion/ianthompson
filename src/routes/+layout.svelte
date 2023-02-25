@@ -171,6 +171,7 @@
 					<li><a href="/#about">About</a></li>
 					<li><a href="/#resume">Resume</a></li>
 					<li><a href="/#projects">Projects</a></li>
+					<li><a href="/posts">Posts</a></li>
 					<li><a href="/lets-chat">Contact</a></li>
 				</ul>
 			</li>
@@ -178,6 +179,7 @@
 				<li><a href="/#about">About</a></li>
 				<li><a href="/#resume">Resume</a></li>
 				<li><a href="/#projects">Projects</a></li>
+				<li><a href="/posts">Posts</a></li>
 				<li><a href="/lets-chat">Contact</a></li>
 			</ul>
 		</ul>

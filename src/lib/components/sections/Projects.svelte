@@ -75,6 +75,9 @@
 		<Card img="/img/pcbtree.JPG" title="PCBTree" description="PCBTree is a project I created while in high school. For this project, I designed and printed PCBs in the shape of a Christmas tree. I then programmed an ATTiny85 to measure a potentiometer which was used to determine the flashing speed of the LEDs." badge="code">
 			<ViewOnGitHubButton url="https://github.com/nicelion/PCBTree" />
 		</Card>
+		<Card img="/img/hymns.png" title="Hymns & Hops" description="This open-source project was developed for Hymns & Hops, a local event that brings worship and beer together in Greenville, SC. This app contains a virtual hymnal." badge="code">
+			<ViewOnGitHubButton url="https://github.com/nicelion/hymns" />
+		</Card>
 		<Card img="https://f4.bcbits.com/img/a1458780141_16.jpg" title="a long medley in the same direction by Saint Cecilia & the Melody Makers" description="During my internship with Fellowship Greenville, this album was recorded and published under the artist 'Saint Cecilia & the Melody Makers'. In reality, my contributions to this project were minimal, however, present nonetheless." badge="music">
 			<!-- <ViewOnGitHubButton url="https://github.com/nicelion/PCBTree" /> -->			
 			<a target="_blank" rel="noreferrer" href="https://saintceciliaandthemelodymakers.bandcamp.com/album/a-long-medley-in-the-same-direction" class="px-4 py-2 rounded-lg text-center flex items-center align-middle border text-white hover:bg-white hover:text-black transition duration-200 ease-in-out">
