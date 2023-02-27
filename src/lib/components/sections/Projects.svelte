@@ -69,6 +69,12 @@
 			<ViewOnGitHubButton url="https://github.com/nicelion/ianthompson" />
 
 		</Card>
+		<Card img="/img/hymns-and-hops-songbook.png" title="Hymns & Hops Online Songbook" description="This is an open-source project I started to serve as a virtual hymnal for Hymns & Hops, an event in Greenville, SC where people gather to enjoy beer and song. This application is not endorsed by Hymns & Hops or its organizers." badge="code">
+			<a target="_blank" rel="noreferrer" href="https://hymns-seven.vercel.app" class="px-4 py-2 rounded-lg text-center flex items-center align-middle border text-white hover:bg-white hover:text-black transition duration-200 ease-in-out">
+				<p class="text-lg">View Project</p>
+			</a>
+			<ViewOnGitHubButton url="https://github.com/nicelion/hymns" />
+		</Card>
 		<Card img="https://obniz.com/doc/reference/m5stickc/images/m5stickc.jpg" title="M5 TCP IRBlaster" description="M5 TCP IRBlaster is a project I worked on while an intern at Fellowship Greenville. This project utilized an M5StickC to decode and send IR signals to power on/off devices. The M5Stick sets up a TCP server which was communicated to via BitFoucs' Companion and via Cronicle to automate Sunday mornings." badge="code"> 
 			<ViewOnGitHubButton url="https://github.com/nicelion/M5IRBlaster" />
 		</Card>
