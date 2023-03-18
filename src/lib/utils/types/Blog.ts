@@ -10,10 +10,12 @@
  
 */
 
+import type { Tag } from "./Tag"
+
 /**
  * Initial response from API
  */
-export interface Response {
+export interface PostResponse {
     data: [Post],
     meta: {
         pagination: Pagination
@@ -41,10 +43,17 @@ export interface Post {
         updatedAt: string,
         publishedAt: string,
         slug: string,
-        tags: [string],
         pinned: boolean,
         featured: boolean,
-        cover: Cover
+        cover: Cover,
+        tags: {
+            data: [
+                {
+                    id: number,
+                    attributes: Tag
+                }
+            ]
+        }
     }
 }
 

@@ -10,53 +10,68 @@
  
 */
 
-import type { Response } from "$lib/utils/types/Blog"
-
-// /** @type {import('./$types').PageLoad} */
-// export async function load({fetch, params}) {
-    
-//   console.log("PRARMS", params);
-  
-  
-
-//   const res = await fetch('/posts');
-//   const response: Response = await res.json();
-  
-//   return response
-
-//   }
-
+import type { PostResponse } from "$lib/utils/types/Blog"
 import { error } from '@sveltejs/kit';
 import type { PageLoad } from './$types';
 
 // const qs = require("qs")
 
  
-export const load = (async ({ fetch, url }) => {
+// export const load = (async ({ fetch, url }) => {
 
-    // console.log("url!!", url.searchParams.get("q"));
+//     // console.log("url!!", url.searchParams.get("q"));
   
-    // The "search parameters" that are to be typed into the text field
-    let searchParam: string | null = null
-    let tagsParam: string | null = null
+//     // The "search parameters" that are to be typed into the text field
+//     let searchParam: string | null = null
+//     let tagsParam: string | null = null
 
-    if (url.searchParams.get("q") != null) {
-      console.log("From page, this isnot nyll!!");
-      searchParam = url.searchParams.get("q") as string
-    }
+//     if (url.searchParams.get("q") != null) {
+//       console.log("From page, this isnot nyll!!");
+//       searchParam = url.searchParams.get("q") as string
+//     }
 
-    if (url.searchParams.get("tag") != null) {
-      tagsParam = url.searchParams.get("tag") as string
-    }
+//     if (url.searchParams.get("tag") != null) {
+//       tagsParam = url.searchParams.get("tag") as string
+//     }
 
-    console.log("accessing " + `/api/posts?q=${searchParam}`);
+//     console.log("accessing " + `/api/posts?q=${searchParam}`);
     
 
-    const res = await fetch(`/api/posts?q=${searchParam}&tag=${tagsParam}`);
-    const response: Response = await res.json();
+//     const res = await fetch(`/api/posts?q=${searchParam}&tag=${tagsParam}`);
+//     const response: Response = await res.json();
   
-    return response
+//     return response
 
  
-  throw error(404, 'Not found');
-}) satisfies PageLoad;
+//   throw error(404, 'Not found');
+// }) satisfies PageLoad;
+
+export const load = (async ({ fetch, url }) => {
+    
+      // The "search parameters" that are to be typed into the text field
+      let searchParam: string | null = null
+      let tagsParam: string | null = null
+  
+      if (url.searchParams.get("q") != null) {
+        console.log("From page, this isnot nyll!!");
+        searchParam = url.searchParams.get("q") as string
+      }
+  
+      if (url.searchParams.get("tag") != null) {
+        tagsParam = url.searchParams.get("tag") as string
+      }
+  
+      console.log("\taccessing " + `/api/posts?q=${searchParam}`);
+      
+  
+      /**
+       * Forward the querystring to the server and query Strapi from there
+       */
+      const res = await fetch(`/api/posts?q=${searchParam}&tag=${tagsParam}`);
+      const response: PostResponse = await res.json();
+    
+      return response
+  
+   
+    throw error(404, 'Not found');
+  }) satisfies PageLoad;

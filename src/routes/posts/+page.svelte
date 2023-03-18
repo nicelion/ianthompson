@@ -13,20 +13,25 @@
 <script lang="ts">
 	import AdContainer from "$lib/components/AdContainer.svelte";
     import PostRow from "$lib/components/blog/PostRow.svelte";
-	import type { Post, Response } from "$lib/utils/types/Blog";
+	import type { Post, PostResponse } from "$lib/utils/types/Blog";
+    
     /** @type {import('./$types').PageData} */
-    export let data: Response;
+    export let data: PostResponse;
+    
     $: (data = data)
+
+
 </script>
 
 <svelte:head>
     <title>The Blog - iancthompson.dev</title>
 </svelte:head>
 
-<div class="space-y-4">
+<div id="post contianer" class="space-y-4">
     {#if data.data.length != 0}
             {#each data.data as post, i}
                 <PostRow data={post} />
+                <!-- <p>{post.attributes.title}</p> -->
                 <!-- 
                     Here, were checking the post row index to determine if we will display an ad or not. We want to display an ad every nth post, which is determined by changing the number after the modulo operator. 
         
