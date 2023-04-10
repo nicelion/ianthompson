@@ -35,8 +35,11 @@
 						small business, and for my role in educational research.
 					</p>
 					<p>
-						I am very interested in pursing graduate school and hoping to find a career where I can
+						Upon my May 2024 graduation, I will be certified to teach 2nd-6th grades in the State of South Carolina, though I hope to find myself in a middle school position. I also am very interested in pursing graduate school, where I hope to find a career where I can
 						combine my passion for computer science and education.
+					</p>
+					<p>
+						In my free time, I enjoy listening to music and being outdoors. I am also a volunteer <a class="url" href="https://younglife.org/get-involved/for-every-kid/">Wyldlife</a> leader at a middle school in Anderson, SC.
 					</p>
 					<!-- <p>
 						If you are interested in my political views, please <a href="/political-views" class="url"> click here.</a>
@@ -101,11 +104,23 @@
 				<p>Bachelor of Arts in Elementary Education</p>
 				<p>August 2020 - Present</p>
 				<br />
-				<p>Activites:</p>
+				<p class="border-b mb-2">Activites:</p>
 				<p>
 					Undergraduate research, College of Education Undergraduate Student Advisory Board,
 					YoungLife
 				</p>
+				<br />
+				<p class="border-b mb-2">Honors:</p>
+				<p>Dean's List - Fall 2022</p>
+				<p>Dean's List - Spring 2022</p>
+				
+				<br />
+				<p class="border-b mb-2">Certifications:</p>
+				<p>Group 1 Investigators Conducting Social and Behavioral Science Research (SBR) at Clemson University</p>
+
+				<br />
+				<p class="border-b mb-2">Committee:</p>
+				<p><span class="italic">Program Committeee</span>, International Conference on Quantitative Ethnography (ICQE) 2023</p>
 			</Experience>
 		</Collapse>
 
@@ -135,6 +150,9 @@
 					<li>
 						Work alongside professors and graduate students in the IDEA (Inclusive Digital Education
 						and Analytics) Lab in the College of Education
+					</li>
+					<li>
+						Assist in the writing of academic literature
 					</li>
 					<li>Assist in the development and design of educational software</li>
 					<li>
@@ -186,7 +204,7 @@
 				<p>August 2020 - Present</p>
 				<br />
 				<p class="leading-relaxed">
-					Wyldlife is a ministry under YoungLife for middle school students. In this role, I have
+					<a class="url" href="https://younglife.org/get-involved/for-every-kid/">Wyldlife</a> is a ministry under YoungLife for middle school students. In this role, I have
 					connected with many students and families at McCants Middle School in Anderson, SC. I am
 					on a team of other college students who plan weekly gatherings, aka "club", and other
 					events with the goal of sharing the Gospel of Christ to our middle school friends.
