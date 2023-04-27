@@ -39,7 +39,7 @@
 						combine my passion for computer science and education.
 					</p>
 					<p>
-						In my free time, I enjoy listening to music and being outdoors. I am also a volunteer <a class="url" href="https://younglife.org/get-involved/for-every-kid/">Wyldlife</a> leader at a middle school in Anderson, SC.
+						In my free time, I enjoy listening to music and being outdoors. I am also a volunteer <a class="url" href="https://younglife.org/get-involved/for-every-kid/">WyldLife</a> leader at a middle school in Anderson, SC.
 					</p>
 					<!-- <p>
 						If you are interested in my political views, please <a href="/political-views" class="url"> click here.</a>
@@ -64,11 +64,13 @@
 				<Interest interest="#Data-privacy" color="bg-purple-400" />
 				<Interest interest="#UX-research" color="bg-purple-400" />
 				<Interest interest="#Childrens-online-privacy" color="bg-purple-400" />
-
 				<Interest interest="#Computer-science-education" color="bg-red-400" />
 				<Interest interest="#Privacy-education" color="bg-red-400" />
 				<Interest interest="#Digital-citizenship" color="bg-red-400" />
 				<Interest interest="#Learning-environments" color="bg-red-400" />
+				<Interest interest="#Elementary-education" color="bg-teal-400" />
+				<Interest interest="#Middle-level-education" color="bg-teal-400" />
+
 			</div>
 		</div>
 		<div class="p-6  rounded-md border-2 border-theme-primary space-y-4 w-full lg:w-1/2 xl:w-1/3">
@@ -82,8 +84,8 @@
 				<Interest interest="TailwindCSS" color="bg-green-400" url="https://tailwindcss.com/" />
 				<Interest interest="Svelte" color="bg-teal-400" url="https://svelte.dev/" />
 				<Interest interest="NodeJS" color="bg-teal-400" url="https://nodejs.org/en/" />
+				<Interest interest="TypeScript" color="bg-teal-400" url="https://www.typescriptlang.org/" />
 				<Interest interest="React" color="bg-teal-400" url="https://reactjs.org/" />
-
 				<Interest interest="Firebase" color="bg-teal-400" url="https://firebase.google.com/" />
 				<Interest interest="VSCode" color="bg-indigo-400" url="https://code.visualstudio.com/" />
 				<Interest interest="Xcode" color="bg-indigo-400" url="https://developer.apple.com/xcode/" />
@@ -199,12 +201,12 @@
 			</Experience>
 		</Collapse>
 		<Collapse title="Volunteering">
-			<Experience title="Wyldlife Leader @ McCants Middle School" fa="fa-solid fa-handshake-angle">
+			<Experience title="WyldLife Leader @ McCants Middle School" fa="fa-solid fa-handshake-angle">
 				<p>Tri-County YoungLife | Anderson, SC</p>
 				<p>August 2020 - Present</p>
 				<br />
 				<p class="leading-relaxed">
-					<a class="url" href="https://younglife.org/get-involved/for-every-kid/">Wyldlife</a> is a ministry under YoungLife for middle school students. In this role, I have
+					<a class="url" href="https://younglife.org/get-involved/for-every-kid/">WyldLife</a> is a ministry under YoungLife for middle school students. In this role, I have
 					connected with many students and families at McCants Middle School in Anderson, SC. I am
 					on a team of other college students who plan weekly gatherings, aka "club", and other
 					events with the goal of sharing the Gospel of Christ to our middle school friends.

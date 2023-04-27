@@ -28,7 +28,7 @@
                 <div class="space-y-2">
                     <h2 class="text-xl underline">Internships</h2>
                     <p>
-                        Do you have or know of an internship in a field I might be interested in? I currently have no commitments for the Summer 2023 and Summer 2024. I am interested in research based internships, specifically in the fields listed <a class="url" href="/#about">here</a>, however I am open to other fields as well!
+                        Do you have or know of an internship in a field I might be interested in? I currently have no commitments for Summer 2024. I am interested in research based internships, specifically in the fields listed <a class="url" href="/#about">here</a>, however I am open to other fields as well!
                     </p>
                 </div>
                 <div class="space-y-2">
