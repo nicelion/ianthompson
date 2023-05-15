@@ -10,9 +10,12 @@
  
 --->
 
-<script>
+<script lang="ts">
 	import { goto } from "$app/navigation";
-	// import Badge from "$lib/components/Badge.svelte";
+	import Badge from "$lib/components/blog/Badge.svelte";
+	import type { Tag } from "$lib/types/Tag";
+
+    export let tags: Tag = []
 
     let showSidebar = false;
 
@@ -24,15 +27,11 @@
 
     const handleSearch = () => {
         // alert("Searching for "+ searchParam)
-        goto(`/blog?q=${searchParam}`, { replaceState: true })
+        goto(`/posts?q=${searchParam}`, { replaceState: true })
     }
 </script>
 
 
-<!-- MOBILE
-<div class="" id="sidebar">
-    show me the sidebar
-</div> -->
 
 
 <!-- Full Size -->
@@ -47,20 +46,18 @@
         <div class="flex flex-col space-y-2">
             <h2>Filter by Tag:</h2>
             <div class="flex flex-wrap">
-                <!-- <Badge title="code"/>
-                <Badge title="opinions"/>
-                <Badge title="politics"/>
-                <Badge title="religion"/>
-                <Badge title="personal"/>
-                <Badge title="how-to"/> -->
+                {#each tags as tag}
+                    <Badge title={tag.attributes.tag} color={tag.attributes.color}/>
+                {/each}
+
             </div>
         </div>
     
-        <!-- <select class="select w-full">
+        <select class="select w-full">
             <option disabled selected>Sort By</option>
             <option>Date - Newest to Oldest</option>
             <option>Date - Oldest to Newest</option>
-          </select> -->
+          </select>
     </form>
 
 </div>

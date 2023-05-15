@@ -12,13 +12,16 @@
 
 <script lang="ts">
 	import RefineSearch from "$lib/components/blog/RefineSearch.svelte";
+	import type { Tag } from "$lib/types/Tag";
 
+   /** @type {import('./$types').PageData} */
+   export let data;   
 
 </script>
 
 <div class="flex flex-col md:flex-row w-full h-full p-4 ">
     <div class="w-full md:w-1/4 md:space-y-20 ">
-        <RefineSearch />
+        <RefineSearch tags={data.tags}/>
         
       <!-- <RefineSearch />
       <AdContainer /> -->
