@@ -12,13 +12,15 @@
 
 
 <script>
+	import { fade, fly } from 'svelte/transition';
+
 	export let img = '';
 	export let title = '';
 	export let description = '';
 	export let badge = '';
 </script>
 
-<div target="_blank" class="card  bg-base-100  font-mono max-w-md">
+<div target="_blank" class="card  bg-base-100  font-mono max-w-md" out:fade in:fade>
 	<div class="overflow-hidden h-3/5 rounded-t-md">
 		<img src={img} alt={title} class="object-cover hover:scale-125 ease-in duration-1000 h-full w-full rounded-t-md"/>	
 	</div>
