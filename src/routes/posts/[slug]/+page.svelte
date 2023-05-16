@@ -23,15 +23,44 @@
 	import ListRenderer from '$lib/components/blog/renderers/ListRenderer.svelte';
 	import ParagraphRenderer from '$lib/components/blog/renderers/ParagraphRenderer.svelte';
 	import StrongRenderer from '$lib/components/blog/renderers/StrongRenderer.svelte';
+    import TOCLinkRenderer from '$lib/components/blog/renderers/TOCLinkRenderer.svelte';
+
 	// import TocLinkRenderer from '$lib/components/blog/renderers/TOCLinkRenderer.svelte';
 	
     import type { Post } from '$lib/types/Blog';
 	import { onMount } from 'svelte';
     import SvelteMarkdown from 'svelte-markdown'
+    // import toc from "markdown-toc"
+    
     export let data: Post;
     let post: Post = data
 
     console.log("POST!!!!", post);
+
+    function generateTableOfContents(markdown) {
+    const headings = markdown.match(/^(#{1,6})\s+(.*)$/gm);
+    let tableOfContents = '';
+    let currentLevel = 0;
+    let index = 1;
+
+    headings.forEach(heading => {
+        const level = heading.indexOf(' ')
+        const text = heading.slice(level + 1);
+
+        const link = text.toLowerCase().replace(/\s/g, '-')
+
+        // console.log(level, text, link);
+
+        tableOfContents = tableOfContents + '\t'.repeat(level - 1) + `- [${text}](#${link})` + "\n"
+    })
+
+
+  return tableOfContents;
+}
+
+
+console.log( generateTableOfContents(post.attributes.content));
+
     
 </script>
 
@@ -46,7 +75,7 @@
         <img src={`http://localhost:1337${data.attributes.cover.data.attributes.url}`} alt="" class="w-full h-72 object-cover rounded-md">  
     </div>
     <div class="p-5">
-        <div class="flex flex-col md:flex-row justify-between">
+        <div class="flex flex-col md:flex-row justify-between border-b-2 border-eerie-black px-7 pb-4">
             <div class="w-full">
                 <h1 class="text-4xl mb-1">{post.attributes.title}</h1>
                 <p>
@@ -63,17 +92,14 @@
                 {/each}
             </div>
         </div>
-        <div class="my-5 ">
-            <div class="border border-eerie-black px-7" />
-        </div>
+
         <div class="space-y-6 mt-9">
-            <!-- <SvelteMarkdown source={data.attributes.content} renderers={{image: ImageRenderer, heading: HeadingRenderer, codespan: CodespanRenderer, link: LinkRenderer, html: HtmlRenderer, code: CodeRenderer, list: ListRenderer, listitem: ListItemRenderer, paragraph: ParagraphRenderer, strong: StrongRenderer}} /> -->
-            <!-- {#if data.attributes.toc != null}
-                <div class="bg-eerie-black rounded-md p-2 ">
-                    <h2 class="text-2xl mb-3">Table of Contents</h2>
-                    <SvelteMarkdown source={data.attributes.toc} renderers={{list: ListRenderer, listitem: ListItemRenderer, heading: HeadingRenderer, link: TocLinkRenderer}}/>
-                </div>
-            {/if}-->
+            <div class="rounded-md p-2 border-b-2 border-eerie-black px-7 pb-4 ">
+                <h2 class="text-2xl mb-3 font-bold">Table of Contents</h2>
+                <SvelteMarkdown source={generateTableOfContents(post.attributes.content)} renderers={{list: ListRenderer, listitem: ListItemRenderer, heading: HeadingRenderer, link: TOCLinkRenderer}}/>
+            </div>
+
+
             <SvelteMarkdown source={post.attributes.content} renderers={{strong: StrongRenderer, image: ImageRenderer, heading: HeadingRenderer, codespan: CodespanRenderer, link: LinkRenderer, html: HtmlRenderer, list: ListRenderer, listitem: ListItemRenderer, paragraph: ParagraphRenderer, code: CodeRenderer}} /> 
         </div>
         <div class="mt-24 text-xs">

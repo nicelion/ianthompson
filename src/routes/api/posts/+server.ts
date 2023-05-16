@@ -46,11 +46,22 @@ export async function GET({url}) {
         }
     }
 
+    // if (tagsParam != "null") {
+    //     baseQuery.filters = {
+    //         ...baseQuery.filters,
+    //         tags: {
+    //             $contains: tagsParam
+    //         }
+    //     }
+    // }
+
     if (tagsParam != "null") {
         baseQuery.filters = {
             ...baseQuery.filters,
             tags: {
-                $contains: tagsParam
+                tag: {
+                    $eq: tagsParam
+                }
             }
         }
     }

@@ -30,6 +30,7 @@
 	"type": "module",
 	"dependencies": {
 		"daisyui": "^2.22.0",
+		"markdown-toc": "^1.2.0",
 		"qs": "^6.11.1",
 		"svelte-confetti": "^1.2.2",
 		"svelte-highlight": "^7.3.0",

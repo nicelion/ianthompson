@@ -32,6 +32,8 @@
 
 {#if isAd}
     <!-- <AdContainer /> -->
+
+    PUT AD HERE
 {:else}
     {@html text}
 {/if}
