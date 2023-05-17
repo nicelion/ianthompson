@@ -38,24 +38,24 @@
     console.log("POST!!!!", post);
 
     function generateTableOfContents(markdown) {
-    const headings = markdown.match(/^(#{1,6})\s+(.*)$/gm);
-    let tableOfContents = '';
-    let currentLevel = 0;
-    let index = 1;
+        const headings = markdown.match(/^(#{1,6})\s+(.*)$/gm);
+        let tableOfContents = '';
+        let currentLevel = 0;
+        let index = 1;
 
-    headings.forEach(heading => {
-        const level = heading.indexOf(' ')
-        const text = heading.slice(level + 1);
+        headings.forEach(heading => {
+            const level = heading.indexOf(' ')
+            const text = heading.slice(level + 1);
 
-        const link = text.toLowerCase().replace(/\s/g, '-')
+            const link = text.toLowerCase().replace(/\s/g, '-')
 
-        // console.log(level, text, link);
+            // console.log(level, text, link);
 
-        tableOfContents = tableOfContents + '\t'.repeat(level - 1) + `- [${text}](#${link})` + "\n"
-    })
+            tableOfContents = tableOfContents + '\t'.repeat(level - 1) + `- [${text}](#${link})` + "\n"
+        })
 
 
-  return tableOfContents;
+        return tableOfContents;
 }
 
 
@@ -79,7 +79,7 @@ console.log( generateTableOfContents(post.attributes.content));
             <div class="w-full">
                 <h1 class="text-4xl mb-1">{post.attributes.title}</h1>
                 <p>
-                    By <a class="url" href="/">Ian Thompson</a> on {new Date(data.attributes.createdAt).toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"long", day:"numeric"})}
+                    By <a class="url" href="/">Ian Thompson</a> on {new Date(data.attributes.postDate).toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"long", day:"numeric"})}
                 </p>
                 <p class="mt-6 italic text-sm">
                     {data.attributes.description}
