@@ -51,6 +51,7 @@ export const load = (async ({ fetch, url }) => {
       // The "search parameters" that are to be typed into the text field
       let searchParam: string | null = null
       let tagsParam: string | null = null
+      let pageParam: string | null = null
   
       if (url.searchParams.get("q") != null) {
         // console.log("From page, this isnot nyll!!");
@@ -60,6 +61,10 @@ export const load = (async ({ fetch, url }) => {
       if (url.searchParams.get("tag") != null) {
         tagsParam = url.searchParams.get("tag") as string
       }
+
+      if (url.searchParams.get("page") != null) {
+        pageParam = url.searchParams.get("page") as string
+      }
   
       // console.log("\taccessing " + `/api/posts?q=${searchParam}`);
       
@@ -67,7 +72,7 @@ export const load = (async ({ fetch, url }) => {
       /**
        * Forward the querystring to the server and query Strapi from there
        */
-      const res = await fetch(`/api/posts?q=${searchParam}&tag=${tagsParam}`);
+      const res = await fetch(`/api/posts?q=${searchParam}&tag=${tagsParam}&page=${pageParam}`);
       const response: PostResponse = await res.json();
     
       return response

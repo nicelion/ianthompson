@@ -20,12 +20,17 @@ export async function GET({url}) {
 
     let baseQuery = {
         populate: "*",
-        sort: ["publishedAt:desc"],
-        filters: {}
+        sort: ["postDate:desc"],
+        filters: {},
+        pagination: {
+            page: 1,
+            pageSize: 10
+        }
     }
 
     let searchParams = url.searchParams.get("q")
     let tagsParam = url.searchParams.get("tag")
+    let pageParam = url.searchParams.get("page")
 
     if (searchParams != "null") {
         console.log("\tsestch present");
@@ -63,6 +68,13 @@ export async function GET({url}) {
                     $eq: tagsParam
                 }
             }
+        }
+    }
+
+    if (pageParam != "null") {
+        baseQuery.pagination = {
+            page: pageParam,
+            pageSize: 10
         }
     }
 

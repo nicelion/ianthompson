@@ -46,6 +46,7 @@ export interface Post {
         pinned: boolean,
         featured: boolean,
         cover: Cover,
+        postDate: Date,
         tags: {
             data: [
                 {

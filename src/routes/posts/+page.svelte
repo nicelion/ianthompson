@@ -15,11 +15,23 @@
 
     import PostRow from "$lib/components/blog/PostRow.svelte";
 	import type { Post, PostResponse } from "$lib/types/Blog";
-    
+    import { page } from '$app/stores';  
+
     /** @type {import('./$types').PageData} */
     export let data: PostResponse;
     
     $: (data = data)
+
+    console.log("HELLO", $page.url);
+    
+
+    const handlePagination = (direction) => {
+        if (direction == "forward") {
+
+        } else if (direction == "backward") {
+
+        }
+    }
 </script>
 
 <svelte:head>
@@ -35,4 +47,16 @@
     {#each data.data as post}
         <PostRow {post} />
     {/each}
+    <div class="w-full flex justify-center">
+        <div class="btn-group">
+            <button class="btn" disabled={`${data.meta.pagination.page == 1 ? "disabled" : ""}`} on:click={() => handlePagination("forward")}>
+                <a href={`/posts?page=${data.meta.pagination.page - 1}`} class="" >«</a>
+            </button>
+            <button class="btn">Page {data.meta.pagination.page}</button>
+            <button class="btn" disabled={`${data.meta.pagination.page >= data.meta.pagination.pageCount ? "disabled" : ""}`}>
+                <a href={`/posts?page=${data.meta.pagination.page + 1}`} class=""  on:click={() => handlePagination("backward")}>»</a>
+            </button>
+        </div>
+    </div>
 </div>
+

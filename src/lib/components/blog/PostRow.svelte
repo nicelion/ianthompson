@@ -30,7 +30,7 @@
 
             {/if} -->
         </div>
-        <p>By: <a href="/" class="url">Ian Thompson</a> on {new Date(post.attributes.createdAt).toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"short", day:"numeric"})} </p>
+        <p>By: <a href="/" class="url">Ian Thompson</a> on {new Date(post.attributes.postDate).toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"short", day:"numeric"})} </p>
         <div class="mt-4">
             <p>{post.attributes.description}</p>
         </div>
