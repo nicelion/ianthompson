@@ -20,21 +20,10 @@
 </script>
 
 <div class="flex flex-col lg:flex-row w-full h-full p-4 ">
-    <div class="w-full lg:w-1/4 lg:space-y-20 py-8">
+    <div class="w-full lg:w-1/5 lg:space-y-20 py-8">
         <RefineSearch tags={data.tags}/>
-        
-      <!-- <RefineSearch />
-      <AdContainer /> -->
     </div>
-    <main class="w-full lg:px-8">
-        <!-- <div class="text-sm breadcrumbs">
-            <ul>
-              <li><a href="/blog" class="url">Blog</a></li> 
-              <li>Blog Post Title</li> 
-            </ul>
-          </div> -->
+    <main class="w-full lg:px-8 lg:w-4/5">
         <slot />
-        <!-- <AdContainer /> -->
-
     </main>
 </div>

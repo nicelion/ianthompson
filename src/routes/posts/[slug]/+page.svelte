@@ -74,7 +74,7 @@
     <div class="w-full h-1/3">    
         <img src={`http://localhost:1337${data.attributes.cover.data.attributes.url}`} alt="" class="w-full h-72 object-cover rounded-md">  
     </div>
-    <div class="p-5">
+    <div class="py-5 px-1">
         <div class="flex flex-col md:flex-row justify-between border-b-2 border-eerie-black px-7 pb-4">
             <div class="w-full">
                 <h1 class="text-4xl mb-1">{post.attributes.title}</h1>
@@ -89,14 +89,14 @@
                 </p>
 
             </div>
-            <div class="md:w-1/4">
+            <div class="md:w-1/4 mt-4">
                 {#each post.attributes.tags.data as tag}
                     <Badge title={tag.attributes.tag} color={tag.attributes.color} />
                 {/each}
             </div>
         </div>
 
-        <div class="space-y-6 mt-9">
+        <div class="space-y-6 mt-9 px-3">
             <div class="rounded-md p-2 border-b-2 border-eerie-black px-7 pb-4 ">
                 <h2 class="text-2xl mb-3 font-bold">Table of Contents</h2>
                 <SvelteMarkdown source={generateTableOfContents(post.attributes.content)} renderers={{list: ListRenderer, listitem: ListItemRenderer, heading: HeadingRenderer, link: TOCLinkRenderer}}/>
@@ -105,7 +105,7 @@
 
             <SvelteMarkdown source={post.attributes.content} renderers={{strong: StrongRenderer, image: ImageRenderer, heading: HeadingRenderer, codespan: CodespanRenderer, link: LinkRenderer, html: HtmlRenderer, list: ListRenderer, listitem: ListItemRenderer, paragraph: ParagraphRenderer, code: CodeRenderer}} /> 
         </div>
-        <div class="mt-24 text-xs">
+        <div class="mt-24 text-xs p-3">
             <p class="text-neutral-content">
                 * This post may contain affiliate marketing links. By clicking these links, a portion of money you spend on the websites you are referred to may be shared with the owner of this site.
             </p>

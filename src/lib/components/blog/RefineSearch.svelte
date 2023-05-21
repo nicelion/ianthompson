@@ -96,6 +96,6 @@
             <option>Date - Newest to Oldest</option>
             <option>Date - Oldest to Newest</option>
         </select>
+        <a href="/posts" class={`btn btn-outline w-full btn-sm`}>CLEAR FILTERS</a>
     </form>
-    <a href="/posts" class="btn btn-outline w-full btn-sm">CLEAR FILTERS</a>
 </div>
