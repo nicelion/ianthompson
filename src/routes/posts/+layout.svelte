@@ -19,14 +19,14 @@
 
 </script>
 
-<div class="flex flex-col md:flex-row w-full h-full p-4 ">
-    <div class="w-full md:w-1/4 md:space-y-20 ">
+<div class="flex flex-col lg:flex-row w-full h-full p-4 ">
+    <div class="w-full lg:w-1/4 lg:space-y-20 py-8">
         <RefineSearch tags={data.tags}/>
         
       <!-- <RefineSearch />
       <AdContainer /> -->
     </div>
-    <main class="w-full md:px-8">
+    <main class="w-full lg:px-8">
         <!-- <div class="text-sm breadcrumbs">
             <ul>
               <li><a href="/blog" class="url">Blog</a></li> 
