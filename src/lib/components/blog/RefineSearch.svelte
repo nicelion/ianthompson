@@ -51,8 +51,8 @@
 
 <!-- Full Size -->
 <div id="sidebar" class="w-full bg-black-lighter p-2 space-y-5 rounded h-fit md:sticky md:top-20">
-    <button class={`md:hidden btn btn-ghost w-full text-xs`} on:click={handleToggle}>{`${showSidebar ? "Close" : "Search Blog"}`}</button>
-    <form on:submit|preventDefault={handleSearch} class={`${showSidebar ? "" : "hidden"} md:block space-y-5`}>
+    <button class={`lg:hidden btn btn-ghost w-full text-xs`} on:click={handleToggle}>{`${showSidebar ? "Close" : "Search Blog"}`}</button>
+    <form on:submit|preventDefault={handleSearch} class={`${showSidebar ? "" : "hidden"} lg:block space-y-5`}>
         <h2 class="font-bold text-center text-xl">Refine Your Search</h2>
         <div class="flex flex-col space-y-5">
             <input type="text" placeholder="Search blog" class="input w-full" bind:value={searchParam}/>
