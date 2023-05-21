@@ -13,13 +13,17 @@
 <script lang="ts">
 	import { goto } from "$app/navigation";
 	import Badge from "$lib/components/blog/Badge.svelte";
+	import { OrderBy } from "$lib/types/Query";
 	import type { Tag } from "$lib/types/Tag";
+	import { QueryFactory } from "$lib/util/QueryFactory";
 
     export let tags: Tag = []
 
     let showSidebar = false;
 
     let searchParam = ""
+
+    let queryURL = "/posts?"
 
     let sortSelect = "Sort By"
     $: {
@@ -33,14 +37,33 @@
 
     const handleSearch = () => {
         // alert("Searching for "+ searchParam)
-        goto(`/posts?q=${searchParam}`, { replaceState: true })
+
+        let qs = QueryFactory(location, {
+            q: searchParam,
+            // page: 1,
+            date: (sortSelect == "Date - Oldest to Newest" ? OrderBy.ASC : OrderBy.DESC),
+            // tag: "code"
+        })
+        // if (searchParam.trim() == "") {
+        //     queryURL = "/posts"
+        // } else {
+        //     queryURL += `q=${searchParam}`
+        // }
+
+        // if (sortSelect == "Date - Oldest to Newest") {
+        //     queryURL += "?date=asc"
+        // }
+
+        goto(queryURL + qs, { replaceState: false })
+
+        // queryURL = "/posts?"
     }
 
     const handleSortSelect = () => {
         if (sortSelect == "Date - Newest to Oldest") {
-            goto(`/posts?date=desc`, { replaceState: true })
+            // goto(`/posts?date=desc`, { replaceState: true })
         } else if (sortSelect == "Date - Oldest to Newest") {
-            goto(`/posts?date=asc`, { replaceState: true })
+            // goto(`/posts?date=asc`, { replaceState: true })
         }
     }
 
@@ -74,5 +97,5 @@
             <option>Date - Oldest to Newest</option>
         </select>
     </form>
-    <button class="btn btn-outline w-full btn-sm">CLEAR FILTERS</button>
+    <a href="/posts" class="btn btn-outline w-full btn-sm">CLEAR FILTERS</a>
 </div>
