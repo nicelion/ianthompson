@@ -13,9 +13,10 @@
 import type { Post, Response } from '$lib/types/Blog';
 import { error } from '@sveltejs/kit';
 import type { PageServerLoad } from './$types';
+import { STRAPI_URL } from '$env/static/private';
  
 export const load = (async ({ params, fetch }) => {
-  const post = await fetch(`http://localhost:1337/api/posts?filters[slug][$eq]=${params.slug}&populate=*`);
+  const post = await fetch(`${STRAPI_URL}/api/posts?filters[slug][$eq]=${params.slug}&populate=*`);
   const response: Response = await post.json();
 
   if (response.data.length == 1) {

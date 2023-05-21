@@ -52,7 +52,8 @@ export const load = (async ({ fetch, url }) => {
       let searchParam: string | null = null
       let tagsParam: string | null = null
       let pageParam: string | null = null
-  
+      let sortParam: string | null = null
+
       if (url.searchParams.get("q") != null) {
         // console.log("From page, this isnot nyll!!");
         searchParam = url.searchParams.get("q") as string
@@ -66,13 +67,16 @@ export const load = (async ({ fetch, url }) => {
         pageParam = url.searchParams.get("page") as string
       }
   
+      if (url.searchParams.get("date") != null) {
+        sortParam = url.searchParams.get("date") as string
+      }
       // console.log("\taccessing " + `/api/posts?q=${searchParam}`);
       
   
       /**
        * Forward the querystring to the server and query Strapi from there
        */
-      const res = await fetch(`/api/posts?q=${searchParam}&tag=${tagsParam}&page=${pageParam}`);
+      const res = await fetch(`/api/posts?q=${searchParam}&tag=${tagsParam}&page=${pageParam}&date=${sortParam}`);
       const response: PostResponse = await res.json();
     
       return response

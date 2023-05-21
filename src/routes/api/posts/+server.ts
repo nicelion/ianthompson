@@ -31,6 +31,11 @@ export async function GET({url}) {
     let searchParams = url.searchParams.get("q")
     let tagsParam = url.searchParams.get("tag")
     let pageParam = url.searchParams.get("page")
+    let sortParam = url.searchParams.get("date")
+
+    if(sortParam != "null") {
+        baseQuery.sort = [`postDate:${sortParam}`]
+    }
 
     if (searchParams != "null") {
         console.log("\tsestch present");
@@ -85,10 +90,10 @@ export async function GET({url}) {
     })
 
     console.log(`\tQUERY IS /api/posts?${query}`);
-    console.log(`\tFETCHING ${env.STRAPI_URL}${query}`);
+    console.log(`\tFETCHING ${env.STRAPI_URL}/api/posts?${query}`);
     
     
-    const res = await fetch(`${env.STRAPI_URL}${query}`);
+    const res = await fetch(`${env.STRAPI_URL}/api/posts?${query}`);
     const data = await res.json() as Response;
     
     return new Response(JSON.stringify(data));

@@ -21,6 +21,12 @@
 
     let searchParam = ""
 
+    let sortSelect = "Sort By"
+    $: {
+        console.log(sortSelect);
+        
+    }
+
     const handleToggle = () => {
         showSidebar = !showSidebar
     }
@@ -29,6 +35,15 @@
         // alert("Searching for "+ searchParam)
         goto(`/posts?q=${searchParam}`, { replaceState: true })
     }
+
+    const handleSortSelect = () => {
+        if (sortSelect == "Date - Newest to Oldest") {
+            goto(`/posts?date=desc`, { replaceState: true })
+        } else if (sortSelect == "Date - Oldest to Newest") {
+            goto(`/posts?date=asc`, { replaceState: true })
+        }
+    }
+
 </script>
 
 
@@ -53,11 +68,11 @@
             </div>
         </div>
     
-        <select class="select w-full">
+        <select class="select w-full" bind:value={sortSelect} on:change={handleSortSelect}>
             <option disabled selected>Sort By</option>
             <option>Date - Newest to Oldest</option>
             <option>Date - Oldest to Newest</option>
-          </select>
+        </select>
     </form>
-
+    <button class="btn btn-outline w-full btn-sm">CLEAR FILTERS</button>
 </div>
