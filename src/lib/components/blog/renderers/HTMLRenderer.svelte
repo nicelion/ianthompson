@@ -13,7 +13,7 @@
 <script lang="ts">
 	// import AdContainer from "$lib/components/AdContainer.svelte";
     import { onMount } from "svelte";
-
+    import AdContainer from "$lib/components/blog/AdContainer.svelte"
 
     export let text: string = undefined
 
@@ -33,7 +33,7 @@
 {#if isAd}
     <!-- <AdContainer /> -->
 
-    PUT AD HERE
+    <AdContainer />
 {:else}
     {@html text}
 {/if}
