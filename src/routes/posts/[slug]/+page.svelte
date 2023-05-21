@@ -59,7 +59,7 @@
 }
 
 
-console.log( generateTableOfContents(post.attributes.content));
+// console.log( generateTableOfContents(post.attributes.content));
 
     
 </script>
@@ -80,6 +80,9 @@ console.log( generateTableOfContents(post.attributes.content));
                 <h1 class="text-4xl mb-1">{post.attributes.title}</h1>
                 <p>
                     By <a class="url" href="/">Ian Thompson</a> on {new Date(data.attributes.postDate).toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"long", day:"numeric"})}
+                </p>
+                <p class="mt-2 text-sm">
+                    Updated on {new Date(data.attributes.updatedAt).toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"long", day:"numeric"})}
                 </p>
                 <p class="mt-6 italic text-sm">
                     {data.attributes.description}
