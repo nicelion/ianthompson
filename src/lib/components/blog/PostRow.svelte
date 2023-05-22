@@ -20,7 +20,7 @@
 </script>
 <a href={`/posts/${post.attributes.slug}`} class="my-5 bg-black-lighter w-full rounded-md flex flex-col lg:flex-row p-4 items-center">
     <div class="lg:w-1/5 h-1/5 lg:h-full mb-5">
-        <img src={`http://localhost:1337${post.attributes.cover.data.attributes.formats.thumbnail?.url}`} alt="" class="h-48 w-full rounded-md object-cover">
+        <!-- <img src={`http://localhost:1337${post.attributes.cover.data.attributes.formats.thumbnail?.url}`} alt="" class="h-48 w-full rounded-md object-cover"> -->
     </div>
     <div class="px-4 w-full">
         <div class="flex w-full justify-between">        
