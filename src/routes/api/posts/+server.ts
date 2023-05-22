@@ -10,7 +10,7 @@
  
 */
 
-import { env } from '$env/dynamic/private';
+import { PUBLIC_STRAPI_URL } from '$env/static/public';
 import { error } from '@sveltejs/kit';
 // import { Response } from '$lib/utils/types/Blog';
 import qs from "qs"
@@ -90,10 +90,10 @@ export async function GET({url}) {
     })
 
     console.log(`\tQUERY IS /api/posts?${query}`);
-    console.log(`\tFETCHING ${env.STRAPI_URL}/api/posts?${query}`);
+    console.log(`\tFETCHING ${PUBLIC_STRAPI_URL}/api/posts?${query}`);
     
     
-    const res = await fetch(`${env.STRAPI_URL}/api/posts?${query}`);
+    const res = await fetch(`${PUBLIC_STRAPI_URL}/api/posts?${query}`);
     const data = await res.json() as Response;
     
     return new Response(JSON.stringify(data));

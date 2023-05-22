@@ -10,11 +10,12 @@
  
 */
 
+import { PUBLIC_STRAPI_URL } from "$env/static/public"
 import type { Tag } from "$lib/types/Tag"
 
 /** @type {import('./$types').LayoutLoad} */
 export async function load() {
-    const tags = await fetch("http://localhost:1337/api/tags")
+    const tags = await fetch(`${PUBLIC_STRAPI_URL}/api/tags`)
     const response = await tags.json()
 
 
