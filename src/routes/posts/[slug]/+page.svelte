@@ -36,8 +36,6 @@
     export let data: Post;
     let post: Post = data
 
-    // console.log("POST!!!!", post);
-
     function generateTableOfContents(markdown) {
         const headings = markdown.match(/^(#{1,6})\s+(.*)$/gm);
         let tableOfContents = '';
@@ -49,8 +47,6 @@
             const text = heading.slice(level + 1);
 
             const link = text.toLowerCase().replace(/\s/g, '-')
-
-            // console.log(level, text, link);
 
             tableOfContents = tableOfContents + '\t'.repeat(level - 1) + `- [${text}](#${link})` + "\n"
         })
@@ -76,9 +72,9 @@
         <img src={`${data.attributes.cover.data.attributes.url}`} alt="" class="w-full h-72 object-cover rounded-md">  
     </div>
     <div class="py-5 px-1">
-        <div class="flex flex-col md:flex-row justify-between border-b-2 border-eerie-black px-7 pb-4">
+        <div class="flex flex-col md:flex-row justify-between border-b-2 border-eerie-black px-3 pb-4">
             <div class="w-full">
-                <h1 class="text-4xl mb-1">{post.attributes.title}</h1>
+                <h1 class="text-4xl mb-2">{post.attributes.title}</h1>
                 <p>
                     By <a class="url" href="/">Ian Thompson</a> on {new Date(data.attributes.postDate).toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"long", day:"numeric"})}
                 </p>
@@ -98,7 +94,7 @@
         </div>
 
         <div class="space-y-6 mt-9 px-3">
-            <div class="rounded-md p-2 border-b-2 border-eerie-black px-7 pb-4 ">
+            <div class="rounded-md p-2 border-b-2 border-eerie-black px-4 pb-4 ">
                 <h2 class="text-2xl mb-3 font-bold">Table of Contents</h2>
                 <SvelteMarkdown source={generateTableOfContents(post.attributes.content)} renderers={{list: ListRenderer, listitem: ListItemRenderer, heading: HeadingRenderer, link: TOCLinkRenderer}}/>
             </div>

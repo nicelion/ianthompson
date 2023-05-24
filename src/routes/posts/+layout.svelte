@@ -19,7 +19,7 @@
 
 </script>
 
-<div class="flex flex-col lg:flex-row w-full h-full p-4 ">
+<div class="flex flex-col lg:flex-row w-full h-full p-2 md:p-4 ">
     <div class="w-full lg:w-1/5 lg:space-y-20 py-8">
         <RefineSearch tags={data.tags}/>
     </div>
