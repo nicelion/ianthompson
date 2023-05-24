@@ -14,7 +14,7 @@
 	<div class="flex flex-col-reverse sm:flex-row items-center justify-between w-full md:px-6 lg:px-64 pt-24 md:pt-0">
 		<div class="">
 			<h1 id="message" class="text-lg mt-12 sm:mt-0 text-white bg-theme-primary md:p-2 px-8 rounded-xl rounded-bl-none w-fit mb-2 font-extrabold font-mono animate-message-bounce"> 
-				Hello, I'm...
+				👋🏼 Hello, I'm...
 			</h1>
 			<h1 class="text-4xl md:text-6xl lg:text-8xl font-bold  mb-5">Ian Thompson</h1>
 			<p class="text-lg md:text-2xl">Undergraduate Student @ Clemson University</p>
