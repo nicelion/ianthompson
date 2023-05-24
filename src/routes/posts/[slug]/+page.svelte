@@ -11,6 +11,7 @@
 --->
 
 <script lang="ts">
+	import { PUBLIC_STRAPI_URL } from '$env/static/public';
 	import Badge from '$lib/components/blog/Badge.svelte';
     // import ContentContainer from '$lib/components/blog/ContentContainer.svelte';
 	import CodeRenderer from '$lib/components/blog/renderers/CodeRenderer.svelte';
@@ -72,7 +73,7 @@
 
 <article class="bg-black-lighter rounded-md text-cornsilk">
     <div class="w-full h-1/3">    
-        <!-- <img src={`http://localhost:1337${data.attributes.cover.data.attributes.url}`} alt="" class="w-full h-72 object-cover rounded-md">   -->
+        <img src={`${data.attributes.cover.data.attributes.url}`} alt="" class="w-full h-72 object-cover rounded-md">  
     </div>
     <div class="py-5 px-1">
         <div class="flex flex-col md:flex-row justify-between border-b-2 border-eerie-black px-7 pb-4">
