@@ -14,7 +14,7 @@
     export let depth: number;
     export let text: string;
 
-    console.log("DATA", depth);
+    // console.log("DATA", depth);
 </script>
 
 

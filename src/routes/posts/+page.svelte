@@ -22,7 +22,7 @@
     
     $: (data = data)
 
-    console.log("HELLO", $page.url);
+    // console.log("HELLO", $page.url);
     
 
     const handlePagination = (direction) => {
