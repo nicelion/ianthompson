@@ -27,7 +27,7 @@
 
     let sortSelect = "Sort By"
     $: {
-        console.log(sortSelect);
+        // console.log(sortSelect);
         
     }
 

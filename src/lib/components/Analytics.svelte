@@ -12,7 +12,7 @@
 
 <script lang="ts">
 
-    import { page } from '$app/stores'
+  import { page } from '$app/stores'
 	import { PUBLIC_MEASUREMENT_ID } from '$env/static/public';
 
     $: {

@@ -36,7 +36,7 @@
     export let data: Post;
     let post: Post = data
 
-    console.log("POST!!!!", post);
+    // console.log("POST!!!!", post);
 
     function generateTableOfContents(markdown) {
         const headings = markdown.match(/^(#{1,6})\s+(.*)$/gm);
