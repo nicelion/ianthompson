@@ -17,9 +17,18 @@ const Projects: [Project] = [
         name: "raspi-metar",
         description: "In short, raspi-metar is a Raspberry Pi project that takes METAR data from various airports and displays it on a VFR sectional map using NEOPIXEL LEDs.",
         img: "/img/raspi-metar.jpeg",
+        url: "/posts/raspi-metar-a-metar-visualization-project-for-raspberry-pi",
         github: "https://github.com/nicelion/raspi-metar",
         tags: ["code"]
     }, 
+    {
+        name: "Hymns & Hops Online Songbook",
+        description: "This is an open-source project I started to serve as a virtual hymnal for Hymns & Hops, an event in Greenville, SC where people gather to enjoy beer and song. This application is not endorsed by Hymns & Hops or its organizers.",
+        img: "/img/hymns-and-hops-songbook.png",
+        github: "https://github.com/nicelion/ianthompson",
+        url: "https://hymns-seven.vercel.app/",
+        tags: ["code"]
+    },
     {
         name: "TPBot Scratch Extension",
         description: "As a part of my work with the IDEA Lab, I helped develop an extension that allows Scratch to interface with TPBot robots.",
@@ -36,14 +45,6 @@ const Projects: [Project] = [
         url: "https://hymns-seven.vercel.app",
         tags: ["code"]
     }, 
-    {
-        name: "Hymns & Hops Online Songbook",
-        description: "This is an open-source project I started to serve as a virtual hymnal for Hymns & Hops, an event in Greenville, SC where people gather to enjoy beer and song. This application is not endorsed by Hymns & Hops or its organizers.",
-        img: "/img/hymns-and-hops-songbook.png",
-        github: "https://github.com/nicelion/ianthompson",
-        url: "https://hymns-seven.vercel.app/",
-        tags: ["code"]
-    },
     {
         name: "M5 TCP IRBlaster",
         description: "M5 TCP IRBlaster is a project I worked on while an intern at Fellowship Greenville. This project utilized an M5StickC to decode and send IR signals to power on/off devices. The M5Stick sets up a TCP server which was communicated to via BitFoucs' Companion and via Cronicle to automate Sunday mornings.",
