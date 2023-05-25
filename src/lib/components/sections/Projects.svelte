@@ -67,13 +67,13 @@
 		<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 px-8 xl:p-23">
 			{#each projects as project}
 				<Card img={project.img} title={project.name} description={project.description} badge={project.tags[0]}>
-					{#if project.url != undefined}
-						<a target="_blank" rel="noreferrer" href={project.url} class="px-4 py-2 rounded-lg text-center flex items-center align-middle border text-white hover:bg-white hover:text-black transition duration-200 ease-in-out">
-							<p class="text-lg">View Project</p>
-						</a>
-					{/if}
 					{#if project.github != undefined}
 						<ViewOnGitHubButton url={project.github} />
+					{/if}
+					{#if project.url != undefined}
+						<a target="_blank" rel="noreferrer" href={project.url} class="px-4 py-2 rounded-lg text-center flex items-center align-middle border text-white hover:bg-white hover:text-black transition duration-200 ease-in-out">
+							<p class="text-lg">See more</p>
+						</a>
 					{/if}
 				</Card>
 			{/each}
