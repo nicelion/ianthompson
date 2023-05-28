@@ -12,6 +12,7 @@ module.exports = {
 				'eerie-black': '#131313',
 				'black-lighter': '#1D1D1D',
 				'theme-primary': '#60a5fa', // change this to affect theme color
+				'spotify-green': "#1DB954"
 			},
 			fontFamily: {
 				body: ['Poppins'],

@@ -16,5 +16,14 @@
     export let text: string = undefined
 </script>
 
-<!-- <a href={href} >{text}</a> -->
-<a {href} {title} target="_blank" rel="noreferrer" class="url"><slot></slot></a>
+{#if text == "Spotify"}
+<div class="flex items-center justify-center">
+    <a {href} {title} target="_blank" rel="noreferrer" class="bg-spotify-green px-3 py-2 rounded-md">
+        <i class="fa fa-spotify pr-2"></i>
+        Listen on Spotify
+    </a>
+</div>
+
+{:else}
+    <a {href} {title} target="_blank" rel="noreferrer" class="url"><slot></slot></a>
+{/if}

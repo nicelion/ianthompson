@@ -26,7 +26,7 @@ const Projects: [Project] = [
         description: "This is an open-source project I started to serve as a virtual hymnal for Hymns & Hops, an event in Greenville, SC where people gather to enjoy beer and song. This application is not endorsed by Hymns & Hops or its organizers.",
         img: "/img/hymns-and-hops-songbook.png",
         github: "https://github.com/nicelion/ianthompson",
-        url: "https://hymns-seven.vercel.app/",
+        url: "/posts/hymns-and-hops-mobile-songbook",
         tags: ["code"]
     },
     {
