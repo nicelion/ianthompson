@@ -36,6 +36,7 @@
 
 <svelte:head>
     <title>Posts - iancthompson.dev</title>
+    <meta name="description" content="Welcome to my 'blog.' Here, you can find posts about projects I am working on, things I have done, and other things that interest me! This is meant to be very casual, so don't expect anything crazy." />
 </svelte:head>
 
 <div class="">
