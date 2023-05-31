@@ -18,6 +18,7 @@
 
 <svelte:head>
 	<title>Ian Thompson | Student @ Clemson University</title>
+	<meta name="description" content="Ian Thompson is an undergraduate student at Clemson University interested in education, computer science, and human-computer interaction that is skilled in web development using technologies such as Javascript, Typescript, Python, and Svelte.">
 </svelte:head>
 
 <CallToAction />

@@ -20,6 +20,7 @@
 	import MadeWith from '$lib/components/footer/made-with.svelte';
 	import { onMount } from 'svelte';
 	import '../app.css';
+	import FavIco from '$lib/components/layout/FavIco.svelte';
 
 	var pageYOffset = 0
 
@@ -119,6 +120,7 @@
 <svelte:head>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4487298036056646"
 	crossorigin="anonymous"></script>
+	<FavIco />
 </svelte:head>
 
 <svelte:window on:scroll={pageScroll} bind:scrollY={pageYOffset} />

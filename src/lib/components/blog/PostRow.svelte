@@ -26,10 +26,6 @@
     <div class="px-4 w-full">
         <div class="flex w-full justify-between">        
             <h1 class="text-2xl font-bold">{post.attributes.title}</h1>
-            <!-- {#if post.pinned}
-                <i class="fa-solid fa-thumbtack text-2xl text-yellow-300 hover:animate-wiggle"></i>
-
-            {/if} -->
         </div>
         <p>By: <a href="/" class="url">Ian Thompson</a> on {new Date(post.attributes.postDate).toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"short", day:"numeric"})} </p>
         <div class="mt-4">
