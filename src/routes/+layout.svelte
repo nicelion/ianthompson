@@ -272,6 +272,6 @@
 	</div>
 </footer>
 <div class="group p-2 px-4 text-sm flex w-full items-center space-x-2 justify-center sm:justify-end hover:underline">
-	<a href="https://github.com/nicelion/ianthompson/issues" target="_blank" rel="noreferrer">See an issue? Create an issue on GitHub!!</a>
+	<a href="https://github.com/nicelion/ianthompson/issues" target="_blank" rel="noreferrer">Something wrong? Create an issue on GitHub!!</a>
 	<i class="fa-solid fa-code-pull-request text-base group-hover:animate-wiggle"></i>
 </div>
