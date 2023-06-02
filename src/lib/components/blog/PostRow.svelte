@@ -19,11 +19,12 @@
     // console.log(post);
     
 </script>
-<a href={`/posts/${post.attributes.slug}`} class="my-5 bg-black-lighter w-full rounded-md flex flex-col lg:flex-row p-4 items-center">
-    <div class="lg:w-1/5 h-1/5 lg:h-full mb-5">
+<a href={`/posts/${post.attributes.slug}`} class="my-8 bg-black-lighter w-full rounded-md flex flex-col lg:flex-row items-center">
+    <div class="w-full mb-5 lg:mb-0 lg:w-1/5 h-full">
+    <!-- <div class="lg:w-1/5 h-1/5 lg:h-full mb-5"> -->
         <img src={`${post.attributes.cover.data.attributes.formats.thumbnail?.url}`} alt="" class="h-48 w-full rounded-md object-cover">
     </div>
-    <div class="px-4 w-full">
+    <div class="px-4 py-2 w-full">
         <div class="flex w-full justify-between">        
             <h1 class="text-2xl font-bold">{post.attributes.title}</h1>
         </div>
