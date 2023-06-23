@@ -32,6 +32,7 @@
 <div class="flex space-x-2 text-xl mb-12">
 	<button class={`border-b-2 ${active == "all" ? "border-theme-primary opacity-100" : "border-transparent opacity-75"} hover:border-theme-primary hover:opacity-100`} on:click={() => active = "all"}>#all</button>
 	<button class={`border-b-2  ${active == "code" ? "border-theme-primary opacity-100" : "border-transparent opacity-75"} hover:border-theme-primary hover:opacity-100`} on:click={() => active = "code"}>#code</button>
+	<button class={`border-b-2 ${active == "pubs" ? "border-theme-primary opacity-100" : "border-transparent opacity-75"}  hover:border-theme-primary hover:opacity-100`} on:click={() => active = "pubs"} >#pubs</button>
 	<button class={`border-b-2 ${active == "music" ? "border-theme-primary opacity-100" : "border-transparent opacity-75"}  hover:border-theme-primary hover:opacity-100`} on:click={() => active = "music"} >#music</button>
 	<!-- <button class={`border-b-2 ${active == "#publications" ? "border-theme-primary opacity-100" : "border-transparent opacity-75"} hover:border-theme-primary hover:opacity-100`} on:click={() => active = "publications"}>#publications</button> -->
 </div>
