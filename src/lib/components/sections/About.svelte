@@ -113,7 +113,8 @@
 				</p>
 				<br />
 				<p class="border-b mb-2">Honors:</p>
-				<p>Dean's List - Fall 2022</p>
+				<p>President's List - Spring 2023</p>
+				<p>Dean's List - Fall 2023</p>
 				<p>Dean's List - Spring 2022</p>
 				
 				<br />
@@ -210,6 +211,21 @@
 					connected with many students and families at McCants Middle School in Anderson, SC. I am
 					on a team of other college students who plan weekly gatherings, aka "club", and other
 					events with the goal of sharing the Gospel of Christ to our middle school friends.
+				</p>
+			</Experience>
+		</Collapse>
+		<Collapse title="Publications">
+			<Experience title="S.P.O.T: A Game-Based Application for Fostering Critical Machine Learning Literacy Among Children" fa="fa-solid fa-book">
+				<p><a href="https://idc.acm.org/2023/" class="url">Interaction Design and Children Conference</a> | Northwestern University</p>
+				<p>June 19, 2023</p>
+				<br />
+				<p class="leading-relaxed">
+					<span class="font-bold">ABSTRACT:</span> This paper describes S.P.O.T., a game-based application for promoting children's practical understanding of ML concepts and applications. Current tools for teaching ML in K-12 engage students in playful exploration of ML mechanisms and teach ML from a cognitive perspective. However, in S.P.O.T, learners interact with ML within real-life sociopolitical contexts and examine how ML predictions impact their daily lives and communities. Through the immersion of stories that mirror children's lived experiences, S.P.O.T. provides elementary school aged children with opportunities to learn how machine learning applications function and develop children's abilities to critically examine, question, and reimagine the consequences of ML decisions in the real world.
+				</p>
+				<p class="leading-relaxed mt-5">
+					<cite>
+						Ibrahim Oluwajoba Adisa, Ian Thompson, Tolulope Famaye, Deepika Sistla, Cinamon Sunrise Bailey, Katherine Mulholland, Alison Fecher, Caitlin Marie Lancaster, and Golnaz Arastoopour Irgens. 2023. S.P.O.T: A Game-Based Application for Fostering Critical Machine Learning Literacy Among Children. In Proceedings of the 22nd Annual ACM Interaction Design and Children Conference (IDC '23). Association for Computing Machinery, New York, NY, USA, 507–511. <a class="url" href="https://doi.org/10.1145/3585088.3593884">https://doi.org/10.1145/3585088.3593884</a>
+					</cite>
 				</p>
 			</Experience>
 		</Collapse>

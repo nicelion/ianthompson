@@ -22,6 +22,13 @@ const Projects: [Project] = [
         tags: ["code"]
     }, 
     {
+        name: "S.P.O.T: A Game-Based Application for Fostering Critical Machine Learning Literacy Among Children",
+        description: "This paper describes S.P.O.T., a game-based application for promoting children's practical understanding of ML concepts and applications. \nThis WIP paper was presented at IDC '23 at Northwestern University.",
+        img: "/img/previews/spot.png",
+        url: "https://dl.acm.org/doi/10.1145/3585088.3593884",
+        tags: ["pubs"]
+    },
+    {
         name: "Hymns & Hops Online Songbook",
         description: "This is an open-source project I started to serve as a virtual hymnal for Hymns & Hops, an event in Greenville, SC where people gather to enjoy beer and song. This application is not endorsed by Hymns & Hops or its organizers.",
         img: "/img/hymns-and-hops-songbook.png",
