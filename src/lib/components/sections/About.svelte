@@ -60,6 +60,7 @@
 			<h3 class="text-2xl text-white font-bold">Academic Interests</h3>
 			<div class="flex flex-wrap">
 				<Interest interest="#Human-computer-interaction" color="bg-purple-400" />
+				<Interest interest="#Child-computer-interaction" color="bg-purple-400" />
 				<Interest interest="#AI-ethics" color="bg-purple-400" />
 				<Interest interest="#Data-privacy" color="bg-purple-400" />
 				<Interest interest="#UX-research" color="bg-purple-400" />
@@ -149,7 +150,7 @@
 					>
 				</p>
 				<p class="leading-relaxed my-4">My duties included, but were not limited to:</p>
-				<ul class="list-disc space-y-2">
+				<ul class="list-disc space-y-2 list-inside">
 					<li>
 						Work alongside professors and graduate students in the IDEA (Inclusive Digital Education
 						and Analytics) Lab in the College of Education
@@ -179,6 +180,15 @@
 					subject areas. During the 21-22 school year, I was hired as a part-time permanent
 					substitute at Greenville Middle and Beck Academy.
 				</p>
+				<p class="leading-relaxed my-4">My duties included, but were not limited to:</p>
+
+				<ul class="list-disc space-y-2 list-inside">					
+					<li> Provide classroom instruction to students as assigned in lesson plans.</li>
+					<li> Take attendance and document daily notes.</li>
+					<li> Create a classroom that is conducive to learning and appropriate to the maturity and interests of students.</li>
+					<li> Maintains discipline and classroom control that fosters a safe and positive learning environment for all students and staff in accordance with school district policies.</li>
+					<li> Perform other duties as assigned by the immediate supervisor.</li>
+				</ul>
 			</Experience>
 			<Experience title="Freelance Developer" fa="fa-solid fa-briefcase">
 				<p><a href="https://www.nicelion.com" class="url" target="_blank" rel="noreferrer">Nice Lion Technologies LLC</a> | Clemson, SC</p>
@@ -199,6 +209,37 @@
 					boards. I also used my computer science background to develop Cronicle extensions written
 					in Python and C++ to create automatons for different church technologies.
 				</p>
+				<p class="leading-relaxed my-4">My duties included, but were not limited to:</p>
+
+				<ul class="list-disc space-y-2 list-inside">
+					<li> Work alongside our Worship Technology Director to complete various improvement projects to worship technology, including system optimization, storage organization efforts, and implementation of new equipment.</li>
+					<li> Assist the Audio/Visual Technology Director with weekly needs such as lighting plots, setup of stage equipment and microphones, and configuring the sound console.</li>
+					<li> Assist the NextGen Production Designer with weekly needs in all NextGen production environments, including system optimization, maintenance, and implementation of any new equipment.</li>
+					<li> Serve and support any and all weekend services in a variety of production roles. </li>
+					<li> Accomplish other tasks and projects as assigned.</li>
+				</ul>
+			</Experience>
+			<Experience title="After School Caregiver" fa="fa-solid fa-briefcase">
+				<p><a href="https://www.greenville.k12.sc.us" class="url" target="_blank" rel="noreferrer">Greenville County School District</a> | Greenville, SC</p>
+				<p>May 2017 - Mar 2020</p>
+				<br />
+				<p class="leading-relaxed">
+					In this role, I worked in the extended day program at Pelham Road Elementary School in Greenville, SC. 
+				</p>
+				<p class="leading-relaxed my-4">My duties included, but were not limited to:</p>
+
+				<ul class="list-disc space-y-2 list-inside">
+					<li>Facilitate planned activities as determined by the site director. </li>
+					<li>Provide assistance in distributing snacks, supplies, etc.</li>
+					<li>Assist the site director with providing all daily services and reports.</li>
+					<li>Supervise children constantly, never leaving them unattended.</li>
+					<li>Assist in homework supervision. </li>
+					<li>Refer serious discipline problems to the site director. </li>
+					<li>Attend all staff meetings and training sessions. </li>
+					<li>Arrive promptly and remain for the specified time. </li>
+					<li>Complete clerical tasks assigned by the director. </li>
+					<li>Perform other duties as assigned by the immediate supervisor.</li>
+				</ul>
 			</Experience>
 		</Collapse>
 		<Collapse title="Volunteering">
