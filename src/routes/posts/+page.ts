@@ -13,6 +13,8 @@
 import type { PostResponse } from "$lib/utils/types/Blog"
 import { error } from '@sveltejs/kit';
 import type { PageLoad } from './$types';
+import { Posts } from "$lib/manifest/Posts";
+import { getFilteredPosts } from "$lib/util/filterPosts";
 
 // const qs = require("qs")
 
@@ -48,6 +50,10 @@ import type { PageLoad } from './$types';
 
 export const load = (async ({ fetch, url }) => {
     
+      let posts = Posts
+
+      console.log("Calling load");
+      
       // The "search parameters" that are to be typed into the text field
       let searchParam: string | null = null
       let tagsParam: string | null = null
@@ -56,7 +62,7 @@ export const load = (async ({ fetch, url }) => {
 
       if (url.searchParams.get("q") != null) {
         // console.log("From page, this isnot nyll!!");
-        searchParam = url.searchParams.get("q") as string
+        searchParam = url.searchParams.get("q") as string        
       }
   
       if (url.searchParams.get("tag") != null) {
@@ -72,14 +78,21 @@ export const load = (async ({ fetch, url }) => {
       }
       // console.log("\taccessing " + `/api/posts?q=${searchParam}`);
       
+
+      posts = await getFilteredPosts(searchParam, sortParam, tagsParam)
+
+      console.log("fuse", posts);
   
       /**
        * Forward the querystring to the server and query Strapi from there
        */
-      const res = await fetch(`/api/posts?q=${searchParam}&tag=${tagsParam}&page=${pageParam}&date=${sortParam}`);
-      const response: PostResponse = await res.json();
+      // const res = await fetch(`/api/posts?q=${searchParam}&tag=${tagsParam}&page=${pageParam}&date=${sortParam}`);
+      
+      // const response: PostResponse = await res.json();
     
-      return response
+      return {
+        posts: posts
+      }
   
    
     throw error(404, 'Not found');
