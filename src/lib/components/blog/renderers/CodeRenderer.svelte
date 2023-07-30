@@ -23,13 +23,22 @@
     import atomOneDark from "svelte-highlight/styles/atom-one-dark";
     
     export let lang: string
-    export let text: string
+    let text: string = ""
+
+    export let gist: null | string = null
 
     let language: any = javascript
 
     let copyState = "Copy"
 
-    onMount(() => {
+    onMount(async () => {
+
+        if (gist != null) {
+            let response = await fetch(gist)
+            text = await response.text()
+            
+        }
+
         switch (lang) {
             case "javascript": 
                 language = javascript
@@ -46,7 +55,7 @@
     })
 
     const handleCopy = () => {
-        navigator.clipboard.writeText(text)
+        // navigator.clipboard.writeText(text)
 
         copyState = "Copied!"
 
@@ -61,7 +70,7 @@
     {@html atomOneDark}
 </svelte:head>
 
-<div class="mockup-code bg-code-background shadow-lg" style="background: #282c34;">
+<div class="mockup-code bg-code-background shadow-lg my-3" style="background: #282c34;">
     <div class="flex items-end w-full justify-end px-5 pb-2">
         <button class="hover:opacity-75" on:click={handleCopy}><i class="fa-solid fa-copy mr-1 text-lg"></i> <span class={`${copyState == "Copied!" ? `text-green-300` : `text-content`}`}>{copyState}</span> </button>
     </div>

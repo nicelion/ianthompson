@@ -1,5 +1,5 @@
-/**
- Tag.ts
+<!--
+ StrongRenderer.svelte
  iancthompson
  
  Created by Ian Thompson on May 15th 2023
@@ -8,9 +8,7 @@
  
  Copyright (c) 2023 Nice Lion Technologies LLC. All Rights Reserved.
  
-*/
+--->
 
-export interface Tag {
-    tag: string,
-    color: string
-}
+
+<strong class="font-bold"><slot></slot></strong>
