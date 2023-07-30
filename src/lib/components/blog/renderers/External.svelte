@@ -1,8 +1,8 @@
 <!--
- StrongRenderer.svelte
+ External.svelte
  iancthompson
  
- Created by Ian Thompson on May 15th 2023
+ Created by Ian Thompson on July 12th 2023
  ianthompson@nicelion.com
  https://www.nicelion.com
  
@@ -11,7 +11,9 @@
 --->
 
 <script lang="ts">
-    export let text: string
+    export let href: string
+
 </script>
 
-<strong class="font-bold"><slot></slot></strong>
+
+<a {href} class="url" target="_blank" rel="noreferrer"><slot /></a>

@@ -17,7 +17,7 @@
 	import type { Tag } from "$lib/types/Tag";
 	import { QueryFactory } from "$lib/util/QueryFactory";
 
-    export let tags: Tag = []
+    export let tags: Tag = ["code", "how-to", "general", "projects", "life"]
 
     let showSidebar = false;
 
@@ -36,27 +36,29 @@
     }
 
     const handleSearch = () => {
-        // alert("Searching for "+ searchParam)
 
-        let qs = QueryFactory(location, {
-            q: searchParam,
-            // page: 1,
-            date: (sortSelect == "Date - Oldest to Newest" ? OrderBy.ASC : OrderBy.DESC),
-            // tag: "code"
-        })
-        // if (searchParam.trim() == "") {
-        //     queryURL = "/posts"
-        // } else {
-        //     queryURL += `q=${searchParam}`
-        // }
-
-        // if (sortSelect == "Date - Oldest to Newest") {
-        //     queryURL += "?date=asc"
-        // }
+        /**
+         * Create our basic search
+         */
+        let searchQuery = {
+            date: (sortSelect == "Date - Oldest to Newest" ? OrderBy.ASC : OrderBy.DESC)
+        }
+        
+        /**
+         * We check to see if the something has been entered into the search box
+         * if it has, then we will add that to the sear query
+        */
+        if (searchParam.trim() != "") {
+            searchQuery = {...searchQuery, q: searchParam}
+        } 
+        
+        /**
+         * We get the query url from QueryFactory
+         */
+        let qs = QueryFactory(location, searchQuery)
 
         goto(queryURL + qs, { replaceState: false })
 
-        // queryURL = "/posts?"
     }
 
     const handleSortSelect = () => {
@@ -85,7 +87,7 @@
             <h2>Filter by Tag:</h2>
             <div class="flex flex-wrap">
                 {#each tags as tag}
-                    <Badge title={tag.attributes.tag} color={tag.attributes.color}/>
+                    <Badge title={tag}/>
                 {/each}
 
             </div>
