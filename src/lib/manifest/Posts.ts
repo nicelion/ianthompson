@@ -39,7 +39,7 @@ export const Posts: Post[] = [
         description: "This is the first post to the blog. Here, you will find a description of what the blog is, and what the goals are.",
         slug: "welcome-to-the-blog",
         cover: "https://storage.googleapis.com/iacthompson-dev-bucket/medium_negative_space_colorful_programming_code_1062x708_2a659aebfc/medium_negative_space_colorful_programming_code_1062x708_2a659aebfc.jpg",
-        postDate: new Date(2023, 11, 24, 12, 0, 0, 0),
+        postDate: new Date(2023, 5, 24, 12, 0, 0, 0),
         tags: ["general"]
     }
 ]
