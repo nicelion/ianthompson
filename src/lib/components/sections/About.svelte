@@ -127,8 +127,33 @@
 				<p><span class="italic">Program Committeee</span>, International Conference on Quantitative Ethnography (ICQE) 2023</p>
 			</Experience>
 		</Collapse>
-
-		<Collapse title="Experience">
+		<Collapse title="Teaching Experience">
+			<Experience title="Practicum Student - 3rd Grade" fa="fa-solid fa-chalkboard-user">
+				<p><a href="https://idealab.sites.clemson.edu/" class="url" target="_blank" rel="noreferrer">Midway Elementary</a> | Anderson School District 5</p>
+				<p>Fall 2023</p>
+				<br />
+				<p>
+					This was a 215 hour placement that satisfied the requirements of EDEL 4010 - Elementary Field Experience at Clemson University.
+				</p>
+			</Experience>
+			<Experience title="Practicum Student - 3rd Grade" fa="fa-solid fa-chalkboard-user">
+				<p><a href="https://idealab.sites.clemson.edu/" class="url" target="_blank" rel="noreferrer">Whitehall Elementary</a> | Anderson School District 5</p>
+				<p>Spring 2023</p>
+				<br />
+				<p>
+					This was a 35 hour placement that satisfied the requirements of EDEL 4520 - Elementary Methods in Mathematics Teaching at Clemson University.
+				</p>
+			</Experience>
+			<Experience title="Practicum Student - 4th Grade" fa="fa-solid fa-chalkboard-user">
+				<p><a href="https://idealab.sites.clemson.edu/" class="url" target="_blank" rel="noreferrer">Forest Acres Elementary</a> | Pickens County School District</p>
+				<p>Fall 2021</p>
+				<br />
+				<p>
+					This was a 6 hour placement that satisfied the requirements of EDF 3340 - Child Growth and Development at Clemson University.
+				</p>
+			</Experience>
+		</Collapse>
+		<Collapse title="Work Experience">
 			<Experience title="Undergraduate Researcher" fa="fa-solid fa-briefcase">
 				<p><a href="https://idealab.sites.clemson.edu/" class="url" target="_blank" rel="noreferrer">IDEA Lab @ Clemson University</a> | Clemson, SC</p>
 				<p>August 2021 - Present</p>
@@ -242,13 +267,24 @@
 				</ul>
 			</Experience>
 		</Collapse>
-		<Collapse title="Volunteering">
-			<Experience title="WyldLife Leader @ McCants Middle School" fa="fa-solid fa-handshake-angle">
-				<p>Tri-County YoungLife | Anderson, SC</p>
-				<p>August 2020 - Present</p>
+		<Collapse title="Volunteer Experience">
+			<Experience title="Young Life Leader @ T.L Hanna High School" fa="fa-solid fa-handshake-angle">
+				<p>Tri-County Young Life | Anderson, SC</p>
+				<p>August 2023 - Present</p>
 				<br />
 				<p class="leading-relaxed">
-					<a class="url" href="https://younglife.org/get-involved/for-every-kid/">WyldLife</a> is a ministry under YoungLife for middle school students. In this role, I have
+					<a class="url" href="https://younglife.org/get-involved/for-every-kid/">Young Life</a> is a ministry for high school students. In this role, I have
+					connected with many students and families at T.L Hanna High School in Anderson, SC. I am
+					on a team of other college students who plan weekly gatherings, aka "club", and other
+					events with the goal of sharing the Gospel of Christ to our high school friends.
+				</p>
+			</Experience>
+			<Experience title="WyldLife Leader @ McCants Middle School" fa="fa-solid fa-handshake-angle">
+				<p>Tri-County Young Life | Anderson, SC</p>
+				<p>August 2020 - August 2023</p>
+				<br />
+				<p class="leading-relaxed">
+					<a class="url" href="https://younglife.org/get-involved/for-every-kid/">WyldLife</a> is a ministry under Young Life for middle school students. In this role, I have
 					connected with many students and families at McCants Middle School in Anderson, SC. I am
 					on a team of other college students who plan weekly gatherings, aka "club", and other
 					events with the goal of sharing the Gospel of Christ to our middle school friends.
@@ -270,5 +306,15 @@
 				</p>
 			</Experience>
 		</Collapse>
+		<!-- <Collapse title="Certifications">
+			<Experience title="Practicum Student - 3rd Grade" fa="fa-solid fa-certificate">
+				<p><a href="https://idealab.sites.clemson.edu/" class="url" target="_blank" rel="noreferrer">Midway Elementary</a> | Anderson School District 5</p>
+				<p>Fall 2023</p>
+				<br />
+				<p>
+					This was a 215 hour placement that satisfied the requirements of EDEL 4010 - Elementary Field Experience at Clemson University.
+				</p>
+			</Experience>
+		</Collapse> -->
 	</div>
 </section>
