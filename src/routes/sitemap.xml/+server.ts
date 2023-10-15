@@ -44,7 +44,6 @@ export async function GET() {
 		<url>
 			<loc>${site}/${post.slug}</loc>
 			<changefreq>monthly</changefreq>
-			<lastmod>${post.postDate}</lastmod>
 			<priority>0.3</priority>
 		</url>
 		`).join('')}
