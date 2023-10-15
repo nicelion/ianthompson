@@ -48,7 +48,6 @@ import { getFilteredPosts } from "$lib/util/filterPosts";
 //   throw error(404, 'Not found');
 // }) satisfies PageLoad;
 
-export const prerender = false;
 export const load = (async ({ fetch, url }) => {
     
       let posts = Posts
