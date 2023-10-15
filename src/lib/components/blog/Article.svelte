@@ -53,7 +53,7 @@
             </div>
         </div>
 
-        <div class="space-y-6 mt-9 px-3 leading-relaxed">
+        <div class="space-y-6 mt-9 px-3 leading-relaxed text-lg">
 
             <slot />
             <!-- <div class="rounded-md p-2 border-b-2 border-eerie-black px-4 pb-4 ">
