@@ -32,7 +32,7 @@
         <div class="mt-4">
             <p>{post.description}</p>
         </div>
-        <div class="flex justify-end">
+        <div class="flex justify-end mt-4">
             {#each post.tags as tag}
                 <Badge title={tag}/>
             {/each}

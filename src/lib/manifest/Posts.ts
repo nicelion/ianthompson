@@ -25,6 +25,15 @@ export const Posts: Post[] = [
     //     tags: ["code", "how-to", "svelte"]
     // },
     {
+        index: 3,
+        title: "Summer Moon Coffee: A Review",
+        description: "Recently, a new coffee shop has been popping up around the Greenville area. In this review, I document my first experience and give my opinion on whether this coffee shop is truly all it is cracked up to be.",
+        slug: "summer-moon-coffee-a-review",
+        cover: "https://bloximages.newyork1.vip.townnews.com/postandcourier.com/content/tncms/assets/v3/editorial/6/cc/6cc28ada-5ca1-11ee-a98a-5fcd26fa663a/65132efeaa608.image.jpg?resize=1200%2C800",
+        postDate: new Date(2023, 9, 15, 12, 0, 0, 0),
+        tags: ["reviews", "food-and-drink"]
+    },
+    {
         index: 2,
         title: "raspi-metar: A METAR Visualization Project for Raspberry Pi!",
         description: "Here I describe raspi-metar, a METAR visualization project I built in the summer of 2020 for Raspberry Pi.",
