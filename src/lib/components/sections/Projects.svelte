@@ -15,8 +15,6 @@
 	import ViewOnGitHubButton from "$lib/components/ViewOnGitHubButton.svelte";
 	import Card from "$lib/components/Card.svelte";
 	
-
-	import { Confetti } from "svelte-confetti"
 	import ProjectSorter from "$lib/components/ProjectSorter.svelte";
 	import type { Project } from "$lib/types/Project";
 	import Projects from "$lib/manifest/Projects";
@@ -27,24 +25,6 @@
 	let timeout
 
 	let projects: [Project] = Projects
-
-	async function moveConfetti(event) {
-
-
-		const { target, clientX, clientY } = event
-
-		const elementY = target.getBoundingClientRect().top
-		const elementX = target.getBoundingClientRect().left
-
-		const x = clientX - elementX
-		const y = clientY - elementY
-
-		things = [...things, { x, y }]
-
-		clearTimeout(timeout)
-
-		timeout = setTimeout(() => things = [], duration)
-	}
 
 	const handleSelection = (event: CustomEvent<string>) => {
 		console.log(event.detail);
