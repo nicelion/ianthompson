@@ -12,7 +12,7 @@
 
 <script lang="ts">
 	import type { Post } from "$lib/types/Post";
-	import Badge from "./Badge.svelte";
+	import Badge from "../Badge.svelte";
 
     // export let coverImg = ""
     // export let title = ""

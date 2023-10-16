@@ -23,7 +23,7 @@
 --->
 
 <script lang="ts">
-	import Article from "$lib/components/blog/Article.svelte";
+	import Article from "$lib/components/blog/renderers/Article.svelte";
 	import type { Post } from "$lib/types/Post";
     import { page } from '$app/stores';  
 	import { getPostData } from "$lib/util/getPostData";

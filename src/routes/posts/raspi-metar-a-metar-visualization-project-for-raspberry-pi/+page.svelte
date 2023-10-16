@@ -12,21 +12,11 @@
 --->
 
 <script lang="ts">
-	import Article from "$lib/components/blog/Article.svelte";
 	import type { Post } from "$lib/types/Post";
-    import { page } from '$app/stores';  
-	import { getPostData } from "$lib/util/getPostData";
-	import Heading from "$lib/components/blog/renderers/Heading.svelte";
-	import Image from "$lib/components/blog/renderers/Image.svelte";
-	import PostLoader from "$lib/components/blog/PostLoader.svelte";
-	import External from "$lib/components/blog/renderers/External.svelte";
-	import { text } from "svelte/internal";
-	import CodespanRenderer from "$lib/components/blog/renderers/CodespanRenderer.svelte";
-	import List from "$lib/components/blog/renderers/List.svelte";
-	import ListItem from "$lib/components/blog/renderers/ListItem.svelte";
-	import Strong from "$lib/components/blog/renderers/Strong.svelte";
-	import CodeRenderer from "$lib/components/blog/renderers/CodeRenderer.svelte";
-	import Section from "$lib/components/blog/renderers/Section.svelte";
+
+    
+    import { Article, Column, ColumnContent, Image, Section, Heading, Strong, List, ListItem, CodeRenderer, CodespanRenderer, External } from "$lib/components/blog/renderers"
+
 
     export let data: Post
     

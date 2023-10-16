@@ -11,17 +11,10 @@
 --->
 
 <script lang="ts">
-	import Article from "$lib/components/blog/Article.svelte";
 	import type { Post } from "$lib/types/Post";
-    import { page } from '$app/stores';  
-	import { getPostData } from "$lib/util/getPostData";
-	import Heading from "$lib/components/blog/renderers/Heading.svelte";
-	import Image from "$lib/components/blog/renderers/Image.svelte";
-	import PostLoader from "$lib/components/blog/PostLoader.svelte";
-    import Section from "$lib/components/blog/renderers/Section.svelte";
-    import Column from "$lib/components/blog/renderers/Column.svelte";
 
-    import ColumnContent from "$lib/components/blog/renderers/ColumnContent.svelte";
+    import { Article, Column, ColumnContent, Image, Section, Heading } from "$lib/components/blog/renderers"
+
     export let data: Post
 
 </script>

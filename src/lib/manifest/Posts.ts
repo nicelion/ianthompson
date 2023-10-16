@@ -10,7 +10,7 @@
  
 */
 
-import Article from "$lib/components/blog/Article.svelte";
+import Article from "$lib/components/blog/renderers/Article.svelte";
 // import WelcomeToTheBlog from "$lib/posts/WelcomeToTheBlog.svelte";
 import type { Post } from "$lib/types/Post";
 
@@ -34,7 +34,7 @@ export const Posts: Post[] = [
         tags: ["reviews", "food-and-drink"]
     },
     {
-        index: 2,
+        index: 2, 
         title: "raspi-metar: A METAR Visualization Project for Raspberry Pi!",
         description: "Here I describe raspi-metar, a METAR visualization project I built in the summer of 2020 for Raspberry Pi.",
         slug: "raspi-metar-a-metar-visualization-project-for-raspberry-pi",
