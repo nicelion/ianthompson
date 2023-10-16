@@ -64,7 +64,7 @@
 
             <SvelteMarkdown source={post.attributes.content} renderers={{strong: StrongRenderer, image: ImageRenderer, heading: HeadingRenderer, codespan: CodespanRenderer, link: LinkRenderer, html: HtmlRenderer, list: ListRenderer, listitem: ListItemRenderer, paragraph: ParagraphRenderer, code: CodeRenderer}} />  -->
         </div>
-        <div class="mt-24 text-xs p-3">
+        <div class="mt-24 text-sm p-3 space-y-4 flex flex-col">
             <p class="text-neutral-content">
                 * This post may contain affiliate marketing links. By clicking these links, a portion of money you spend on the websites you are referred to may be shared with the owner of this site.
             </p>
