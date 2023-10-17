@@ -19,7 +19,7 @@
 		"postcss": "^8.4.20",
 		"prettier": "^2.8.8",
 		"prettier-plugin-svelte": "^2.8.1",
-		"prettier-plugin-tailwindcss": "^0.5.6",
+		"prettier-plugin-tailwindcss": "^0.3.0",
 		"svelte": "^3.54.0",
 		"svelte-check": "^2.9.2",
 		"svelte-preprocess": "^5.0.0",
@@ -36,7 +36,6 @@
 		"markdown-toc": "^1.2.0",
 		"qs": "^6.11.1",
 		"svelte-highlight": "^7.3.0",
-		"svelte-markdown": "^0.2.3",
-		"svelte-notifications": "^0.9.98"
+		"svelte-markdown": "^0.2.3"
 	}
 }
