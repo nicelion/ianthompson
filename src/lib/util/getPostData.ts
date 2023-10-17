@@ -10,18 +10,17 @@
  
 */
 
-import { Posts } from "$lib/manifest/Posts";
-import type { Post } from "$lib/types/Post";
+import { Posts } from '$lib/manifest/Posts';
+import type { Post } from '$lib/types/Post';
 
 export const getPostData = async (pathname: string) => {
-    return new Promise<Post>((resolve, reject) => {
+	return new Promise<Post>((resolve, reject) => {
+		let postToFind = Posts.find((s) => pathname.endsWith(s.slug));
 
-        let postToFind = Posts.find(s => pathname.endsWith(s.slug))
+		if (postToFind != undefined) {
+			resolve(postToFind);
+		}
 
-        if (postToFind != undefined) {
-            resolve(postToFind)
-        }
-        
-        reject(new Error("No post could be found!"))
-    });
-}
+		reject(new Error('No post could be found!'));
+	});
+};

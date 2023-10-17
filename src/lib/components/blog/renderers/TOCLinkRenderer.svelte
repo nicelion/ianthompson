@@ -11,9 +11,9 @@
 --->
 
 <script lang="ts">
-    export let title: string = undefined
-    export let href: string = undefined
-    export let text: string = undefined
+	export let title: string = undefined;
+	export let href: string = undefined;
+	export let text: string = undefined;
 </script>
 
 <a href={`#${text}`} class="url text-lg">{text}</a>

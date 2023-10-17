@@ -10,11 +10,10 @@
  
 */
 
-import { Posts } from "$lib/manifest/Posts";
+import { Posts } from '$lib/manifest/Posts';
 
-const site = "https://www.iancthompson.dev"
-const pages = ["posts", "lets-chat"]
-
+const site = 'https://www.iancthompson.dev';
+const pages = ['posts', 'lets-chat'];
 
 export async function GET() {
 	return new Response(
@@ -33,20 +32,26 @@ export async function GET() {
             <changefreq>weekly</changefreq>
             <priority>1</priority>
         </url>
-        ${pages.map((page) => `
+        ${pages
+					.map(
+						(page) => `
             <url>
                 <loc>${site}/${page}</loc>
                 <changefreq>weekly</changefreq>
                 <priority>0.7</priority>
             </url>
-        `).join('')}
-		${Posts.map((post) => `
+        `
+					)
+					.join('')}
+		${Posts.map(
+			(post) => `
 		<url>
-			<loc>${site}/${post.slug}</loc>
+			<loc>${site}/posts/${post.slug}</loc>
 			<changefreq>monthly</changefreq>
 			<priority>0.3</priority>
 		</url>
-		`).join('')}
+		`
+		).join('')}
 		</urlset>`.trim(),
 		{
 			headers: {

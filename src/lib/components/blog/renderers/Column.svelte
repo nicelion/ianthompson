@@ -11,10 +11,10 @@
 --->
 
 <div class="flex-none md:flex md:space-x-5">
-    <div class="md:w-1/2">
-        <slot name="left"/>
-    </div>
-    <div class="md:w-1/2">
-        <slot name="right"/>
-    </div>
+	<div class="md:w-1/2">
+		<slot name="left" />
+	</div>
+	<div class="md:w-1/2">
+		<slot name="right" />
+	</div>
 </div>

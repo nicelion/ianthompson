@@ -10,4 +10,4 @@
  
 --->
 
-<li class="ml-8"><slot></slot></li>
+<li class="ml-8"><slot /></li>

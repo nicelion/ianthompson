@@ -10,6 +10,4 @@
  
 --->
 
-<div class="w-full h-full bg-orange-400 rounded text-center p-6">
-    AD GOES HERE
-</div>
+<div class="h-full w-full rounded bg-orange-400 p-6 text-center">AD GOES HERE</div>

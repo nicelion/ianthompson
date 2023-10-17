@@ -11,10 +11,10 @@
 */
 
 export interface Project {
-    name: string,
-    description: string,
-    github?: string
-    url?: string,
-    img: string
-    tags: [string]
+	name: string;
+	description: string;
+	github?: string;
+	url?: string;
+	img: string;
+	tags: [string];
 }

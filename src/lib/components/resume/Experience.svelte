@@ -17,10 +17,10 @@
 
 <div class="flex items-center space-x-4">
 	<i class={`${fa} text-2xl`} />
-	<div class="w-full flex items-center justify-around">
+	<div class="flex w-full items-center justify-around">
 		<div class="mt-4 w-full bg-black-lighter p-2 md:pr-24">
 			<h4 class="text-lg font-bold">
-				<span class="uppercase text-2xl">{title}</span>
+				<span class="text-2xl uppercase">{title}</span>
 			</h4>
 			<slot />
 		</div>

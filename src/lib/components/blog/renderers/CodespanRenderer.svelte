@@ -11,9 +11,9 @@
 --->
 
 <script lang="ts">
-    export let content: string
+	export let content: string;
 </script>
 
-<code class="text-neutral-content font-mono bg-code-background p-2 font-bold rounded-md mt-4">
-    {content.replace(/`/g, '')}
+<code class="bg-code-background mt-4 rounded-md p-2 font-mono font-bold text-neutral-content">
+	{content.replace(/`/g, '')}
 </code>

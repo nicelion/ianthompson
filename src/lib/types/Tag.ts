@@ -11,6 +11,6 @@
 */
 
 export interface Tag {
-    tag: string,
-    color: string
+	tag: string;
+	color: string;
 }

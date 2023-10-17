@@ -11,5 +11,5 @@
 --->
 
 <div class="space-y-5">
-    <slot/>
+	<slot />
 </div>

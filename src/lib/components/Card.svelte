@@ -10,7 +10,6 @@
  
 --->
 
-
 <script>
 	import { fade, fly } from 'svelte/transition';
 
@@ -20,16 +19,19 @@
 	export let badge = '';
 </script>
 
-<div target="_blank" class="card  bg-base-100  font-mono max-w-md" out:fade in:fade>
-	<div class="overflow-hidden h-3/5 rounded-t-md">
-		<img src={img} alt={title} class="object-cover hover:scale-125 ease-in duration-1000 h-full w-full rounded-t-md"/>	
+<div target="_blank" class="card max-w-md bg-base-100 font-mono" out:fade in:fade>
+	<div class="h-3/5 overflow-hidden rounded-t-md">
+		<img
+			src={img}
+			alt={title}
+			class="h-full w-full rounded-t-md object-cover duration-1000 ease-in hover:scale-125" />
 	</div>
 	<div class="card-body h-full">
 		<h2 class="card-title">
 			{title}
 		</h2>
 		<div class="mb-2 italic">
-			<div class="badge py-3 badge-primary text-white">#{badge}</div>
+			<div class="badge badge-primary py-3 text-white">#{badge}</div>
 		</div>
 		<p>{description}</p>
 

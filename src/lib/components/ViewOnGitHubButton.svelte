@@ -11,10 +11,14 @@
 --->
 
 <script>
-    export let url = "";
+	export let url = '';
 </script>
 
-<a href={url} class="group px-4 py-2 rounded-lg text-center flex items-center align-middle border text-white hover:bg-white hover:text-black transition ease-in-out duration-200" target="_blank" rel="noreferrer">
-    <i class="fa-brands fa-github group-hover:animate-wiggle text-3xl" />
-    <p class="text-lg">View on GitHub</p>
+<a
+	href={url}
+	class="group flex items-center rounded-lg border px-4 py-2 text-center align-middle text-white transition duration-200 ease-in-out hover:bg-white hover:text-black"
+	target="_blank"
+	rel="noreferrer">
+	<i class="fa-brands fa-github text-3xl group-hover:animate-wiggle" />
+	<p class="text-lg">View on GitHub</p>
 </a>

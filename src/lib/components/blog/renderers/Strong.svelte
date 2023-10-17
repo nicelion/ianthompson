@@ -10,5 +10,4 @@
  
 --->
 
-
-<strong class="font-bold"><slot></slot></strong>
+<strong class="font-bold"><slot /></strong>

@@ -10,13 +10,13 @@
  
 */
 
-export interface Post { 
-    title: string,
-    description: string,
-    postDate: Date,
-    cover: string,
-    slug: string,
-    index?: number,
-    tags?: string[]
-    // component: any
+export interface Post {
+	title: string;
+	description: string;
+	postDate: Date;
+	cover: string;
+	slug: string;
+	index?: number;
+	tags?: string[];
+	// component: any
 }

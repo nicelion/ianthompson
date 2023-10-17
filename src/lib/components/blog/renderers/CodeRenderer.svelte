@@ -10,71 +10,71 @@
  
 --->
 
-
 <script lang="ts">
-	import { onMount } from "svelte";
-    import Highlight from "svelte-highlight";
-    // import javascript from "svelte-highlight/languages/javascript";
-    // import python from "svelte-highlight/languages/python"
-    // import html
+	import { onMount } from 'svelte';
+	import Highlight from 'svelte-highlight';
+	// import javascript from "svelte-highlight/languages/javascript";
+	// import python from "svelte-highlight/languages/python"
+	// import html
 
-    import {python, javascript, cpp} from "svelte-highlight/languages"
+	import { python, javascript, cpp } from 'svelte-highlight/languages';
 
-    import atomOneDark from "svelte-highlight/styles/atom-one-dark";
-    
-    export let lang: string
-    let text: string = ""
+	import atomOneDark from 'svelte-highlight/styles/atom-one-dark';
 
-    export let gist: null | string = null
+	export let lang: string;
+	let text: string = '';
 
-    let language: any = javascript
+	export let gist: null | string = null;
 
-    let copyState = "Copy"
+	let language: any = javascript;
 
-    onMount(async () => {
+	let copyState = 'Copy';
 
-        if (gist != null) {
-            let response = await fetch(gist)
-            text = await response.text()
-            
-        }
+	onMount(async () => {
+		if (gist != null) {
+			let response = await fetch(gist);
+			text = await response.text();
+		}
 
-        switch (lang) {
-            case "javascript": 
-                language = javascript
-                break;
-            case "python":
-                language = python;
-                break;
-            case "cpp":
-                language = cpp;
-                break;
-            default:
-                language = javascript;
-        }
-    })
+		switch (lang) {
+			case 'javascript':
+				language = javascript;
+				break;
+			case 'python':
+				language = python;
+				break;
+			case 'cpp':
+				language = cpp;
+				break;
+			default:
+				language = javascript;
+		}
+	});
 
-    const handleCopy = () => {
-        // navigator.clipboard.writeText(text)
+	const handleCopy = () => {
+		// navigator.clipboard.writeText(text)
 
-        copyState = "Copied!"
+		copyState = 'Copied!';
 
-        setTimeout(() => {
-            copyState = "Copy"
-        }, 2000)
-    }
-
+		setTimeout(() => {
+			copyState = 'Copy';
+		}, 2000);
+	};
 </script>
 
 <svelte:head>
-    {@html atomOneDark}
+	{@html atomOneDark}
 </svelte:head>
 
-<div class="mockup-code bg-code-background shadow-lg my-3" style="background: #282c34;">
-    <div class="flex items-end w-full justify-end px-5 pb-2">
-        <button class="hover:opacity-75" on:click={handleCopy}><i class="fa-solid fa-copy mr-1 text-lg"></i> <span class={`${copyState == "Copied!" ? `text-green-300` : `text-content`}`}>{copyState}</span> </button>
-    </div>
-    <div class="border-t border-eerie-black">
-        <Highlight {language} code={text} />
-    </div>
+<div class="bg-code-background mockup-code my-3 shadow-lg" style="background: #282c34;">
+	<div class="flex w-full items-end justify-end px-5 pb-2">
+		<button class="hover:opacity-75" on:click={handleCopy}
+			><i class="fa-solid fa-copy mr-1 text-lg" />
+			<span class={`${copyState == 'Copied!' ? `text-green-300` : `text-content`}`}
+				>{copyState}</span>
+		</button>
+	</div>
+	<div class="border-t border-eerie-black">
+		<Highlight {language} code={text} />
+	</div>
 </div>

@@ -13,12 +13,12 @@
 	export let title = '';
 </script>
 
-<div class="w-full collapse collapse-arrow " tabindex="0">
+<div class="collapse collapse-arrow w-full" tabindex="0">
 	<input type="checkbox" aria-label="resume" />
-	<h1 class="collapse-title text-3xl border-b">{title}</h1>
+	<h1 class="collapse-title border-b text-3xl">{title}</h1>
 	<div class="collapse-content flex items-center space-x-4">
 		<!-- <i class="fa-solid fa-graduation-cap text-2xl" /> -->
-		<div class="mt-4 w-full bg-black-lighter ">
+		<div class="mt-4 w-full bg-black-lighter">
 			<slot />
 		</div>
 	</div>

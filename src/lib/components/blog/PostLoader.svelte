@@ -10,7 +10,7 @@
  
 --->
 
-<div class="flex flex-col items-center justify-center w-full h-full">
-    Loading...
-    <span class="loading loading-spinner loading-lg"></span>
+<div class="flex h-full w-full flex-col items-center justify-center">
+	Loading...
+	<span class="loading-spinner loading-lg loading" />
 </div>

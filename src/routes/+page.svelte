@@ -1,8 +1,7 @@
 <script lang="ts">
-  	import CallToAction from '$lib/components/CallToAction.svelte';
+	import CallToAction from '$lib/components/CallToAction.svelte';
 
-
-    import Collapse from '$lib/components/Collapse.svelte';
+	import Collapse from '$lib/components/Collapse.svelte';
 	import Card from '$lib/components/Card.svelte';
 	import Interest from '$lib/components/Interest.svelte';
 	import Education from '$lib/components/resume/Education.svelte';
@@ -13,12 +12,13 @@
 	import About from '$lib/components/sections/About.svelte';
 	import Hero from '$lib/components/sections/Hero.svelte';
 	import Wave from '$lib/components/Wave.svelte';
-	
 </script>
 
 <svelte:head>
 	<title>Ian Thompson | Student @ Clemson University</title>
-	<meta name="description" content="Ian Thompson is an undergraduate student at Clemson University interested in education, computer science, and human-computer interaction that is skilled in web development using technologies such as Javascript, Typescript, Python, and Svelte.">
+	<meta
+		name="description"
+		content="Ian Thompson is an undergraduate student at Clemson University interested in education, computer science, and human-computer interaction that is skilled in web development using technologies such as Javascript, Typescript, Python, and Svelte." />
 </svelte:head>
 
 <CallToAction />
@@ -29,6 +29,6 @@
 
 <About />
 
-<Wave inverted={false}/>
+<Wave inverted={false} />
 
 <Projects />

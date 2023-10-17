@@ -15,16 +15,16 @@
 @tailwind utilities;
 
 .hero {
-    height: calc(100vh - theme(height.header));
+	height: calc(100vh - theme(height.header));
 }
 
 .will-change-transform {
-    will-change: transform;
+	will-change: transform;
 }
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 .url {
-    @apply text-theme-primary hover:underline
+	@apply text-theme-primary hover:underline;
 }

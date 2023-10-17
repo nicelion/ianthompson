@@ -12,32 +12,30 @@
 
 <script lang="ts">
 	// import AdContainer from "$lib/components/AdContainer.svelte";
-    import { onMount } from "svelte";
-    import AdContainer from "$lib/components/blog/AdContainer.svelte"
+	import { onMount } from 'svelte';
+	import AdContainer from '$lib/components/blog/AdContainer.svelte';
 
-    export let text: string = undefined
+	export let text: string = undefined;
 
-    let isAd: boolean = false
-    
+	let isAd: boolean = false;
 
-    onMount(() => {
-        var doc = new DOMParser().parseFromString(text, "text/html")
+	onMount(() => {
+		var doc = new DOMParser().parseFromString(text, 'text/html');
 
-        if (doc.getElementById("ad") != null) {
-            isAd = true            
-        }
-
-    })
+		if (doc.getElementById('ad') != null) {
+			isAd = true;
+		}
+	});
 </script>
 
 {#if isAd}
-    <!-- <AdContainer /> -->
+	<!-- <AdContainer /> -->
 
-    <AdContainer />
+	<AdContainer />
 {:else}
-    {@html text}
+	{@html text}
 {/if}
 
 <!-- <div class="w-full h-fit flex justify-center items-center"> -->
-   <!-- <h1>hello</h1> -->
+<!-- <h1>hello</h1> -->
 <!-- </div> -->

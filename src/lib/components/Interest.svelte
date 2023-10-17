@@ -17,9 +17,11 @@
 </script>
 
 {#if url == ''}
-	<p class={`py-1 px-2 ${color} rounded-md font-mono h-fit my-1 mx-2`}>{interest}</p>
+	<p class={`px-2 py-1 ${color} mx-2 my-1 h-fit rounded-md font-mono`}>{interest}</p>
 {:else}
-	<a href={url} target="_blank" class={`py-1 px-2 ${color} rounded-md font-mono h-fit my-1 mx-2 hover:underline text-cornsilk`}
-		>{interest}</a
-	>
+	<a
+		href={url}
+		target="_blank"
+		class={`px-2 py-1 ${color} mx-2 my-1 h-fit rounded-md font-mono text-cornsilk hover:underline`}
+		>{interest}</a>
 {/if}
