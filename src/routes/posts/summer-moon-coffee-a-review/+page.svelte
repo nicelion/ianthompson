@@ -36,7 +36,7 @@
 		many hours at a good coffee shop. In my opinion, the local, the better. So, when I first heard
 		of this new coffee concept, I was intrigued but disappointed to hear that it was, in fact, a
 		chain restaurant. However, this cooler October day (and finally one of the first hints of Fall
-		weather) felt like a perfect day to try their "Autum Moon Latte" they have been heavily
+		weather) felt like a perfect day to try their "Autumn Moon Latte" they have been heavily
 		advertising.
 	</p>
 	<Section title="My Review">

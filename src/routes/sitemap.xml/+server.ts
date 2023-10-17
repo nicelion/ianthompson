@@ -46,7 +46,7 @@ export async function GET() {
 		${Posts.map(
 			(post) => `
 		<url>
-			<loc>${site}/${post.slug}</loc>
+			<loc>${site}/posts/${post.slug}</loc>
 			<changefreq>monthly</changefreq>
 			<priority>0.3</priority>
 		</url>

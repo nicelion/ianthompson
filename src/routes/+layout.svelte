@@ -263,9 +263,9 @@
 				</div>
 			</div>
 		</div>
-		<div id="footer-right" class="p-7 md:w-1/2">
-			<ul>
-				<!-- <li><a href="#">Instagram</a></li> -->
+		<div id="footer-right" class="flex justify-end p-7 md:w-1/2">
+			<ul class="mt-auto">
+				<!-- <li><a href="/sitemap.xml">Sitemap</a></li> -->
 			</ul>
 		</div>
 	</div>
@@ -286,6 +286,14 @@
 					rel="noreferrer">license</a
 				>!
 			</p>
+			<div class="mt-2 flex justify-center space-x-2">
+				<a href="/sitemap.xml" class="url">Sitemap</a>
+				<span>•</span>
+				<a href="https://www.github.com/nicelion/ianthompson" class="url after:content-['_↗']"
+					>Repository</a>
+				<span>•</span>
+				<a href="/lets-chat" class="url">Contact</a>
+			</div>
 		</div>
 	</div>
 </footer>

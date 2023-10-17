@@ -28,4 +28,4 @@
 	};
 </script>
 
-<p on:click={handleClick}>Made {text} in South Carolina.</p>
+<button class="hover:cursor-pointer" on:click={handleClick}>Made {text} in South Carolina.</button>
