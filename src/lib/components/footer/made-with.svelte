@@ -10,7 +10,6 @@
  
 --->
 
-
 <script>
 	let choices = [
 		'with ❤️ and ☕️',

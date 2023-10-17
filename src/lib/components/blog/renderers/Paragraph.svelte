@@ -11,8 +11,8 @@
 --->
 
 <script>
-    export let text = undefined
+	export let text = undefined;
 </script>
-  
+
 <!-- <p class="leading-relaxed">{text}</p> -->
-<p class="leading-relaxed"><slot></slot></p>
+<p class="leading-relaxed"><slot /></p>

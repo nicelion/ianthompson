@@ -11,9 +11,9 @@
 --->
 
 <a href="/lets-chat" id="cta" class="toast toast-end z-50 hidden hover:underline">
-	<div class="alert bg-theme-primary text-white sticky bottom-3">
-	  <div>
-		<span>Want to work together? <span class="font-bold">Let's chat!</span></span>
-	  </div>
+	<div class="alert sticky bottom-3 bg-theme-primary text-white">
+		<div>
+			<span>Want to work together? <span class="font-bold">Let's chat!</span></span>
+		</div>
 	</div>
 </a>

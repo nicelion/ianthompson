@@ -11,13 +11,13 @@
 */
 
 export enum OrderBy {
-    ASC = "asc",
-    DESC = "desc"
-} 
+	ASC = 'asc',
+	DESC = 'desc'
+}
 
 export interface Query {
-    q?: string,
-    date?: OrderBy,
-    tag?: string,
-    page?: number
+	q?: string;
+	date?: OrderBy;
+	tag?: string;
+	page?: number;
 }

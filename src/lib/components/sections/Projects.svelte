@@ -11,47 +11,53 @@
 --->
 
 <script lang="ts">
+	import ViewOnGitHubButton from '$lib/components/ViewOnGitHubButton.svelte';
+	import Card from '$lib/components/Card.svelte';
 
-	import ViewOnGitHubButton from "$lib/components/ViewOnGitHubButton.svelte";
-	import Card from "$lib/components/Card.svelte";
-	
-	import ProjectSorter from "$lib/components/ProjectSorter.svelte";
-	import type { Project } from "$lib/types/Project";
-	import Projects from "$lib/manifest/Projects";
+	import ProjectSorter from '$lib/components/ProjectSorter.svelte';
+	import type { Project } from '$lib/types/Project';
+	import Projects from '$lib/manifest/Projects';
 
-	const duration = 2000
+	const duration = 2000;
 
-	let things = []
-	let timeout
+	let things = [];
+	let timeout;
 
-	let projects: [Project] = Projects
+	let projects: [Project] = Projects;
 
 	const handleSelection = (event: CustomEvent<string>) => {
 		console.log(event.detail);
-		
-		if (event.detail == "all") {
-			projects = Projects
-		} else {
-			projects = Projects.filter(p => p.tags.includes(event.detail))
-		}
-	}
 
+		if (event.detail == 'all') {
+			projects = Projects;
+		} else {
+			projects = Projects.filter((p) => p.tags.includes(event.detail));
+		}
+	};
 </script>
 
-<section id="projects" class="flex flex-col justify-center w-full items-center py-12">
-	<div class="text-cornsilk mb-6">
-		<h1 class="font-bold text-2xl md:text-4xl">Projects I've Worked On</h1>
+<section id="projects" class="flex w-full flex-col items-center justify-center py-12">
+	<div class="mb-6 text-cornsilk">
+		<h1 class="text-2xl font-bold md:text-4xl">Projects I've Worked On</h1>
 	</div>
 	<ProjectSorter on:selection={handleSelection} />
 	{#if projects.length > 0}
-		<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 px-8 xl:p-23">
+		<div class="xl:p-23 grid gap-10 px-8 sm:grid-cols-2 lg:grid-cols-3">
 			{#each projects as project}
-				<Card img={project.img} title={project.name} description={project.description} badge={project.tags[0]}>
+				<Card
+					img={project.img}
+					title={project.name}
+					description={project.description}
+					badge={project.tags[0]}>
 					{#if project.github != undefined}
 						<ViewOnGitHubButton url={project.github} />
 					{/if}
 					{#if project.url != undefined}
-						<a target="_blank" rel="noreferrer" href={project.url} class="px-4 py-2 rounded-lg text-center flex items-center align-middle border text-white hover:bg-white hover:text-black transition duration-200 ease-in-out">
+						<a
+							target="_blank"
+							rel="noreferrer"
+							href={project.url}
+							class="flex items-center rounded-lg border px-4 py-2 text-center align-middle text-white transition duration-200 ease-in-out hover:bg-white hover:text-black">
 							<p class="text-lg">See more</p>
 						</a>
 					{/if}
@@ -78,13 +84,12 @@
 		background: white;
 		user-select: none;
 	}
-  
+
 	.mover {
-	 	 position: absolute;
+		position: absolute;
 	}
-  
+
 	span {
-	  	pointer-events: none;
+		pointer-events: none;
 	}
-  </style>
-  
+</style>

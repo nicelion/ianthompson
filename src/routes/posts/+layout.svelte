@@ -11,19 +11,18 @@
 --->
 
 <script lang="ts">
-	import RefineSearch from "$lib/components/blog/RefineSearch.svelte";
-	import type { Tag } from "$lib/types/Tag";
+	import RefineSearch from '$lib/components/blog/RefineSearch.svelte';
+	import type { Tag } from '$lib/types/Tag';
 
-//    /** @type {import('./$types').PageData} */
-//    export let data;   
-
+	//    /** @type {import('./$types').PageData} */
+	//    export let data;
 </script>
 
-<div class="flex flex-col lg:flex-row w-full h-full p-2 md:p-4 ">
-    <div class="w-full lg:w-1/5 lg:space-y-20 py-8">
-        <RefineSearch />
-    </div>
-    <main class="w-full lg:px-8 lg:w-4/5">
-        <slot />
-    </main>
+<div class="flex h-full w-full flex-col p-2 md:p-4 lg:flex-row">
+	<div class="w-full py-8 lg:w-1/5 lg:space-y-20">
+		<RefineSearch />
+	</div>
+	<main class="w-full lg:w-4/5 lg:px-8">
+		<slot />
+	</main>
 </div>

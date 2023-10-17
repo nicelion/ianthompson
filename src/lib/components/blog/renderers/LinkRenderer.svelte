@@ -11,19 +11,23 @@
 --->
 
 <script lang="ts">
-    export let title: string = undefined
-    export let href: string = undefined
-    export let text: string = undefined
+	export let title: string = undefined;
+	export let href: string = undefined;
+	export let text: string = undefined;
 </script>
 
-{#if text == "Spotify"}
-<div class="flex items-center justify-center">
-    <a {href} {title} target="_blank" rel="noreferrer" class="bg-spotify-green px-3 py-2 rounded-md">
-        <i class="fa fa-spotify pr-2"></i>
-        Listen on Spotify
-    </a>
-</div>
-
+{#if text == 'Spotify'}
+	<div class="flex items-center justify-center">
+		<a
+			{href}
+			{title}
+			target="_blank"
+			rel="noreferrer"
+			class="rounded-md bg-spotify-green px-3 py-2">
+			<i class="fa fa-spotify pr-2" />
+			Listen on Spotify
+		</a>
+	</div>
 {:else}
-    <a {href} {title} target="_blank" rel="noreferrer" class="url"><slot></slot></a>
+	<a {href} {title} target="_blank" rel="noreferrer" class="url"><slot /></a>
 {/if}

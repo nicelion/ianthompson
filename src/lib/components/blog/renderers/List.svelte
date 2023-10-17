@@ -11,12 +11,12 @@
 --->
 
 <script>
-    export let ordered
-    // export let start
-  </script>
-  
+	export let ordered;
+	// export let start
+</script>
+
 {#if ordered}
-    <ol class="list-disc list-inside"><slot></slot></ol>
+	<ol class="list-inside list-disc"><slot /></ol>
 {:else}
-    <ul class="list-disc list-inside"><slot></slot></ul>
+	<ul class="list-inside list-disc"><slot /></ul>
 {/if}

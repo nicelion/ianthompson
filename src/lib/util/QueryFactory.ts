@@ -10,20 +10,16 @@
  
 */
 
-import type { Query } from "$lib/types/Query";
+import type { Query } from '$lib/types/Query';
 
 export const QueryFactory = (l: Location, search: Query) => {
-    
-    const urlParams = new URLSearchParams(l.search);
+	const urlParams = new URLSearchParams(l.search);
 
-    Object.keys(search).forEach(element => {
+	Object.keys(search).forEach((element) => {
+		if (search[element] != null) {
+			urlParams.set(element, search[element]);
+		}
+	});
 
-        
-        if (search[element] != null) {
-            urlParams.set(element, search[element])
-        }
-
-    });
-    
-    return urlParams.toString()
-}
+	return urlParams.toString();
+};
