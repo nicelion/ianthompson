@@ -68,7 +68,7 @@
 </script>
 
 <!-- Full Size -->
-<div id="sidebar" class="h-fit w-full space-y-5 rounded bg-black-lighter p-2 md:sticky md:top-20">
+<div id="sidebar" class="h-fit w-full space-y-5 rounded bg-black-lighter p-2">
 	<button class={`btn btn-ghost w-full text-xs lg:hidden`} on:click={handleToggle}
 		>{`${showSidebar ? 'Close' : 'Search Blog'}`}</button>
 	<form

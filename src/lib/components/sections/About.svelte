@@ -154,38 +154,85 @@
 		<Collapse title="Teaching Experience">
 			<Experience title="Practicum Student - 3rd Grade" fa="fa-solid fa-chalkboard-user">
 				<p>
-					<a href="https://idealab.sites.clemson.edu/" class="url" target="_blank" rel="noreferrer"
+					<a href="https://midway.anderson5.net/" class="url" target="_blank" rel="noreferrer"
 						>Midway Elementary</a> | Anderson School District 5
 				</p>
 				<p>Fall 2023</p>
 				<br />
 				<p>
-					This was a 215 hour placement that satisfied the requirements of EDEL 4010 - Elementary
-					Field Experience at Clemson University.
+					This was a 215 hour placement that satisfied the requirements of <span class="italic"
+						>EDEL 4010 - Elementary Field Experience</span> at Clemson University.
 				</p>
 			</Experience>
 			<Experience title="Practicum Student - 3rd Grade" fa="fa-solid fa-chalkboard-user">
 				<p>
-					<a href="https://idealab.sites.clemson.edu/" class="url" target="_blank" rel="noreferrer"
+					<a href="https://whitehall.anderson5.net/" class="url" target="_blank" rel="noreferrer"
 						>Whitehall Elementary</a> | Anderson School District 5
 				</p>
 				<p>Spring 2023</p>
 				<br />
 				<p>
-					This was a 35 hour placement that satisfied the requirements of EDEL 4520 - Elementary
-					Methods in Mathematics Teaching at Clemson University.
+					This was a 35 hour placement that satisfied the requirements of <span class="italic"
+						>EDEL 4520 - Elementary Methods in Mathematics Teaching</span> at Clemson University.
 				</p>
 			</Experience>
 			<Experience title="Practicum Student - 4th Grade" fa="fa-solid fa-chalkboard-user">
 				<p>
-					<a href="https://idealab.sites.clemson.edu/" class="url" target="_blank" rel="noreferrer"
+					<a href="https://fae.pickens.k12.sc.us/" class="url" target="_blank" rel="noreferrer"
 						>Forest Acres Elementary</a> | Pickens County School District
 				</p>
 				<p>Fall 2021</p>
 				<br />
 				<p>
-					This was a 6 hour placement that satisfied the requirements of EDF 3340 - Child Growth and
-					Development at Clemson University.
+					This was a 6 hour placement that satisfied the requirements of <span class="italic"
+						>EDF 3340 - Child Growth and Development</span> at Clemson University.
+				</p>
+			</Experience>
+			<Experience title="Substitute Teacher" fa="fa-solid fa-chalkboard-user">
+				<p>
+					<a href="https://www.greenville.k12.sc.us" class="url" target="_blank" rel="noreferrer"
+						>Greenville County School District</a> | Greenville, SC
+				</p>
+				<p>January 2021 - Present</p>
+				<br />
+				<p class="leading-relaxed">
+					In this role, I substitute taught at various middle schools in school district in all
+					subject areas.
+				</p>
+			</Experience>
+			<Experience title="Permanent Substitute Teacher" fa="fa-solid fa-chalkboard-user">
+				<p>
+					<a
+						href="https://www.greenville.k12.sc.us/gvillem"
+						class="url"
+						target="_blank"
+						rel="noreferrer">Greenville Middle Academy</a> | Greenville, SC
+				</p>
+				<p>Spring 2021</p>
+			</Experience>
+			<Experience title="Permanent Substitute Teacher" fa="fa-solid fa-chalkboard-user">
+				<p>
+					<a
+						href="https://www.greenville.k12.sc.us/beck"
+						class="url"
+						target="_blank"
+						rel="noreferrer">Beck Academy</a> | Greenville, SC
+				</p>
+				<p>Spring 2021</p>
+			</Experience>
+			<Experience title="After School Caregiver" fa="fa-solid fa-chalkboard-user">
+				<p>
+					<a
+						href="https://www.greenville.k12.sc.us/pelham"
+						class="url"
+						target="_blank"
+						rel="noreferrer">Pelham Road Elementary</a> | Greenville, SC
+				</p>
+				<p>May 2017 - Mar 2020</p>
+				<br />
+				<p class="leading-relaxed">
+					In this role, I worked in the extended day program at Pelham Road Elementary School in
+					Greenville, SC.
 				</p>
 			</Experience>
 		</Collapse>
@@ -368,7 +415,7 @@
 				fa="fa-solid fa-book">
 				<p>
 					<a href="https://idc.acm.org/2023/" class="url"
-						>Interaction Design and Children Conference</a> | Northwestern University
+						>Interaction Design and Children Conference</a> @ Northwestern University, Chicago, IL
 				</p>
 				<p>June 19, 2023</p>
 				<br />
@@ -385,14 +432,13 @@
 				</p>
 				<p class="mt-5 leading-relaxed">
 					<cite>
-						Ibrahim Oluwajoba Adisa, Ian Thompson, Tolulope Famaye, Deepika Sistla, Cinamon Sunrise
-						Bailey, Katherine Mulholland, Alison Fecher, Caitlin Marie Lancaster, and Golnaz
-						Arastoopour Irgens. 2023. S.P.O.T: A Game-Based Application for Fostering Critical
-						Machine Learning Literacy Among Children. In Proceedings of the 22nd Annual ACM
-						Interaction Design and Children Conference (IDC '23). Association for Computing
-						Machinery, New York, NY, USA, 507–511. <a
-							class="url"
-							href="https://doi.org/10.1145/3585088.3593884"
+						Ibrahim Oluwajoba Adisa, <span class="font-bold">Ian Thompson,</span> Tolulope Famaye,
+						Deepika Sistla, Cinamon Sunrise Bailey, Katherine Mulholland, Alison Fecher, Caitlin
+						Marie Lancaster, and Golnaz Arastoopour Irgens. 2023. S.P.O.T: A Game-Based Application
+						for Fostering Critical Machine Learning Literacy Among Children. In Proceedings of the
+						22nd Annual ACM Interaction Design and Children Conference (IDC '23). Association for
+						Computing Machinery, New York, NY, USA, 507–511.
+						<a class="url" href="https://doi.org/10.1145/3585088.3593884"
 							>https://doi.org/10.1145/3585088.3593884</a>
 					</cite>
 				</p>

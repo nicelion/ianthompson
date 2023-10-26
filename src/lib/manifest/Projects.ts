@@ -35,8 +35,8 @@ const Projects: [Project] = [
 		description:
 			'This is an open-source project I started to serve as a virtual hymnal for Hymns & Hops, an event in Greenville, SC where people gather to enjoy beer and song. This application is not endorsed by Hymns & Hops or its organizers.',
 		img: '/img/hymns-and-hops-songbook.png',
-		github: 'https://github.com/nicelion/ianthompson',
-		url: '/posts/hymns-and-hops-mobile-songbook',
+		github: 'https://github.com/nicelion/hymns',
+		url: 'https://hymns-seven.vercel.app/',
 		tags: ['code']
 	},
 	{
@@ -53,8 +53,8 @@ const Projects: [Project] = [
 		description:
 			'This website you are viewing is a project of mine! If you want to use this as a template for your own site, feel free to check out the GitHub',
 		img: '/img/cover.jpg',
-		github: 'https://github.com/nicelion/hymns',
-		url: 'https://hymns-seven.vercel.app',
+		github: 'https://github.com/nicelion/ianthompson',
+		url: 'https://www.iancthompson.dev',
 		tags: ['code']
 	},
 	{
