@@ -14,6 +14,12 @@ If you see an issue in the live version and would like to make a fix, submit a p
 
 Please see LICENSE.md for more information.
 
+Here are a few things to consider (inspired by [Ko](https://github.com/amyjko/faculty)):
+
+- I view the code as public domain. Do what you like with it.
+- The site isn't written for reuse, so I recommend forking.
+- I'm not in a position to provide a ton of support for adapting it, but I'm happy to answer the occasional question.
+
 ## Developing
 
 Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
