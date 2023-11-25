@@ -25,7 +25,8 @@ export const Posts: Post[] = [
 	//     tags: ["code", "how-to", "svelte"]
 	// },
 	{
-		index: 3,
+		index: 4,
+		published: true,
 		title: 'Summer Moon Coffee: A Review',
 		description:
 			'Recently, a new coffee shop has been popping up around the Greenville area. In this review, I document my first experience and give my opinion on whether this coffee shop is truly all it is cracked up to be.',
@@ -36,7 +37,8 @@ export const Posts: Post[] = [
 		tags: ['reviews', 'food-and-drink']
 	},
 	{
-		index: 2,
+		index: 3,
+		published: true,
 		title: 'raspi-metar: A METAR Visualization Project for Raspberry Pi!',
 		description:
 			'Here I describe raspi-metar, a METAR visualization project I built in the summer of 2020 for Raspberry Pi.',
@@ -44,10 +46,24 @@ export const Posts: Post[] = [
 		cover:
 			'https://storage.googleapis.com/iacthompson-dev-bucket/medium_raspi_metar_762042dbed/medium_raspi_metar_762042dbed.jpeg',
 		postDate: new Date(2023, 6, 13, 12, 0, 0, 0),
-		tags: ['projects', 'python', 'raspberry-pi']
+		tags: ['projects', 'python', 'raspberry-pi'],
+		
+	},
+	{
+		index: 2,
+		published: true,
+		title: 'Attending Interaction Design & Children Conference at Northwestern University',
+		description:
+			'This past June, I had the opportunity to attend and present at the ACM Interaction Design & Children Conference at Northwestern University in Chicago, IL.',
+		slug: 'idc-2023',
+		cover:
+			'https://storage.googleapis.com/iacthompson-dev-bucket/IMG_5768_7d0ca1d01c/IMG_5768_7d0ca1d01c.jpeg?updated_at=2023-11-07T16:29:46.659Z',
+		postDate: new Date("2023-6-19"),
+		tags: ['trip-report', 'academic'],
 	},
 	{
 		index: 1,
+		published: true,
 		title: 'Welcome to the Blog!',
 		description:
 			'This is the first post to the blog. Here, you will find a description of what the blog is, and what the goals are.',
@@ -55,6 +71,6 @@ export const Posts: Post[] = [
 		cover:
 			'https://storage.googleapis.com/iacthompson-dev-bucket/medium_negative_space_colorful_programming_code_1062x708_2a659aebfc/medium_negative_space_colorful_programming_code_1062x708_2a659aebfc.jpg',
 		postDate: new Date(2023, 5, 24, 12, 0, 0, 0),
-		tags: ['general']
+		tags: ['general'],
 	}
 ];
