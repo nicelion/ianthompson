@@ -21,7 +21,7 @@
 	<div class="flex flex-col items-center justify-center space-y-4 text-center">
 		<div class="flex flex-col items-center justify-center">
 			<a href="/" class="text-3xl">Ian Thompson</a>
-			<p>Undergraduate Student</p>
+			<p>Teacher Candidate</p>
 		</div>
 		<p class="text-sm italic">
 			Ian is an undergraduate elementary education major at Clemson University. He is interested in
