@@ -18,5 +18,6 @@ export interface Post {
 	slug: string;
 	index?: number;
 	tags?: string[];
+	published: boolean;
 	// component: any
 }
