@@ -43,8 +43,7 @@ export async function GET() {
         `
 					)
 					.join('')}
-		${Posts.map(
-			(post) => `
+		${Posts.map((post) => !post.published ? null : `
 		<url>
 			<loc>${site}/posts/${post.slug}</loc>
 			<changefreq>monthly</changefreq>

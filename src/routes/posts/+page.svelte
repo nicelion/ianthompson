@@ -51,7 +51,7 @@
 	<!-- <PostRow /> -->
 	<div class="px-2">
 		<!-- {#if data.data.length < 1} -->
-		{#if false}
+		{#if data.posts.length < 1}
 			<div class="flex h-full w-full flex-col items-center justify-center space-y-5 py-9">
 				<img
 					class="h-96 rounded-md"
@@ -61,7 +61,9 @@
 			</div>
 		{:else}
 			{#each data.posts as post}
-				<PostRow {post} />
+				{#if post.published}
+					<PostRow {post} />
+				{/if}
 			{/each}
 		{/if}
 	</div>

@@ -22,7 +22,7 @@
 				👋🏼 Hello, I'm...
 			</h1>
 			<h1 class="mb-5 text-4xl font-bold md:text-6xl lg:text-8xl">Ian Thompson</h1>
-			<p class="text-lg md:text-2xl">Undergraduate Student @ Clemson University</p>
+			<p class="text-lg md:text-2xl">Teacher Candidate @ Clemson University</p>
 
 			<div class="mt-12 space-y-2">
 				<div class="group flex items-center space-x-4 text-xl">
