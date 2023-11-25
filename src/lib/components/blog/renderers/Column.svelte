@@ -10,7 +10,7 @@
  
 --->
 
-<div class="flex-none md:flex md:space-x-5">
+<div class="flex-none md:flex md:items-center md:space-x-5">
 	<div class="md:w-1/2">
 		<slot name="left" />
 	</div>
