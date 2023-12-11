@@ -49,6 +49,15 @@ const Projects: Project[] = [
 		tags: ["code"]
 	},
 	{
+		name: "teachable-svelte",
+		description:
+			"In this application, you are able to create image classifications and train a model using webcam or uploaded image data. Once the model has been created and trained, the model is serialized and becomes available for download. These can then be utilized else where.",
+		img: "/img/teachable-svelte.jpg",
+		github: "https://github.com/nicelion/teachable-svelte",
+		url: "https://teachable-svelte.vercel.app/",
+		tags: ["code"]
+	},
+	{
 		name: "This Website",
 		description:
 			"This website you are viewing is a project of mine! If you want to use this as a template for your own site, feel free to check out the GitHub",
