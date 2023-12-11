@@ -50,6 +50,18 @@ export const Posts: Post[] = [
 		
 	},
 	{
+		index: 5,
+		published: true,
+		title: 'teachable-svelte: An open-source Teachable Machine wrapper',
+		description:
+			'Here, I describe teachable-svelte, an open-source wrapper for creating, training, and using machine learning models compatible with Google Teachable Machine.',
+		slug: 'teachable-svelte',
+		cover:
+			'/img/svelte_tm.png',
+		postDate: new Date("2023-07-08"),
+		tags: ['code', 'projects']
+	},
+	{
 		index: 2,
 		published: true,
 		title: 'Attending Interaction Design & Children Conference at Northwestern University',
