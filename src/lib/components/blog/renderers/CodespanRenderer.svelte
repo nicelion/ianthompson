@@ -11,9 +11,10 @@
 --->
 
 <script lang="ts">
-	export let content: string;
+	// export let content: string;
 </script>
 
-<code class="bg-code-background mt-4 rounded-md p-2 font-mono font-bold text-neutral-content">
-	{content.replace(/`/g, '')}
+<code class="bg-code-background rounded-md font-mono font-bold text-neutral-content">
+	<!-- {content.replace(/`/g, '')} -->
+	<slot />
 </code>
