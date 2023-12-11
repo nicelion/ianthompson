@@ -26,7 +26,7 @@ export const Posts: Post[] = [
 	// },
 	{
 		index: 4,
-		published: true,
+		published: false,
 		title: 'Summer Moon Coffee: A Review',
 		description:
 			'Recently, a new coffee shop has been popping up around the Greenville area. In this review, I document my first experience and give my opinion on whether this coffee shop is truly all it is cracked up to be.',
