@@ -146,7 +146,7 @@
 				<br />
 				<p class="mb-2 border-b">Committee:</p>
 				<p>
-					<span class="italic">Program Committeee</span>, International Conference on Quantitative
+					<span class="italic">Program Committee</span>, International Conference on Quantitative
 					Ethnography (ICQE) 2023
 				</p>
 			</Experience>
