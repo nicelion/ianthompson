@@ -39,14 +39,14 @@
 					</p>
 					<p>
 						Upon my May 2024 graduation, I will be certified to teach 2nd-6th grades in the State of
-						South Carolina, though I hope to find myself in a middle school position. I also am very
-						interested in pursing graduate school, where I hope to find a career where I can combine
-						my passion for computer science and education.
+						South Carolina, interested in teaching grades 3rd-6th. I also am very interested in
+						pursing graduate school, where I hope to find a career where I can combine my passion
+						for computer science and education.
 					</p>
 					<p>
 						In my free time, I enjoy listening to music and being outdoors. I am also a volunteer <a
 							class="url"
-							href="https://younglife.org/get-involved/for-every-kid/">WyldLife</a> leader at a middle
+							href="https://younglife.org/get-involved/for-every-kid/">Young Life</a> leader at a high
 						school in Anderson, SC.
 					</p>
 					<!-- <p>
@@ -146,7 +146,7 @@
 				<br />
 				<p class="mb-2 border-b">Committee:</p>
 				<p>
-					<span class="italic">Program Committeee</span>, International Conference on Quantitative
+					<span class="italic">Program Committee</span>, International Conference on Quantitative
 					Ethnography (ICQE) 2023
 				</p>
 			</Experience>

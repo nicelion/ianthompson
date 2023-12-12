@@ -26,7 +26,7 @@ export const Posts: Post[] = [
 	// },
 	{
 		index: 4,
-		published: true,
+		published: false,
 		title: 'Summer Moon Coffee: A Review',
 		description:
 			'Recently, a new coffee shop has been popping up around the Greenville area. In this review, I document my first experience and give my opinion on whether this coffee shop is truly all it is cracked up to be.',
@@ -48,6 +48,18 @@ export const Posts: Post[] = [
 		postDate: new Date(2023, 6, 13, 12, 0, 0, 0),
 		tags: ['projects', 'python', 'raspberry-pi'],
 		
+	},
+	{
+		index: 5,
+		published: true,
+		title: 'teachable-svelte: An open-source Teachable Machine wrapper',
+		description:
+			'Here, I describe teachable-svelte, an open-source wrapper for creating, training, and using machine learning models compatible with Google Teachable Machine.',
+		slug: 'teachable-svelte',
+		cover:
+			'/img/svelte_tm.png',
+		postDate: new Date("2023-07-08"),
+		tags: ['code', 'projects']
 	},
 	{
 		index: 2,
