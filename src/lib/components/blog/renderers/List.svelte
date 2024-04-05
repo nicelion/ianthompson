@@ -16,7 +16,7 @@
 </script>
 
 {#if ordered}
-	<ol class="list-inside list-disc"><slot /></ol>
+	<ol class="list-inside list-disc prose-ol:list-inside"><slot /></ol>
 {:else}
-	<ul class="list-inside list-disc"><slot /></ul>
+	<ul class="list-inside list-disc prose-ul:list-inside"><slot /></ul>
 {/if}

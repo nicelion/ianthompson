@@ -66,7 +66,7 @@
 	{@html atomOneDark}
 </svelte:head>
 
-<div class="bg-code-background mockup-code my-3 shadow-lg" style="background: #282c34;">
+<div class="bg-code-background prose-code mockup-code my-3 shadow-lg" style="background: #282c34;">
 	<div class="flex w-full items-end justify-end px-5 pb-2">
 		<button class="hover:opacity-75" on:click={handleCopy}
 			><i class="fa-solid fa-copy mr-1 text-lg" />

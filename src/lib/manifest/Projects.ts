@@ -14,6 +14,14 @@ import type { Project } from "$lib/types/Project";
 
 const Projects: Project[] = [
 	{
+		name: "S.P.O.T: A Game-Based Application for Fostering Critical Machine Learning Literacy Among Children",
+		description:
+			"This paper describes S.P.O.T., a game-based application for promoting children's practical understanding of ML concepts and applications. \nThis WIP paper was presented at IDC '23 at Northwestern University.",
+		img: "/img/previews/spot.png",
+		url: "https://dl.acm.org/doi/10.1145/3585088.3593884",
+		tags: ["pubs"]
+	},
+	{
 		name: "raspi-metar",
 		description:
 			"In short, raspi-metar is a Raspberry Pi project that takes METAR data from various airports and displays it on a VFR sectional map using NEOPIXEL LEDs.",
@@ -21,14 +29,6 @@ const Projects: Project[] = [
 		url: "/posts/raspi-metar-a-metar-visualization-project-for-raspberry-pi",
 		github: "https://github.com/nicelion/raspi-metar",
 		tags: ["code"]
-	},
-	{
-		name: "S.P.O.T: A Game-Based Application for Fostering Critical Machine Learning Literacy Among Children",
-		description:
-			"This paper describes S.P.O.T., a game-based application for promoting children's practical understanding of ML concepts and applications. \nThis WIP paper was presented at IDC '23 at Northwestern University.",
-		img: "/img/previews/spot.png",
-		url: "https://dl.acm.org/doi/10.1145/3585088.3593884",
-		tags: ["pubs"]
 	},
 	{
 		name: "Hymns & Hops Online Songbook",
@@ -70,7 +70,7 @@ const Projects: Project[] = [
 		name: "M5 TCP IRBlaster",
 		description:
 			"M5 TCP IRBlaster is a project I worked on while an intern at Fellowship Greenville. This project utilized an M5StickC to decode and send IR signals to power on/off devices. The M5Stick sets up a TCP server which was communicated to via BitFoucs' Companion and via Cronicle to automate Sunday mornings.",
-		img: "https://obniz.com/doc/reference/m5stickc/images/m5stickc.jpg",
+		img: "/img/m5.jpeg",
 		github: "https://github.com/nicelion/PCBTree",
 		tags: ["code"]
 	},

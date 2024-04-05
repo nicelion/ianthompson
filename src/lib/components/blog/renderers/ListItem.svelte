@@ -10,4 +10,4 @@
  
 --->
 
-<li class="ml-8"><slot /></li>
+<li class="ml-8 prose-li:ml-9"><slot /></li>

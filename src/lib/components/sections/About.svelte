@@ -15,6 +15,7 @@
 	import Collapse from '$lib/components/Collapse.svelte';
 	import Interest from '$lib/components/Interest.svelte';
 	import Experience from '$lib/components/resume/Experience.svelte';
+	import External from '../blog/renderers/External.svelte';
 </script>
 
 <section
@@ -42,12 +43,6 @@
 						South Carolina, interested in teaching grades 3rd-6th. I also am very interested in
 						pursing graduate school, where I hope to find a career where I can combine my passion
 						for computer science and education.
-					</p>
-					<p>
-						In my free time, I enjoy listening to music and being outdoors. I am also a volunteer <a
-							class="url"
-							href="https://younglife.org/get-involved/for-every-kid/">Young Life</a> leader at a high
-						school in Anderson, SC.
 					</p>
 					<!-- <p>
 						If you are interested in my political views, please <a href="/political-views" class="url"> click here.</a>
@@ -116,6 +111,37 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- <div
+		class="container my-4 flex flex-col-reverse items-center justify-center px-8 lg:flex-row lg:flex-row-reverse lg:items-stretch lg:space-x-10 xl:my-10 xl:px-10">
+		<div id="col" class="mlgd:px-28 lg:w-3/4">
+			<div id="about-text" class="space-y-8 md:px-20">
+				<div id="about-heading" class="mb-10">
+					<h2 class="text-slate-gray text-4xl font-semibold">Know me a little more.</h2>
+				</div>
+				<div class="space-y-5 text-xl leading-relaxed">
+					<p>
+						I am an avid music fan and Spotify user. Feel free to check out my profile <External
+							>here</External
+						>. I also enjoy playing music with my friends and being outside hiking or camping.
+					</p>
+					<p>
+						I am also a <External href="https://www.younglife.org/about">Young Life</External> leader
+						at T.L Hanna High School in Anderson, South Carolina. Before that, I served three years as
+						a WyldLife leader at McCants Middle School. If you scour social media enough, you may be
+						able to find some rather unflattering pictures of me, but please know: I am always down to
+						dress goofy for the kids. Go Jackets!
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<img
+			src="/img/ian-with-jacket.JPG"
+			alt="Ian with jacket"
+			class="mb-8 h-72 w-72 rounded-md object-cover" />
+	</div> -->
+
 	<div id="resume" class="flex w-full flex-col justify-evenly space-y-9 p-6 md:p-24">
 		<Collapse title="Education">
 			<Experience
@@ -152,6 +178,14 @@
 			</Experience>
 		</Collapse>
 		<Collapse title="Teaching Experience">
+			<Experience title="Student Teacher - 5th Grade" fa="fa-solid fa-chalkboard-user">
+				<p>
+					<a href="https://midway.anderson5.net/" class="url" target="_blank" rel="noreferrer"
+						>Midway Elementary</a> | Anderson School District 5
+				</p>
+				<p>Spring 2024</p>
+				<br />
+			</Experience>
 			<Experience title="Practicum Student - 3rd Grade" fa="fa-solid fa-chalkboard-user">
 				<p>
 					<a href="https://midway.anderson5.net/" class="url" target="_blank" rel="noreferrer"

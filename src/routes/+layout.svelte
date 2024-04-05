@@ -122,7 +122,10 @@
 	class="navbar sticky top-0 z-50 w-full border-b border-transparent bg-eerie-black transition-opacity duration-200 ease-in-out"
 	id="header">
 	<div class="flex-1">
-		<a href="/" class="flex h-full w-full items-center space-x-2 md:space-x-5">
+		<a
+			rel="canonical"
+			href="https://www.iancthompson.dev/"
+			class="flex h-full w-full items-center space-x-2 md:space-x-5">
 			{#if showImage}
 				<div
 					class="ml-2 h-7 sm:h-14"
