@@ -26,5 +26,5 @@ html {
 }
 
 .url {
-	@apply text-theme-primary hover:underline;
+	@apply text-theme-primary hover:underline hover:opacity-90;
 }
