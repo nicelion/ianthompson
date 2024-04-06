@@ -30,9 +30,7 @@
 				<div class="space-y-2">
 					<h2 class="text-xl underline">Teaching</h2>
 					<p>
-						Upon my May 2024 graduation, I will be looking for a teaching position in the
-						Anderson/Greenville area. I will be certified in grades 2-6th, but hoping to teach
-						grades 4th-6th.
+						Following my May 2024 graduation, I will be full time teaching at Midway Elementary School in Anderson, South Carolina.
 					</p>
 				</div>
 				<div class="space-y-2">

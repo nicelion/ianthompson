@@ -44,6 +44,11 @@
 						pursing graduate school, where I hope to find a career where I can combine my passion
 						for computer science and education.
 					</p>
+					<p>
+						I am also a <External href="https://www.younglife.org/about">Young Life</External> leader
+						at T.L Hanna High School in Anderson, South Carolina. Before that, I served three years as
+						a WyldLife leader at McCants Middle School. Go Jackets!
+					</p>
 					<!-- <p>
 						If you are interested in my political views, please <a href="/political-views" class="url"> click here.</a>
 					</p> -->
