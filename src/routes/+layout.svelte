@@ -23,8 +23,8 @@
 
 	var pageYOffset = 0;
 
-	var showImage = true;
-	var showMessage = true;
+	var showImage = false;
+	var showMessage = false;
 
 	// console.log($page.url);
 
@@ -118,7 +118,7 @@
 
 <Analytics />
 
-<nav
+<!-- <nav
 	class="navbar sticky top-0 z-50 w-full border-b border-transparent bg-eerie-black transition-opacity duration-200 ease-in-out"
 	id="header">
 	<div class="flex-1">
@@ -185,7 +185,63 @@
 			</ul>
 		</ul>
 	</div>
-</nav>
+</nav> -->
+
+<div class="navbar bg-eerie-black py-5 sticky top-0 z-50 border-b border-transparent transition-opacity duration-200 ease-in-out" id="header">
+	<div class="navbar-start">
+	  <div class="dropdown">
+		<div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+		  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+		</div>
+		<ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+			<li><a href="/">Home</a></li>
+			<li><a href="/#about">About</a></li>
+			<li><a href="/#resume">Resume</a></li>
+			<li><a href="/#projects">Projects</a></li>
+			<li><a href="/posts">Posts</a></li>
+			<li><a href="/lets-chat">Contact</a></li>
+		</ul>
+	  </div>
+	  <div class="flex-1">
+		<a
+			rel="canonical"
+			href="https://www.iancthompson.dev/"
+			class="flex h-full w-full items-center space-x-2 md:space-x-5">
+			{#if showImage}
+				<div
+					class="ml-2 h-7 sm:h-14"
+					in:fly={{ x: -200, duration: 500 }}
+					out:fly={{ x: -200, duration: 500 }}>
+					<img
+						id="logo-img"
+						src="/img/ian-thompson.jpg"
+						alt=""
+						class="hidden h-full rounded-full rounded-br-sm border-4 border-theme-primary transition-all delay-75 ease-in-out sm:block" />
+				</div>
+			{/if}
+
+			{#if showMessage}
+				<p
+					id="logo"
+					class="sm:text-md mb-2 w-fit rounded-xl rounded-bl-none bg-theme-primary p-1 px-4 font-mono text-sm font-extrabold text-white transition-all delay-75 ease-in-out"
+					in:fly={{ x: -200, duration: 500 }}
+					out:fly={{ x: -200, duration: 500 }}>
+					Hi, I'm Ian.
+				</p>
+				<p />
+			{/if}
+		</a>
+	</div>	</div>
+	<div class="navbar-end hidden lg:flex">
+	  <ul class="menu menu-horizontal px-1">
+		<li><a href="/#about">About</a></li>
+		<li><a href="/#resume">Resume</a></li>
+		<li><a href="/#projects">Projects</a></li>
+		<li><a href="/posts">Posts</a></li>
+		<li><a href="/lets-chat">Contact</a></li>
+	  </ul>
+	</div>
+  </div>
 
 <div class="relative w-full bg-eerie-black font-body" id="content">
 	<slot />
