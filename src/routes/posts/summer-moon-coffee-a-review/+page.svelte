@@ -21,11 +21,12 @@
 		Section,
 		Heading
 	} from '$lib/components/blog/renderers';
+	import { page } from '$app/stores';
 
-	export let data: Post;
+	export let postData: Post = $page.data
 </script>
 
-<Article postData={data}>
+<Article {postData}>
 	<p>
 		Recently, a new coffee shop has been popping up around the Greenville, South Carolina area. This
 		Texas-based chain has made its way to the State with its first location (and the location I

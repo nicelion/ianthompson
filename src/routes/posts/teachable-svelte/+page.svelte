@@ -25,11 +25,12 @@
 	} from '$lib/components/blog/renderers';
 	import External from '$lib/components/blog/renderers/External.svelte';
 	import ViewOnGitHubButton from '$lib/components/ViewOnGitHubButton.svelte';
+	import { page } from '$app/stores';
 
-	export let data: Post;
+	export let postData: Post = $page.data
 </script>
 
-<Article postData={data}>
+<Article {postData}>
 	<h2>About</h2>
 	<p>
 		Teachable Svelte is an open source project I created during my time as an undergraduate research

@@ -61,7 +61,7 @@
 
 <article class="rounded-md bg-black-lighter">
 	<div class="h-1/3 w-full">
-		<img src={postData.cover} alt="" class="h-72 w-full rounded-md object-cover" />
+		<img src={postData.cover} alt="" class="h-72 w-full roundploped-md object-cover" />
 	</div>
 	<div class="px-1 py-5">
 		<div class="flex flex-col justify-between border-b-2 border-eerie-black px-3 pb-4 md:flex-row">

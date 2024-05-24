@@ -1,3 +1,4 @@
+
 <!--
  +page.svelte
  iancthompson
@@ -12,7 +13,7 @@
 
 <script lang="ts">
 	import type { Post } from '$lib/types/Post';
-
+	import { page } from '$app/stores';
 	import {
 		Article,
 		Column,
@@ -28,10 +29,10 @@
 		External
 	} from '$lib/components/blog/renderers';
 
-	export let data: Post;
+	export let postData: Post = $page.data
 </script>
 
-<Article postData={data}>
+<Article {postData}>
 	<div role="alert" class="alert alert-warning">
 		<svg
 			xmlns="http://www.w3.org/2000/svg"

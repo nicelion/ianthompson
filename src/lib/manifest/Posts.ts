@@ -15,15 +15,79 @@ import Article from '$lib/components/blog/renderers/Article.svelte';
 import type { Post } from '$lib/types/Post';
 
 export const Posts: Post[] = [
-	// {
-	//     index: 3,
-	//     title: "Creating an Auto-leveling Svelte Header Component",
-	//     description: "In this short how-to, I show how I created a Svelte header component that auto-levels based on where it is in the structure.",
-	//     slug: "creating-an-auto-leveling-svelte-header-component",
-	//     cover: "/img/posts/creating-an-auto-leveling-svelte-header-component-cover.jpeg",
-	//     postDate: new Date(2023, 6, 18, 12, 0, 0, 0),
-	//     tags: ["code", "how-to", "svelte"]
-	// },
+	/* POSTS */	
+    {
+		published: false,
+		title: "You Were Made For This: Thoughts from a Young Life Leader",
+		description: "j",
+		slug: 'you-were-made-for-this:-thoughts-from-a-young-life-leader',
+		cover: "https://dpbvj4a9anukr.cloudfront.net/846b4004-7989-4e48-9cf3-aa3dca341f35/f1dee311-9b6e-42cd-8d8c-5e2c0dd8a965/c67cc95ff96199de32717010b8910fc5/2019-Carolina-Point_0045.jpg",
+		postDate: new Date("2024-04-09"),
+		tags: []
+	},	
+    {
+		published: false,
+		title: "I Learned Jupyter for an Overkill Project as a Student Teacher",
+		description: "f",
+		slug: 'i-learned-jupyter-for-an-overkill-project-as-a-student-teacher',
+		cover: "https://miro.medium.com/v2/resize:fit:1358/1*RzxZF0mmXAsMLrIzAWYDSg.png",
+		postDate: new Date("2024-04-09"),
+		tags: ["python", "projects", "teaching"]
+	},	
+    {
+		published: false,
+		title: "From Computer Engineering to Elementary Education: Reflecting on the College Experience",
+		description: "j",
+		slug: 'from-computer-engineering-to-elementary-education:-reflecting-on-the-college-experience',
+		cover: "https://scpictureproject.org/wp-content/uploads/tillman-hall.jpg",
+		postDate: new Date("2024-04-09"),
+		tags: ["personal", "teaching"]
+	},	
+    {
+		published: false,
+		title: "Building a Scratch Extension to Interface with a TPBot",
+		description: "k",
+		slug: 'building-a-scratch-extension-to-interface-with-a-tpbot',
+		cover: "/img/cml-scratch.jpg",
+		postDate: new Date("2024-04-09"),
+		tags: ["javascript", "code", "projects"]
+	},	
+    {
+		published: false,
+		title: "How an Elementary Education Major Worked in a Church's A/V Department",
+		description: "One summer...",
+		slug: 'how-an-elementary-education-major-worked-in-a-churchs-a/v-department',
+		cover: "",
+		postDate: new Date("2024-04-09"),
+		tags: ["work", "projects"]
+	},	
+    {
+		published: true,
+		title: "PCBTree: A Christmas Tree PCB I Made in High School",
+		description: "A high school trip to Las Vegas might seem unusual, but it sparked my fascination with electronics. Inspired by ElectroBoom's near-death fail compilations, I transitioned from programming to hardware, leading to the creation of PCBTree—a Christmas tree-shaped printed circuit board. Designed using KiCAD and powered by an ATTiny85, this project was my entry into the world of DIY electronics.",
+		slug: 'pcbtree:-a-christmas-tree-pcb-i-made-in-high-school',
+		cover: "/img/pcbtree.JPG",
+		postDate: new Date("2017-11-31"),
+		tags: ["code", "projects", "arduino", "c", "microcontroller", "hardware"]
+	},	
+    {
+		published: false,
+		title: "Hymns and Hops: An Online Song Book using SvelteKit",
+		description: "Hymns and Hops is a local gathering where craft beer is enjoyed, and traditional hymns are sung loud. Here I describe a project I created in SvelteKit where I created an online songbook for the gathering.",
+		slug: 'hymns-and-hops:-an-online-song-book-using-sveltekit',
+		cover: "https://github.com/nicelion/hymns/blob/main/static/img/bar.jpg?raw=true",
+		postDate: new Date("2023-04-23"),
+		tags: ["sveltekit", "projects"]
+	},	
+    {
+		published: false,
+		title: "Using Plopfile.js in a SvelteKit Blog",
+		description: "Discover the power of plopfile.js in your SvelteKit blog. Our upcoming post walks you through leveraging this tool to simplify the creation of new blog posts. Enhance your workflow by automating repetitive tasks and focusing more on content creation.",
+		slug: 'using-plopfilejs-in-a-sveltekit-blog',
+		cover: "https://plopjs.com/images/plop-meta-card.jpg",
+		postDate: new Date("2024-04-09"),
+		tags: ["code", "javascript", "how-to", "sveltekit"]
+	},	
 	{
 		index: 4,
 		published: false,

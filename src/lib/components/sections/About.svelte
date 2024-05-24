@@ -32,15 +32,14 @@
 				<div class="space-y-5 text-xl leading-relaxed">
 					<p>My name is Ian Thompson. I am from the Upstate of South Carolina.</p>
 					<p>
-						I am currently a student at Clemson University working towards my Bachelor of Arts in
-						Elementary Education. I love all things tech. I have been programming since I was 12
+						I am 3rd grade teacher and I love all things tech. I have been programming since I was 12
 						years old, having first started out learning Objective-C using Xcode 5! Since then, I
 						have used my programming skills to accomplish a variety of personal projects, for my
 						small business, and for my role in educational research.
 					</p>
 					<p>
-						Upon my May 2024 graduation, I will be certified to teach 2nd-6th grades in the State of
-						South Carolina, interested in teaching grades 3rd-6th. I also am very interested in
+						I will am certified to teach 2nd-6th grades in the State of
+						South Carolina, interested in teaching grades 3rd-6th. Once able, I hope to add on my secondary computer science teaching credential. I also am very interested in
 						pursing graduate school, where I hope to find a career where I can combine my passion
 						for computer science and education.
 					</p>
@@ -154,7 +153,7 @@
 				fa="fa-solid fa-graduation-cap"
 				img="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Clemson_Tigers_logo.svg/500px-Clemson_Tigers_logo.svg.png?20181104184913">
 				<p>Bachelor of Arts in Elementary Education</p>
-				<p>August 2020 - Present</p>
+				<p>August 2020 - May 2024</p>
 				<br />
 				<p class="mb-2 border-b">Activites:</p>
 				<p>
@@ -183,6 +182,14 @@
 			</Experience>
 		</Collapse>
 		<Collapse title="Teaching Experience">
+			<Experience title="3rd Grade Teacher" fa="fa-solid fa-chalkboard-user">
+				<p>
+					<a href="https://midway.anderson5.net/" class="url" target="_blank" rel="noreferrer"
+						>Midway Elementary</a> | Anderson School District 5
+				</p>
+				<p>August 2024 - Present</p>
+				<br />
+			</Experience>
 			<Experience title="Student Teacher - 5th Grade" fa="fa-solid fa-chalkboard-user">
 				<p>
 					<a href="https://midway.anderson5.net/" class="url" target="_blank" rel="noreferrer"

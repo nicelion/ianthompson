@@ -53,7 +53,7 @@ export const getFilteredPosts = (query: string, order?: string, tag?: string) =>
 		/**
 		 * If the order is in ascending, then we will sort the results array
 		 */
-		if (order == 'asc') {
+		if (order == 'asc' || order == null) {
 			results = results.sort((a, b) => b.postDate - a.postDate);
 			// resolve(asc)
 		}
