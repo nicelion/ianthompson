@@ -15,10 +15,10 @@
 </script>
 
 <svelte:head>
-	<title>Ian Thompson | Teacher Candidate @ Clemson University</title>
+	<title>Ian Thompson | Elementary School Teacher. Tech Enthusiast.</title>
 	<meta
 		name="description"
-		content="Ian Thompson is an teacher candidate at Clemson University interested in education, computer science, and human-computer interaction that is skilled in web development using technologies such as Javascript, Typescript, Python, and Svelte." />
+		content="Ian Thompson is an elementary school teacher interested in education, computer science, and human-computer interaction that is skilled in web development using technologies such as Javascript, Typescript, Python, and Svelte." />
 </svelte:head>
 
 <CallToAction />

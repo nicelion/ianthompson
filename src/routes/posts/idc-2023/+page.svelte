@@ -23,11 +23,12 @@
 		Heading
 	} from '$lib/components/blog/renderers';
 	import External from '$lib/components/blog/renderers/External.svelte';
+	import { page } from '$app/stores';
 
-	export let data: Post;
+	export let postData: Post = $page.data
 </script>
 
-<Article postData={data}>
+<Article {postData}>
 	<p>
 		This past June, I had the privilege of traveling to Chicago to visit the Association for
 		Computing Machinery <External src="https://idc.acm.org/2023/"

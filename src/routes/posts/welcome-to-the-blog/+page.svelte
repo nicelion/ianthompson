@@ -22,11 +22,12 @@
 		Section,
 		Heading
 	} from '$lib/components/blog/renderers';
+	import { page } from '$app/stores';
 
-	export let data: Post;
+	export let postData: Post = $page.data
 </script>
 
-<Article postData={data}>
+<Article {postData}>
 	<p>Hello, and welcome to the blog! I'll start by introducing myself:</p>
 	<p>
 		My name is Ian Thompson, and I am currently a senior elementary education major at Clemson
