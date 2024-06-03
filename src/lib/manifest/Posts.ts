@@ -15,7 +15,7 @@ import Article from '$lib/components/blog/renderers/Article.svelte';
 import type { Post } from '$lib/types/Post';
 
 export const Posts: Post[] = [
-	/* POSTS */	
+	/* POSTS */		
     {
 		published: false,
 		title: "You Were Made For This: Thoughts from a Young Life Leader",

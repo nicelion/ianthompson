@@ -41,10 +41,9 @@ export default function (plop) {
         ],
         actions: [
             {
-                type: 'addMany',
-                destination: "./src/routes/posts/{{slugify title}}/",
-                base: ".templates/blog-post/template",
-                templateFiles: ".templates/blog-post/template/**"
+                type: 'add',
+                path: "./src/routes/posts/{{slugify title}}.svelte",
+                templateFile: ".templates/blog-post/template/post.svelte.hbs"
             },
             {
                 type: "modify",
