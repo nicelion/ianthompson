@@ -2,11 +2,11 @@
  +layout.svelte
  iancthompson
  
- Created by Ian Thompson on May 15th 2023
+ Created by Ian Thompson on June 3rd 2024
  ianthompson@nicelion.com
  https://www.nicelion.com
  
- Copyright (c) 2023 Nice Lion Technologies LLC. All Rights Reserved.
+ Copyright (c) 2024 Nice Lion Technologies LLC. All Rights Reserved.
  
 --->
 

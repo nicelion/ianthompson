@@ -71,7 +71,7 @@ export const Posts: Post[] = [
 		tags: ["code", "projects", "arduino", "c", "microcontroller", "hardware"]
 	},	
     {
-		published: false,
+		published: true,
 		title: "Hymns and Hops: An Online Song Book using SvelteKit",
 		description: "Hymns and Hops is a local gathering where craft beer is enjoyed, and traditional hymns are sung loud. Here I describe a project I created in SvelteKit where I created an online songbook for the gathering.",
 		slug: 'hymns-and-hops:-an-online-song-book-using-sveltekit',

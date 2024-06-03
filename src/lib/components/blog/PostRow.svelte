@@ -16,7 +16,6 @@
 
 	export let post: Post;
 
-	// console.log(post);
 </script>
 
 <a

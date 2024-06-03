@@ -29,7 +29,7 @@
 		External
 	} from '$lib/components/blog/renderers';
 
-	export let postData: Post = $page.data
+	let {postData}: Post = $page.data
 </script>
 
 <Article {postData}>

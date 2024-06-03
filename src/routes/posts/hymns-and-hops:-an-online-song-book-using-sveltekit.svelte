@@ -1,12 +1,12 @@
 <!--
- +page.svelte
+ hymns.svelte
  iancthompson
  
- Created by Ian Thompson on July 12th 2023
+ Created by Ian Thompson on June 3rd 2024
  ianthompson@nicelion.com
  https://www.nicelion.com
  
- Copyright (c) 2023 Nice Lion Technologies LLC. All Rights Reserved.
+ Copyright (c) 2024 Nice Lion Technologies LLC. All Rights Reserved.
  
 --->
 
@@ -22,14 +22,13 @@
 		Section,
 		Heading
 	} from '$lib/components/blog/renderers';
-	import { onMount } from 'svelte';
-	import { page } from '$app/stores';
 
-	export let postData: Post = $page.data;
+	import { page } from '$app/stores';
+	let {postData}: Post = $page.data
 
 </script>
 
-<Article {postData}>
+<Article postData={postData}>
 	<p>Hello, this is a template!</p>
 	<Column>
 		<ColumnContent slot="left">

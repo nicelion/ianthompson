@@ -10,7 +10,7 @@
  
 --->
 
-<script lang="ts">
+ <script lang="ts">
 	import type { Post } from '$lib/types/Post';
 	import PostLoader from '$lib/components/blog/PostLoader.svelte';
 
@@ -27,7 +27,9 @@
 	import ViewOnGitHubButton from '$lib/components/ViewOnGitHubButton.svelte';
 
 	import Retroactive from '$lib/components/blog/Retroactive.svelte';
-	export let postData: Post = $page.data
+	
+	let {postData}: Post = $page.data
+
 </script>
 
 <Article {postData}>
@@ -102,4 +104,4 @@
 			alt="Close up of ATTiny85 and transistors."
 			slot="right" />
 	</Column>
-</Article>
+</Article> 

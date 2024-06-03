@@ -19,13 +19,12 @@
 			class="w-40 rounded-full rounded-br-sm border-4 border-theme-primary transition-all duration-500 ease-in-out" />
 	</div>
 	<div class="flex flex-col items-center justify-center space-y-4 text-center">
-		<div class="flex flex-col items-center justify-center">
+		<div class="flex flex-col items-center justify-center space-y-2">
 			<a href="/" class="text-3xl">Ian Thompson</a>
-			<p>Teacher Candidate</p>
+			<p class="">Elementary School Teacher. Tech Enthusiast.</p>
 		</div>
 		<p class="text-sm italic">
-			Ian is an undergraduate elementary education major at Clemson University. He is interested in
-			education, technology, and how the two go hand-in-hand.
+			Ian is an elementary school teacher interested in technology.
 		</p>
 		<div class="flex space-x-5">
 			<a

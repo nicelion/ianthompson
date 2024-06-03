@@ -25,7 +25,7 @@
 	import External from '$lib/components/blog/renderers/External.svelte';
 	import { page } from '$app/stores';
 
-	export let postData: Post = $page.data
+	let {postData}: Post = $page.data
 </script>
 
 <Article {postData}>

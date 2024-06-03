@@ -27,7 +27,7 @@
 	import ViewOnGitHubButton from '$lib/components/ViewOnGitHubButton.svelte';
 	import { page } from '$app/stores';
 
-	export let postData: Post = $page.data
+	let {postData}: Post = $page.data
 </script>
 
 <Article {postData}>

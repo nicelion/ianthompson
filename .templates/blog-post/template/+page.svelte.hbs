@@ -23,10 +23,11 @@
 		Heading
 	} from '$lib/components/blog/renderers';
 
-	export let data: Post;
+	import { page } from '$app/stores';
+	let {postData}: Post = $page.data
 </script>
 
-<Article postData={data}>
+<Article postData={postData}>
 	<p>Hello, this is a template!</p>
 	<Column>
 		<ColumnContent slot="left">

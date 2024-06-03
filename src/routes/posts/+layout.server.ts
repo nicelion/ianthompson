@@ -2,7 +2,7 @@
  +layout.server.ts
  iancthompson
  
- Created by Ian Thompson on May 23rd 2024
+ Created by Ian Thompson on June 3rd 2024
  ianthompson@nicelion.com
  https://www.nicelion.com
  
@@ -15,23 +15,22 @@ import { getPostData } from '$lib/util/getPostData';
 import { error } from '@sveltejs/kit';
 import type { LayoutServerLoad } from './$types';
 
-export const load = (async ({params, url}) => {
-    // console.log(params, url);
+// export const load = (async ({params, url}) => {
 
-    if (url.pathname != "/posts") {
-        // user is navigating to a post!
-        console.log("Naving to a post");
+//     if (url.pathname != "/blog") {
+//         // user is navigating to a post!
+//         console.log("Naving to a post");
         
-        let postData: Promise<Post> = await getPostData(url.pathname)
+//         let postData: Promise<Post> = await getPostData(url.pathname)
 
-        if (postData.published == false || postData == undefined) {
-            console.log("Throwing!");
+//         if (postData.published == false || postData == undefined) {
+//             console.log("Throwing!");
             
-            throw error(404, "Not found!!")
-        } 
+//             throw error(404, "Not found!!")
+//         } 
 
-        return postData
-    }
+//         return postData
+//     }
     
-    return {};
-}) satisfies LayoutServerLoad;
+//     return {};
+// }) satisfies LayoutServerLoad;
